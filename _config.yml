@@ -2,18 +2,20 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+hexo-asset-folder: true
+
 # Site
 title: Furrybear's Blog
-subtitle: 'Do not want to work, but to play.'
-description: ''
+subtitle: 
+description: "Don't want to work, but to play."
 keywords:
 author: Furrybear
-language: zh_CN
+language: en
 timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: https://furrybear.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -41,7 +43,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
