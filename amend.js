@@ -33,8 +33,10 @@ function amend(filePath) {
             if (!attrs.date) {
                 attrs.date = moment(birthtime).utc(8).format("YYYY-MM-DD HH:mm:ss");
             } else {
+                console.log("Create time exist: " + attrs.date)
                 attrs.date = moment(attrs.date).utc(0).format("YYYY-MM-DD HH:mm:ss");
             }
+            console.log("Modified time: " + mtime);
             attrs.updated = moment(mtime).utc(8).format("YYYY-MM-DD HH:mm:ss");
 
             const output = stringifyFrontMatter(frontMatter)
