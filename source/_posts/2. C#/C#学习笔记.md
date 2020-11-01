@@ -1,9 +1,9 @@
 ---
 title: C#学习笔记
 date: '2020-11-01 11:36:10'
-updated: '2020-11-01 12:23:05'
+updated: '2020-11-01 12:24:47'
 categories:
-  - 2. Programming in C#
+  - 2. C#
 ---
 # C#学习笔记
 
