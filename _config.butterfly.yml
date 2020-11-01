@@ -177,7 +177,6 @@ cover:
     - /images/cover/WechatIMG8.png
     - /images/cover/ae10f7433043bd8c2fd898ed1bb05b2c.jpg
     - /images/cover/d477819e97d4ca792c2c49b2f6e1ee8bcc5eb887f335a553545e9fcf6a5989ca.jpg
-    - /images/cover/hehe.txt
     - /images/cover/jyfansubtsuki_ga_kirei11big5x264_aac720p7fc15d6d-mp4_001659-639.jpg
     - /images/cover/maxresdefault.jpg
     - /images/cover/psalms_of_planets_eureka_seven-045.jpg
@@ -684,7 +683,7 @@ aside:
     sort: date # date or updated
   card_categories:
     enable: true
-    limit: 8 # if set 0 will show all
+    limit: 0 # if set 0 will show all
     expand: none # none/true/false
   card_tags:
     enable: true
