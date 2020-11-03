@@ -1,10 +1,10 @@
 ---
 title: HTTPS基础知识
 date: '2020-10-28 10:03:47'
-updated: '2020-10-31 23:19:43'
+updated: '2020-11-01 10:14:34'
 tags: null
 categories:
-  - 1. Knowledge of Back End
+  - 1. Back End
 keywords: null
 description: null
 top_img: null
