@@ -9,8 +9,9 @@ categories:
 
 ## 开源许可证分类
 
-![](Open Source License Notes/1.jpg)
+![](./Open Source License Notes/1.jpg)
 
 ## 参考
 
 - <https://www.zhihu.com/question/19568896>
+
