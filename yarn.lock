@@ -703,14 +703,6 @@ hexo-renderer-ejs@^1.0.0:
   dependencies:
     ejs "^2.6.1"
 
-hexo-renderer-marked@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.npm.taobao.org/hexo-renderer-marked/download/hexo-renderer-marked-3.3.0.tgz#54bce9f00d356c71392b2fc3a881df7ff6dae8bd"
-  integrity sha1-VLzp8A01bHE5Ky/DqIHff/ba6L0=
-  dependencies:
-    hexo-util "^2.1.0"
-    marked "^1.0.0"
-
 hexo-renderer-pug@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/hexo-renderer-pug/download/hexo-renderer-pug-1.0.0.tgz#e23cfa53d308a0985ae8ec2b25a4f8d24c4b4dcc"
@@ -740,7 +732,7 @@ hexo-server@^2.0.0:
     open "^7.0.0"
     serve-static "^1.14.1"
 
-hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
+hexo-util@^2.0.0, hexo-util@^2.4.0:
   version "2.4.0"
   resolved "https://registry.npm.taobao.org/hexo-util/download/hexo-util-2.4.0.tgz#f5c0099a0a1718b3ad27061e5e4d1fb9eb7f2b41"
   integrity sha1-9cAJmgoXGLOtJwYeXk0fuet/K0E=
@@ -964,11 +956,6 @@ lower-case@^2.0.1:
   integrity sha1-Oe6zbjlhFcwF4pQi6uqeaSyUCMc=
   dependencies:
     tslib "^1.10.0"
-
-marked@^1.0.0:
-  version "1.2.2"
-  resolved "https://registry.npm.taobao.org/marked/download/marked-1.2.2.tgz?cache=0&sync_timestamp=1603290696820&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmarked%2Fdownload%2Fmarked-1.2.2.tgz#5d77ffb789c4cb0ae828bfe76250f7140b123f70"
-  integrity sha1-XXf/t4nEywroKL/nYlD3FAsSP3A=
 
 micromatch@^4.0.2:
   version "4.0.2"
