@@ -90,8 +90,10 @@ async function main() {
             const rl = readline.createInterface({ input: p.stdout });
             rl.on("line", line => {
                 line = line.replace(/^"(.*)"$/, "$1");
-                console.log(line);
-                filePaths.push(line);
+                if (line.match(/^.*\.md$/)) {
+                    console.log(line);
+                    filePaths.push(line);
+                }
             });
             p.on('exit', (exitCode) => {
                 if (exitCode === 0) {
