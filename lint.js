@@ -18,7 +18,8 @@ function isCategoriesValid(categories, filePath) {
     console.log(filePathSplited);
     if (filePathSplited.length - categories.length !== 3) return false;
     for (let i = 0; i < categories.length; i++) {
-        if (categories[i] !== filePathSplited[i + 2]) return false;
+        // console.log(filePathSplited[i + 2].replace("_", " "))
+        if (categories[i] !== filePathSplited[i + 2].replace(/_/g, " ")) return false;
     }
     return true;
 }

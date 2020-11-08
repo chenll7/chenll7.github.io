@@ -107,5 +107,5 @@ theme: butterfly
 deploy:
   type: ''
 
-marked:
-  gfm: true
+plugins:
+  - hexo-reference

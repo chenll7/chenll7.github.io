@@ -13,7 +13,7 @@ function getCategories(filePath) {
     if (filePathSplited.length < 4) throw new Error("Length of file path splited is less than 4.");
     if (filePathSplited[0] !== "source") throw new Error("\"source\" is not in the file path.");
     if (filePathSplited[1] !== "_posts") throw new Error("\"_posts\" is not in the file path.");
-    return filePathSplited.slice(2, filePathSplited.length - 1);
+    return filePathSplited.slice(2, filePathSplited.length - 1).map(e => e.replace(/_/g, " "));
 }
 
 function amend(filePath) {

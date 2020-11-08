@@ -1,7 +1,7 @@
 ---
 title: Linux_VFS
 date: '2020-11-01 11:36:12'
-updated: '2020-11-04 22:14:24'
+updated: '2020-11-08 09:17:45'
 categories:
   - 3 Linux
 ---
@@ -107,7 +107,7 @@ struct inode {
 
 ## 软链接
 
-![](linux_soft_link.jpg)
+![](Linux_VFS/linux_soft_link.jpg)
 
 　　可以指向不存在的文件或者目录。
 
