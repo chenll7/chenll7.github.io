@@ -675,6 +675,14 @@ hexo-generator-index@^2.0.0:
     hexo-pagination "1.0.0"
     timsort "^0.3.0"
 
+hexo-generator-search@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.npm.taobao.org/hexo-generator-search/download/hexo-generator-search-2.4.1.tgz#623d078f4a94fe282f76ea7284f38a58183565a7"
+  integrity sha1-Yj0Hj0qU/igvdupyhPOKWBg1Zac=
+  dependencies:
+    nunjucks "^3.0.1"
+    utils-merge "^1.0.0"
+
 hexo-generator-tag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/hexo-generator-tag/download/hexo-generator-tag-1.0.0.tgz#54ec23de9409c75584ea81e36057a59031b022f1"
@@ -1187,7 +1195,7 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   resolved "https://registry.npm.taobao.org/normalize-path/download/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=
 
-nunjucks@^3.2.1:
+nunjucks@^3.0.1, nunjucks@^3.2.1:
   version "3.2.2"
   resolved "https://registry.npm.taobao.org/nunjucks/download/nunjucks-3.2.2.tgz#45f915fef0f89fbab38c489dc85025f64859f466"
   integrity sha1-RfkV/vD4n7qzjEidyFAl9khZ9GY=
@@ -1715,7 +1723,7 @@ urix@^0.1.0:
   resolved "https://registry.npm.taobao.org/urix/download/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
-utils-merge@1.0.1:
+utils-merge@1.0.1, utils-merge@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/utils-merge/download/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=

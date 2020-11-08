@@ -2,9 +2,7 @@
 title: Linux下用户权限和用户组
 date: '2017-10-11 08:00:00'
 category: 笔记
-tag:
-  - Linux
-updated: '2020-11-04 22:14:24'
+updated: '2020-11-08 11:59:57'
 categories:
   - 3 Linux
 ---
