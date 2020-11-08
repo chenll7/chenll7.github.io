@@ -6,6 +6,8 @@
 # name || icon:
 #   name || link || icon
 
+touch_icon: "/images/favicon.jpg"
+
 menu:
   # Home: / || fas fa-home
   # Archives: /archives/ || fas fa-archive
