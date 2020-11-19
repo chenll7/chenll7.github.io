@@ -1,11 +1,11 @@
 ---
-title: Javascript Basics
+title: Javascript笔记
 date: '2020-11-01 11:36:10'
-updated: '2020-11-07 10:37:05'
+updated: '2020-11-10 13:46:20'
 categories:
   - 2 Frontend
 ---
-# Javascript Basics
+# Javascript笔记
 
 ## 参数传递
 
@@ -102,26 +102,6 @@ import { b, c } from './path'; // b就是2, c就是3
 import something, { b, c } from './path';
 ```
 
-## 如何将回调函数Promise化
-
-见参考[^2]。
-
-```js
-#!/usr/bin/env node
-"use strict";
-const fs = require("fs");
-function readFileContent(filepath) {
-    return new Promise((resolve, reject) => {
-        fs.readFile(filepath, "utf-8", (err, data) => {
-            if (err) return reject(err);
-            console.log(data);
-            resolve(data)
-        })
-    })
-}
-readFileContent(String.raw`C:\Windows\System32\drivers\etc\hosts`).then(data => { console.log(data) }).catch(err => { console.log(err) });
-```
-
 ## 错误处理
 
 ### Error
@@ -138,7 +118,5 @@ readFileContent(String.raw`C:\Windows\System32\drivers\etc\hosts`).then(data => 
 
 ## 参考
 
-[^1]:[[如何用 es6 的 export 语法导出多少个类？](https://segmentfault.com/q/1010000008760434)](https://segmentfault.com/q/1010000008760434/a-1020000008760580)
-[^2]: [Converting callbacks to promises](https://zellwk.com/blog/converting-callbacks-to-promises/)
-
+[^1]:[如何用 es6 的 export 语法导出多少个类？](https://segmentfault.com/q/1010000008760434)
 [^3]: [判断JS数据类型的四种方法](https://www.cnblogs.com/onepixel/p/5126046.html)

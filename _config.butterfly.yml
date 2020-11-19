@@ -6,8 +6,6 @@
 # name || icon:
 #   name || link || icon
 
-touch_icon: "/images/favicon.jpg"
-
 menu:
   # Home: / || fas fa-home
   # Archives: /archives/ || fas fa-archive
@@ -550,7 +548,7 @@ yandex_site_verification:
 # The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
 index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
-index_top_img_height: 
+index_top_img_height:
 
 # The user interface setting of category and tag page (category和tag頁的UI設置)
 # index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
@@ -878,13 +876,15 @@ lazyload:
   enable: false
   post: /img/loading.gif
 
+touch_icon: "/images/favicon.jpg"
+
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
-# pwa:
-#   enable: false
+pwa:
+  enable: true
 #   manifest: /image/pwa/manifest.json
-#   apple_touch_icon: /image/pwa/apple-touch-icon.png
+  apple_touch_icon: "/images/favicon.jpg"
 #   favicon_32_32: /image/pwa/32.png
 #   favicon_16_16: /image/pwa/16.png
 #   mask_icon: /image/pwa/safari-pinned-tab.svg

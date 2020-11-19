@@ -1,11 +1,11 @@
 ---
-title: Javascript Prototype and Prototype Chain Explained
+title: Javascript原型和原型链笔记
 date: '2020-11-01 11:36:10'
-updated: '2020-11-07 10:37:05'
+updated: '2020-11-10 13:38:28'
 categories:
   - 2 Frontend
 ---
-# Javascript Prototype and Prototype Chain Explained
+# Javascript原型和原型链笔记
 
 ## new、prototype、\_\_proto\_\_、原型与原型链
 
