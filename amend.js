@@ -1,6 +1,7 @@
 const child_process = require("child_process");
 const readline = require("readline");
 const fs = require('fs');
+const fsPromises = fs.promises
 const getFrontMatter = require('gray-matter');
 const { stringify: stringifyFrontMatter } = require('gray-matter');
 const path = require("path");
@@ -16,66 +17,81 @@ function getCategories(filePath) {
     return filePathSplited.slice(2, filePathSplited.length - 1).map(e => e.replace(/_/g, " "));
 }
 
-function amend(filePath) {
-    return new Promise((resolve, reject) => {
-        fs.readFile(filePath, 'utf8', function (err, data) {
-            console.log("\n#################################");
-            console.log(`Check and amend file ${filePath}`);
-            console.log("#################################");
-            if (err) {
-                reject(err);
-                return;
-            }
-            const frontMatter = getFrontMatter(data);
-            //console.log(frontMatter);
-            const { data: attrs } = frontMatter;
+async function amend(filePath) {
+    try {
+        // Read file.
+        const fileContent = await fsPromises.readFile(filePath, 'utf8')
+        console.log("\n#################################");
+        console.log(`Check and amend file ${filePath}`);
+        console.log("#################################");
+        const frontMatter = getFrontMatter(fileContent);
+        // console.debug(frontMatter);
+        const { data: attrs, content: fileContentWithoutFrontMatter } = frontMatter;
 
-            const fileState = fs.statSync(filePath);
-            const { mtime, birthtime } = fileState;
+        const fileState = await fsPromises.stat(filePath);
+        const { mtime, birthtime } = fileState;
 
-            // Amend.
-            if (!attrs.title) {
-                if (filePath.match(/^.*\.[^\.]*$/))
-                    attrs.title = path.basename(filePath).replace(/^(.*)\.[^\.]*$/, "$1");
-                else
-                    attrs.title = path.basename(filePath);
-            }
+        // Start amending.
 
-            if (!attrs.date) {
-                console.log("Attribute date dose not exist, use the file birthtime: " + attrs.date)
-                attrs.date = moment(birthtime).utc(8).format("YYYY-MM-DD HH:mm:ss");
-            } else {
-                console.log("Attribute date exists: " + attrs.date)
-                attrs.date = moment(attrs.date).utc(8).format("YYYY-MM-DD HH:mm:ss");
-            }
-
-            console.log("Use the file modified time: " + mtime);
-            attrs.updated = moment(mtime).utc(8).format("YYYY-MM-DD HH:mm:ss");
-
-            try {
-                const categories = getCategories(filePath);
-                attrs.categories = categories;
-            } catch (err) {
-                reject(err);
-                return;
-            }
-            // End amending.
-
-            const output = stringifyFrontMatter(frontMatter)
-            console.log(output)
-
-            fs.writeFile(filePath, output, err => {
-                if (err) {
-                    reject(err);
-                    return;
+        // Amend attribute title.
+        if (!attrs.title) {
+            const splited = fileContentWithoutFrontMatter.split('\n')
+            console.debug(splited)
+            let title = null
+            if (splited.length > 0) {
+                const matchResult = /^#\s(.*)\r*/.exec(splited[0])
+                if (matchResult) {
+                    title = matchResult[1]
                 }
-                resolve();
-            });
-        })
-    });
+            }
+            if (title) {
+                attrs.title = title
+            } else {
+                const matchResult = /^.*\.[^\.]*$/.exec(filePath)
+                if (matchResult) {
+                    attrs.title = matchResult[1]
+                } else {
+                    attrs.title = filePath
+                }
+            }
+        }
+
+        // Amend attribute date.
+        if (!attrs.date) {
+            console.log("Attribute date dose not exist, use the file birthtime: " + attrs.date)
+            attrs.date = moment(birthtime).utc(8).format("YYYY-MM-DD HH:mm:ss");
+        } else {
+            console.log("Attribute date exists: " + attrs.date)
+            attrs.date = moment(attrs.date).utc(8).format("YYYY-MM-DD HH:mm:ss");
+        }
+
+        // Amend attribute updated.
+        console.log("Use the file modified time: " + mtime);
+        attrs.updated = moment(mtime).utc(8).format("YYYY-MM-DD HH:mm:ss");
+
+        // Amend attribute categories.
+        try {
+            const categories = getCategories(filePath);
+            attrs.categories = categories;
+        } catch (err) {
+            reject(err);
+            return;
+        }
+
+        // End amending.
+
+        console.debug(frontMatter)
+
+        // Write file.
+        const output = stringifyFrontMatter(frontMatter)
+        // console.log(output)
+        fsPromises.writeFile(filePath, output)
+    } catch (err) {
+        throw err;
+    }
 }
 
-async function getFilePaths(command, filePaths) {
+function getFilePaths(command, filePaths) {
     return new Promise((resolve, reject) => {
         const p = child_process.exec(command);
         p.stderr.pipe(p.stdout);
@@ -103,7 +119,7 @@ async function main() {
     const argv = process.argv;
 
     console.log("\n#################################");
-    console.log("The following files are in git staging area:");
+    console.log("The following files are untracked or in the git staging area:");
     console.log("#################################");
     const filePaths = [];
     //console.log(argv);

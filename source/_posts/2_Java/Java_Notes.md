@@ -1,11 +1,11 @@
 ---
-title: Java Basics
+title: Java笔记
 date: '2020-11-01 11:36:10'
-updated: '2020-11-07 10:37:05'
+updated: '2021-01-04 20:50:51'
 categories:
   - 2 Java
 ---
-# Java Basics
+# Java笔记
 
 ## 环境变量设置
 
