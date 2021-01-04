@@ -75,6 +75,30 @@ function amend(filePath) {
     });
 }
 
+async function getFilePaths(command, filePaths) {
+    return new Promise((resolve, reject) => {
+        const p = child_process.exec(command);
+        p.stderr.pipe(p.stdout);
+        const rl = readline.createInterface({ input: p.stdout });
+        rl.on("line", line => {
+            // 去掉双引号
+            line = line.replace(/^"(.*)"$/, "$1");
+            // 只处理md文件
+            if (line.match(/^.*\.md$/)) {
+                console.log(line);
+                filePaths.push(line);
+            }
+        });
+        p.on('exit', (exitCode) => {
+            if (exitCode === 0) {
+                resolve();
+            } else {
+                reject(exitCode);
+            }
+        });
+    });
+}
+
 async function main() {
     const argv = process.argv;
 
@@ -84,25 +108,8 @@ async function main() {
     const filePaths = [];
     //console.log(argv);
     if (argv.length < 3) {
-        await new Promise((resolve, reject) => {
-            const p = child_process.exec("git diff --name-only --diff-filter=ACMRTUXB head source/_posts");
-            p.stderr.pipe(p.stdout);
-            const rl = readline.createInterface({ input: p.stdout });
-            rl.on("line", line => {
-                line = line.replace(/^"(.*)"$/, "$1");
-                if (line.match(/^.*\.md$/)) {
-                    console.log(line);
-                    filePaths.push(line);
-                }
-            });
-            p.on('exit', (exitCode) => {
-                if (exitCode === 0) {
-                    resolve();
-                } else {
-                    reject(exitCode);
-                }
-            });
-        });
+        await getFilePaths("git diff --name-only --diff-filter=ACMRTUXB head source/_posts", filePaths)
+        await getFilePaths("git ls-files --others --exclude-standard", filePaths)
     } else {
         console.log(argv[2]);
         filePaths.push(argv[2]);

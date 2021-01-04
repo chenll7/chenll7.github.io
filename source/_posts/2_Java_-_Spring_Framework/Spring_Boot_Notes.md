@@ -1,7 +1,7 @@
 ---
 title: Spring Boot Notes
 date: '2020-11-04 11:36:10'
-updated: '2020-11-07 10:42:25'
+updated: '2020-11-07 10:59:14'
 categories:
   - 2 Java - Spring Framework
 ---

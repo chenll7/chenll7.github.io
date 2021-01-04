@@ -1,7 +1,7 @@
 ---
 title: Enterprize Application Basics
 date: '2020-10-29 08:59:17'
-updated: '2020-11-07 10:37:05'
+updated: '2021-01-04 16:53:57'
 categories:
   - 1 Back End
 ---
@@ -18,6 +18,8 @@ categories:
 - OLTP和OLAP
 
 ![](https://raw.githubusercontent.com/furrybear/res/master/img/20190501141421.png)
+
+三层架构：表现层、业务层、持久层
 
 ## 微服务
 
