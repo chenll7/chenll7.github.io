@@ -1,9 +1,9 @@
 ---
+title: Spring框架开发实践
 date: '2020-12-29 11:20:31'
-updated: '2021-01-04 20:49:11'
+updated: '2021-01-05 10:48:20'
 categories:
   - 2 Java - Spring Framework
-title: Spring框架开发实践
 ---
 # Spring框架开发实践
 

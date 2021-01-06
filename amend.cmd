@@ -1,2 +1,2 @@
 @echo off
-call node amend.js
+call node amend.js %*

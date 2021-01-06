@@ -1,11 +1,11 @@
 ---
-title: Maven使用学习笔记
+title: Maven笔记
 date: '2020-11-01 11:36:10'
-updated: '2021-01-04 20:50:12'
+updated: '2021-01-05 10:48:20'
 categories:
   - 2 Java
 ---
-# Maven使用学习笔记
+# Maven笔记
 
 ## 概念
 

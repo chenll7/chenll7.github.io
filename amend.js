@@ -80,12 +80,13 @@ async function amend(filePath) {
 
         // End amending.
 
-        console.debug(frontMatter)
+        // console.debug(frontMatter)
 
         // Write file.
         const output = stringifyFrontMatter(frontMatter)
+        console.debug(output)
         // console.log(output)
-        fsPromises.writeFile(filePath, output)
+        await fsPromises.writeFile(filePath, output)
     } catch (err) {
         throw err;
     }

@@ -1,33 +1,34 @@
 ---
 title: Java笔记
 date: '2020-11-01 11:36:10'
-updated: '2021-01-04 20:50:51'
+updated: '2021-01-05 10:48:20'
 categories:
   - 2 Java
 ---
 # Java笔记
 
-## 环境变量设置
+## 环境变量配置
 
-### Windows下设置
+### Windows
 
-#### JAVA_HOME：JDK安装目录
+#### 配置JAVA_HOME
 
-　　将JAVA_HOME设置为JDK安装目录，例如`C:\Program Files\Java\jdk-12.0.2`。
+　　JAVA_HOME指定了系统当前默认使用的JDK。将JAVA_HOME设置为JDK安装目录，例如`C:\Program Files\Java\jdk-12.0.2`。
+
+#### 配置CLASSPATH
+
+　　CLASSPATH是类搜索路径，告诉JVM如何搜索Java的类，值一般设置为`.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar`（表示当前目录、`%JAVA_HOME%\lib\dt.jar`和`%JAVA_HOME%\lib\tools.jar`）。　
+#### 修改PATH
 
 　　安装目录的bin子目录里有java、javac等命令的可执行文件，为了能在任何位置调用这些命令，所以要将`%JAVA_HOME%\bin`加入PATH环境变量。
-
-#### CLASSPATH：类搜索路径
-
-　　告诉JVM如何搜索Java的类，值设置为`.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar`。表示分别是当前目录、`%JAVA_HOME%\lib\dt.jar`和`%JAVA_HOME%\lib\tools.jar`。
 
 ## jar包
 
 　　jar包是class文件的归档文件。
 
-## javac
+## javac使用
 
-在Windows下编译UTF-8编码的源文件可以使用`javac -encoding utf8 x.java`。
+　　javac用于将Java源文件编译成字节码文件。在Windows下编译UTF-8编码的源文件可以执行`javac -encoding utf8 <源文件路径>`。
 
 ## JRE（Java Runtime Environment）制作
 
@@ -42,12 +43,6 @@ jlink --module-path jmods --add-modules java.base --output myjre
 > Java平台的领导者们意识到了随着虚拟化、容器化、微服务化的普及和流行，以前庞大的JRE已经跟不上时代的发展：作为一个运行时，里面经常包含了太多不需要的东西。比如，如果一台主机上的某个JRE仅仅是用来运行Apache Tomcat，那么JRE中用来支持SWT的部分肯定是不需要的，及浪费空间又降低效率。
 
 > 引入Module System，使得开发者能够按自己的应用创建一个最小的运行时成为了可能——你的一个微服务的部署应用仅仅需要一个非常小的Runtime（比如仅仅20m）——而不是像以前一样不管应用复杂还是简单，都需要一个上百兆的JRE作为Runtime。横向扩展和部署的效率将能大幅提升。[^1]
-
-
-
-## 常用容器
-
-
 
 ## 参考
 

@@ -1,7 +1,7 @@
 ---
 title: Java Web笔记
 date: '2020-11-01 11:36:10'
-updated: '2021-01-04 20:51:18'
+updated: '2021-01-05 10:48:20'
 categories:
   - 2 Java
 ---
@@ -9,11 +9,11 @@ categories:
 
 ## Servlet[^1]
 
-　　Servlet是服务器端运行的一个程序，是一个被编译好的[Java](http://lib.csdn.net/base/javaee)类。它不是框架等。Web容器的启动需要依赖Servlet，当Web服务器开始执行时，Servlet类就被初始化。
+　　Servlet是一个被编译好的Java类。Web容器的启动需要依赖Servlet，当Web服务器开始执行时，Servlet类就被初始化。
 　　
 　　当用户通过浏览器访问输入URI的时候，这个时候Web服务器就通过Servlet来分发请求执行不同的内容。
 
-　　对于SpringMVC来说，一般可以采用如下方式载入Servlet。在`/src/main/webapp/WEB-INF/web.xml`中如下定义：
+　　对于SpringMVC来说，一般可以采用如下方式载入Servlet。在`/src/main/webapp/WEB-INF/web.xml`中：
 
 ```xml
 <!DOCTYPE web-app PUBLIC
@@ -33,8 +33,7 @@ categories:
 </web-app>
 ```
 
-　　这里使用了SpringMVC框架的DispatcherServlet。运行时SpringMVC从`spring-dispatcher-servlet.xml`读取配置并创建Servlet。
-　　
+　　这里使用了SpringMVC框架的DispatcherServlet。运行时SpringMVC从`spring-dispatcher-servlet.xml`读取配置并创建Servlet。　　
 ## References
 
 [^1]: [servlet和Spring的DispatcherServlet详解](https://blog.csdn.net/yalishadaa/article/details/70544492)
