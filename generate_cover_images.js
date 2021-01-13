@@ -5,6 +5,7 @@ const fsPromises = fs.promises;
 
 const srcDirPath = "../cover-original";
 const dstDirPath = "images/cover";
+const cfgFilePath = "../_config.butterfly.yml";
 
 async function emptyDirectory(dirPath) {
     const subFilesOrDirs = await fsPromises.readdir(dirPath, { withFileTypes: true });
@@ -24,12 +25,19 @@ async function emptyDirectory(dirPath) {
 async function main() {
     try {
         process.chdir("source");
-        if (!(fs.existsSync(srcDirPath) || fs.existsSync(dstDirPath))) {
-            throw new Error("Source directory or destination directory does not exist.");
+        if (!fs.existsSync(srcDirPath)) {
+            throw new Error(`Source directory ${srcDirPath} does not exist.`);
+        }
+        if (!fs.existsSync(dstDirPath)) {
+            throw new Error(`Destination directory ${dstDirPath} does not exist.`);
+        }
+        if (!fs.existsSync(cfgFilePath)) {
+            throw new Error(`Configuration file ${cfgFilePath} does not exist.`);
         }
         const srcFiles = await fsPromises.readdir(srcDirPath, { withFileTypes: true });
         await emptyDirectory(dstDirPath);
         let count = 0;
+        let coverList = "";
         for (const srcFile of srcFiles) {
             if (srcFile.isFile()) {
                 const matchResult = /^.*(\.jpg|\.jpeg|\.png|\.bmp)$/i.exec(srcFile.name);
@@ -37,12 +45,16 @@ async function main() {
                     const srcFilePath = path.join(srcDirPath, srcFile.name);
                     const dstFilePath = path.join(dstDirPath, `${count}${matchResult[1]}`);
                     count++;
-                    // console.log(srcFilePath);
-                    console.log(`    - ${dstFilePath.replace(/\//g, '/')}`);
+                    const coverListItem = `    - ${dstFilePath.replace(/\//g, '/')}\n`;
+                    coverList += coverListItem;
                     await fsPromises.copyFile(srcFilePath, dstFilePath);
                 }
             }
         }
+        const cfgFileContent = await fsPromises.readFile(cfgFilePath);
+        const replaceResult = cfgFileContent.toString().replace(/default_cover:\n((    - images\/cover\/.*\n)*)/, `default_cover:\n${coverList}`);
+        console.log(replaceResult);
+        await fsPromises.writeFile(cfgFilePath, replaceResult);
     } catch (err) {
         throw err;
     }
