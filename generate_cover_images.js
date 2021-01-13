@@ -45,14 +45,14 @@ async function main() {
                     const srcFilePath = path.join(srcDirPath, srcFile.name);
                     const dstFilePath = path.join(dstDirPath, `${count}${matchResult[1]}`);
                     count++;
-                    const coverListItem = `    - ${dstFilePath.replace(/\//g, '/')}\n`;
+                    const coverListItem = `    - ${dstFilePath.replace(/\\/g, '/')}\n`;
                     coverList += coverListItem;
                     await fsPromises.copyFile(srcFilePath, dstFilePath);
                 }
             }
         }
         const cfgFileContent = await fsPromises.readFile(cfgFilePath);
-        const replaceResult = cfgFileContent.toString().replace(/default_cover:\n((    - images\/cover\/.*\n)*)/, `default_cover:\n${coverList}`);
+        const replaceResult = cfgFileContent.toString().replace(/default_cover:\n((    - .*\n)*)/, `default_cover:\n${coverList}`);
         console.log(replaceResult);
         await fsPromises.writeFile(cfgFilePath, replaceResult);
     } catch (err) {
