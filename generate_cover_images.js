@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const fsPromises = fs.promises;
 
-const srcDirPath = "images/cover-original";
+const srcDirPath = "../cover-original";
 const dstDirPath = "images/cover";
 
 async function emptyDirectory(dirPath) {
