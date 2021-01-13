@@ -38,7 +38,7 @@ async function main() {
                     const dstFilePath = path.join(dstDirPath, `${count}${matchResult[1]}`);
                     count++;
                     // console.log(srcFilePath);
-                    console.log(`    - ${dstFilePath}`);
+                    console.log(`    - ${dstFilePath.replace(/\//g, '/')}`);
                     await fsPromises.copyFile(srcFilePath, dstFilePath);
                 }
             }
