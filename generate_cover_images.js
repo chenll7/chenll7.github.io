@@ -2,6 +2,7 @@
 const path = require('path');
 const fs = require('fs');
 const fsPromises = fs.promises;
+const webp = require('webp-converter');
 
 const srcDirPath = "../cover-original";
 const dstDirPath = "images/cover";
@@ -43,16 +44,19 @@ async function main() {
                 const matchResult = /^.*(\.jpg|\.jpeg|\.png|\.bmp)$/i.exec(srcFile.name);
                 if (matchResult) {
                     const srcFilePath = path.join(srcDirPath, srcFile.name);
-                    const dstFilePath = path.join(dstDirPath, `${count}${matchResult[1]}`);
+                    // const dstFilePath = path.join(dstDirPath, `${count}${matchResult[1]}`);
+                    const dstFilePath = path.join(dstDirPath, `${count}.webp`);
                     count++;
                     const coverListItem = `    - ${dstFilePath.replace(/\\/g, '/')}\n`;
                     coverList += coverListItem;
-                    await fsPromises.copyFile(srcFilePath, dstFilePath);
+                    console.log(coverListItem)
+                    // await fsPromises.copyFile(srcFilePath, dstFilePath);
+                    await webp.cwebp(srcFilePath, dstFilePath, "-q 80");
                 }
             }
         }
         const cfgFileContent = await fsPromises.readFile(cfgFilePath);
-        const replaceResult = cfgFileContent.toString().replace(/default_cover:\n((    - .*\n)*)/, `default_cover:\n${coverList}`);
+        const replaceResult = cfgFileContent.toString().replace(/default_cover:\r?\n((    - .*\r?\n)*)/, `default_cover:\n${coverList}`);
         console.log(replaceResult);
         await fsPromises.writeFile(cfgFilePath, replaceResult);
     } catch (err) {

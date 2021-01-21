@@ -27,5 +27,7 @@
     "hexo-server": "^2.0.0",
     "moment": "^2.29.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "webp-converter": "^2.3.1"
+  }
 }
