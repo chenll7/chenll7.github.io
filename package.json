@@ -28,6 +28,6 @@
     "moment": "^2.29.1"
   },
   "devDependencies": {
-    "webp-converter": "^2.3.1"
+    "sharp": "^0.27.0"
   }
 }

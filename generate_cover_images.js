@@ -2,7 +2,7 @@
 const path = require('path');
 const fs = require('fs');
 const fsPromises = fs.promises;
-const webp = require('webp-converter');
+const sharp = require('sharp');
 
 const srcDirPath = "../cover-original";
 const dstDirPath = "images/cover";
@@ -45,13 +45,14 @@ async function main() {
                 if (matchResult) {
                     const srcFilePath = path.join(srcDirPath, srcFile.name);
                     // const dstFilePath = path.join(dstDirPath, `${count}${matchResult[1]}`);
-                    const dstFilePath = path.join(dstDirPath, `${count}.webp`);
+                    const dstFilePath = path.join(dstDirPath, `${count}.jpg`);
                     count++;
                     const coverListItem = `    - ${dstFilePath.replace(/\\/g, '/')}\n`;
                     coverList += coverListItem;
                     console.log(coverListItem)
                     // await fsPromises.copyFile(srcFilePath, dstFilePath);
-                    await webp.cwebp(srcFilePath, dstFilePath, "-q 80");
+                    // await webp.cwebp(srcFilePath, dstFilePath, "-q 80");
+                    await sharp(srcFilePath).jpeg().toFile(dstFilePath);
                 }
             }
         }
