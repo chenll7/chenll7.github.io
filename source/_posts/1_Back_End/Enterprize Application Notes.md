@@ -1,11 +1,11 @@
 ---
-title: Enterprize Application Basics
+title: 企业级应用学习笔记
 date: '2020-10-29 08:59:17'
-updated: '2021-01-04 16:53:57'
+updated: '2021-01-25 09:44:54'
 categories:
   - 1 Back End
 ---
-# 企业级应用学习笔记
+# 企业级应用笔记
 
 ## 常见概念
 
