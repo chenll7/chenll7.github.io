@@ -6,8 +6,6 @@ categories:
   - 2 Frontend
 ---
 
-[TOC]
-
 # Javascript异步编程笔记
 
 　　传统的JS是单线程的，所以采用回调函数的方法实现异步编程，避免阻塞。使用回调函数会出现回调函数层层嵌套，即所谓的“回调地狱（Callback Hell）”的情况，所以ES6推出了Promise和async/await的语法来避免这种情况。
