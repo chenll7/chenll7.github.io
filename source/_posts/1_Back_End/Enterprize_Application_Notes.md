@@ -17,7 +17,7 @@ categories:
 
 - OLTP和OLAP
 
-![](./Enterprize_Application_Notes/20190501141421.png)
+![](Enterprize_Application_Notes/20190501141421.png)
 
 三层架构：表现层、业务层、持久层
 
