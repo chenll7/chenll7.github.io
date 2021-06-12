@@ -1,7 +1,7 @@
 ---
 title: Javascript异步编程笔记
 date: '2020-11-01 11:36:10'
-updated: '2021-06-05 18:41:04'
+updated: '2021-06-06 19:03:38'
 categories:
   - 2 Frontend
 ---
@@ -126,7 +126,7 @@ p1.then(function() {
 
 ###  使用Promise.all
 
-```js
+```javascript
 Promise.all(<Promise对象数组>).then(<所有作业处理后的回调函数>);
 ```
 
