@@ -23,8 +23,8 @@ categories:
 
 ## 分布式架构
 
-- [分布式架构知识体系必读](./Enterprize_Application_Notes/分布式架构知识体系必读.pdf)
-- [图说分布式架构的发展和演进](./Enterprize_Application_Notes/图说分布式架构的发展和演进.pdf)
+- [分布式架构知识体系必读](Enterprize_Application_Notes/分布式架构知识体系必读.pdf)
+- [图说分布式架构的发展和演进](Enterprize_Application_Notes/图说分布式架构的发展和演进.pdf)
 
 ## 微服务
 
