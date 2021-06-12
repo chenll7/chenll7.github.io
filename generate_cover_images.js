@@ -5,7 +5,7 @@ const fsPromises = fs.promises;
 const crypto = require('crypto');
 const sharp = require('sharp');
 
-const srcDirPath = "../cover-original";
+const srcDirPath = "../../cover-original";
 const dstDirPath = "images/cover";
 const cfgFilePath = "../_config.butterfly.yml";
 
