@@ -21,7 +21,7 @@ categories:
 
 ## 研究的部分结论
 
-![](./Script_and_Address_of_Bitcoin_Notes/20190302101309.png)
+![](Script_and_Address_of_Bitcoin_Notes/20190302101309.png)
 
 ### 非隔离见证交易（没有marker和flag的）
 

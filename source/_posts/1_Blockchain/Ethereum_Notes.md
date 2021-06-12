@@ -31,7 +31,7 @@ categories:
 
 - Swarm：基于以太坊的存储服务。
 
-![](./Ethereum_Notes/20190302100828.png)
+![](Ethereum_Notes/20190302100828.png)
 
 ## 无状态客户端（Stateless Client）
 

@@ -15,5 +15,5 @@ categories:
 
 # 连接保活
 
-![](./Putty_Notes/20190223103014.png)
+![](Putty_Notes/20190223103014.png)
 

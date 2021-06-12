@@ -210,7 +210,7 @@ git config --global credential.helper store
 
 　　标签就是给一个版本再取个别名，一般标记一个里程碑版本的。可以给任何版本打标签，一般给master分支的节点打标签。
 
-![](./Git_CLI_Notes/20190302101927.png)
+![](Git_CLI_Notes/20190302101927.png)
 
 ```sh
 # 轻量级标签

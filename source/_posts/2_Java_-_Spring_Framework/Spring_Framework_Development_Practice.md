@@ -19,5 +19,5 @@ categories:
 
 　　常见的VO、BO、PO、DO、DTO都是实体类。各个实体类的作用可以参考[这篇文章](https://zhuanlan.zhihu.com/p/102389552)。
 
-![](./Spring_Framework_Development_Practice/1.jpg)
+![](Spring_Framework_Development_Practice/1.jpg)
 

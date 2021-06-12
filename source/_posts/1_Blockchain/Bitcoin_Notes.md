@@ -19,7 +19,7 @@ categories:
 
 ### 非coinbase交易
 
-　　![](./Bitcoin_Notes/比特币交易结构.png)
+　　![](Bitcoin_Notes/比特币交易结构.png)
 
 　　交易中的script可以看做是一个下推自动机的的形式语言，用来对栈进行存取和处理。
 
@@ -85,7 +85,7 @@ categories:
 [nVersion][marker][flag][txins][txouts][witness][nLockTime]
 ```
 
-![](./Bitcoin_Notes/20190302101503.png)
+![](Bitcoin_Notes/20190302101503.png)
 
 其中，maker和flag的目的是为了与老的交易区别，对于老的节点来说，新交易看起来是0输入的交易。原因见BIP144。
 

@@ -8,6 +8,6 @@ categories:
 # GPT与MBR、Legacy与UEFI的关系
 ## 参考
 
-[^1]: [UEFI+GPT、Legacy+MBR引导模式介绍及引导修复教程](./Relationship_between_GPT_MBR_Legacy_and_UEFI的关系/UEFI+GPT、Legacy+MBR引导模式介绍及引导修复教程.pdf)
+[^1]: [UEFI+GPT、Legacy+MBR引导模式介绍及引导修复教程](UEFI+GPT、Legacy+MBR引导模式介绍及引导修复教程.pdf)
 
 来源：<http://tieba.baidu.com/p/3754146793>

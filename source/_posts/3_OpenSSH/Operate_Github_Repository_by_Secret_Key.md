@@ -23,6 +23,6 @@ ssh-keygen -t rsa
 
 　　在需要操作的仓库页面，点击如下“SSH”页下的仓库地址：
 
-![](./Operate_Github_Repository_by_Secret_Key/20190223102902.png)
+![](Operate_Github_Repository_by_Secret_Key/20190223102902.png)
 
 　　在终端中执行`git clone <仓库地址>`，就可以克隆仓库到本地。

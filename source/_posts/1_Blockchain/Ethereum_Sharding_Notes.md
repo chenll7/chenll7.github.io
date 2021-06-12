@@ -27,7 +27,7 @@ collator：整理者、校对者
 
 ## Sharding的整体结构
 
-![](./Ethereum_Sharding_Notes/20190302101730.png)
+![](Ethereum_Sharding_Notes/20190302101730.png)
 
 　　我们看到Sharding跟比特币闪电网络的精神有相通之处，即避免大量交易进入主链，避免每笔交易都要所有验证者进行验证。
 
@@ -37,7 +37,7 @@ collator：整理者、校对者
 
 　　在一个分片内有多个名为collator的节点，collator是从validators中随机抽取的。每个collator都有创建一个collation的任务。一个collation是长这样的：
 
-![](./Ethereum_Sharding_Notes/20190302101747.png)
+![](Ethereum_Sharding_Notes/20190302101747.png)
 
 collation包含有该分片的重要信息。collation就像对这个分片的状态和交易的“迷你描述”。collation header内容包括：
 
@@ -74,7 +74,7 @@ collation包含有该分片的重要信息。collation就像对这个分片的�
 
 　　攻击者可能控制单个分片的大部分collators从而控制某个分片，即所谓**单分片接管攻击**。超级节点会获得不合法的collation。
 
-　　![](./Ethereum_Sharding_Notes/20190302101712.png)
+　　![](Ethereum_Sharding_Notes/20190302101712.png)
 
 　　解决的方法是，在每个分片的collators是随机抽取出的。validators不会提前知道会成为哪个分片的collator。每个分片会被分配一组collators。
 
@@ -92,11 +92,11 @@ collation包含有该分片的重要信息。collation就像对这个分片的�
 
 　　对于所谓的period，目前VMC中`PERIOD_LENGTH = 5`，即每五个区块中，对于一个分片，只能有至多一个合法的collation。
 
-![](./Ethereum_Sharding_Notes/20190302101802.png)
+![](Ethereum_Sharding_Notes/20190302101802.png)
 
 　　所有分片的这个period的最新状态根会被记录在VMC的中，反映在VMC的状态。
 
-![](./Ethereum_Sharding_Notes/20190302101814.png)
+![](Ethereum_Sharding_Notes/20190302101814.png)
 
 ### 分片链的分叉选择规则
 
