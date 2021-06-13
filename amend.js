@@ -47,11 +47,11 @@ async function amend(filePath) {
             if (title) {
                 attrs.title = title
             } else {
-                const matchResult = /^.*\.[^\.]*$/.exec(filePath)
+                const matchResult = /^(.*)\.[^\.]*$/.exec(path.basename(filePath))
                 if (matchResult) {
                     attrs.title = matchResult[1]
                 } else {
-                    attrs.title = filePath
+                    attrs.title = "Unnamed"
                 }
             }
         }
@@ -80,7 +80,7 @@ async function amend(filePath) {
 
         // End amending.
 
-        // console.debug(frontMatter)
+        console.debug(frontMatter)
 
         // Write file.
         const output = stringifyFrontMatter(frontMatter)
@@ -123,7 +123,7 @@ async function main() {
     console.log("The following files are untracked or in the git staging area:");
     console.log("#################################");
     const filePaths = [];
-    //console.log(argv);
+    // console.log(argv);
     if (argv.length < 3) {
         await getFilePaths("git diff --name-only --diff-filter=ACMRTUXB head source/_posts", filePaths)
         await getFilePaths("git ls-files --others --exclude-standard", filePaths)
