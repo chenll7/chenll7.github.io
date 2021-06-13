@@ -21,4 +21,12 @@ allownonascii=$(git config --type=bool hooks.allownonascii)
 # Redirect output to stderr.
 exec 1>&2
 
+pwd
+
+for file in $(git diff --name-only --diff-filter=ACMRTUXB head source/_posts)
+do
+	node amend.js "$file"
+	git add "$file"
+done
+
 node lint.js
