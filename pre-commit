@@ -21,4 +21,5 @@ allownonascii=$(git config --type=bool hooks.allownonascii)
 # Redirect output to stderr.
 exec 1>&2
 
+node amend.js
 node lint.js

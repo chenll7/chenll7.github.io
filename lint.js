@@ -40,12 +40,10 @@ async function lint(filePath) {
     if (!attrs.title) {
         const s = `Front matter of file ${filePath} has no title attribute.`;
         problems.push(s);
-        //console.log(s);
     }
     if (!attrs.date) {
         const s = `Front matter of file ${filePath} has no date attribute.`;
         problems.push(s);
-        //console.log(s);
     }
     if (!isCategoriesValid(attrs.categories, filePath)) {
         const s = `Front matter of file ${filePath} has no categories attribute or it is invalid.`;
