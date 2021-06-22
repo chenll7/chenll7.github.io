@@ -1,11 +1,11 @@
 ---
-title: Electron Basics
+title: Electron Notes
 date: '2020-11-01 11:36:10'
-updated: '2020-11-07 10:37:05'
+updated: '2021-06-20 15:02:39'
 categories:
   - 2 Node.js - Electron
 ---
-# Electron Basics
+# Electron Notes
 
 ## How to Solve the Problem of Downloading Failure while Using `electron-builder`
 

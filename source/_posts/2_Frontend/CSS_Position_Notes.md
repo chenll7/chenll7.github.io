@@ -1,7 +1,7 @@
 ---
 title: CSS定位笔记
 date: '2020-11-01 11:36:10'
-updated: '2021-06-11 20:55:17'
+updated: '2021-06-21 14:02:46'
 categories:
   - 2 Frontend
 ---
@@ -18,11 +18,11 @@ categories:
 
 　　display可以有以下值来改变元素块级元素或者行内元素的属性：
 
-![2020-07-26 19-18-01](./CSS_Position_Notes/2020-07-26%2019-18-01-1595765512453.png)
+<img src="./CSS_Position_Notes/2020-07-26%2019-18-01-1595765512453.png" alt="2020-07-26 19-18-01" style="zoom:150%;" />
 
 　　其中，positon可以有以下值：
 
-![2020-07-26 19-18-00](./CSS_Position_Notes/2020-07-26%2019-18-00.jpg)
+<img src="./CSS_Position_Notes/2020-07-26%2019-18-00.jpg" alt="2020-07-26 19-18-00" style="zoom:150%;" />
 
 ### 定位机制
 
