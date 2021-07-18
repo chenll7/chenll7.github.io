@@ -1,13 +1,28 @@
 ---
-title: How to Use Docker
+title: Docker笔记
 date: '2020-11-01 11:36:12'
-updated: '2020-11-07 10:37:05'
+updated: '2021-07-18 17:03:52'
 categories:
   - 3 Docker
 ---
-# How to Use Docker
+# Docker笔记
 
-## Command Line
+## 安装
+
+### 在线安装
+
+　　在Ubuntu上安装Docker可以参考[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)。
+
+### 离线安装
+
+　　安装Docker可以参考[Linux 离线安装docker（一键式安装）](https://www.jianshu.com/p/64a470628e49)。
+　　
+　　Docker安装包下载页在[Index of linux/static/stable/x86_64/](https://download.docker.com/linux/static/stable/x86_64/)。
+　　
+　　获取Docker镜像可以参考[离线环境获取Docker镜像
+原创](https://my.oschina.net/u/3446722/blog/988807)
+
+## 命令行
 
 ### docker ps
 

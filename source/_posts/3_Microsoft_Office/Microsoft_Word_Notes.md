@@ -1,7 +1,7 @@
 ---
 title: Miscrosoft Word笔记
 date: '2021-02-24 17:43:06'
-updated: '2021-05-17 15:00:16'
+updated: '2021-07-18 16:29:17'
 categories:
   - 3 Microsoft Office
 ---
@@ -14,7 +14,7 @@ categories:
 **注意:** 对 Normal.dotm 所做的任何更改都将应用于以后创建的文档。
 
 1. 在**“文件”**选项卡上，单击**“打开”**。
-2. 转到 `C:\Users\<用户名>\AppData\Roaming\Microsoft\Templates`。
+2. 转到 `C:\Users\<用户名>\AppData\Roaming\Microsoft\Templates`（即`%APPDATA%\Microsoft\Templates`）。
 3. 打开 Normal 模板 (Normal.dotm)。
 4. 对字体、边距、间距以及其他设置进行任意所需更改。 可以使用更改文件所用的命令和功能，但请记住，对 Normal.dotm 所作的任何更改都将应用于以后创建的文档。
 5. 完成后，单击“**文件**”选项卡，然后单击“**保存**”。[^1]
