@@ -1,7 +1,7 @@
 ---
 title: Javascript异步编程笔记
 date: '2020-11-01 11:36:10'
-updated: '2021-06-06 19:03:38'
+updated: '2021-07-26 14:39:12'
 categories:
   - 2 Frontend
 ---
@@ -131,6 +131,10 @@ Promise.all(<Promise对象数组>).then(<所有作业处理后的回调函数>);
 ```
 
 　　Promise.all中任何一个promise出现错误的时候都会执行reject，导致其它正常返回的数据也无法使用了。
+
+## Generator函数和yield
+
+　　Generator 函数是协程在 ES6 的实现，最大特点就是可以交出函数的执行权（即暂停执行）。
 
 ## async/await语法
 
