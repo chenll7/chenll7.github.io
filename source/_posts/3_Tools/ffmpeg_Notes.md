@@ -1,7 +1,7 @@
 ---
 title: ffmpeg笔记
 date: '2020-11-01 11:36:11'
-updated: '2021-07-03 10:25:13'
+updated: '2021-09-23 09:09:52'
 categories:
   - 3 Tools
 ---
@@ -43,7 +43,7 @@ ffmpeg -framerate 5 -pattern_type glob -i '*.JPG' video.mp4
 ```
 
 ```shell
-# flac转mp3
-ffmpeg -i input.flac -ab 320k output.mp3
+# flac转mp3，保留元信息
+ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
 ```
 

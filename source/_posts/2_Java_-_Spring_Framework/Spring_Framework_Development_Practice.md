@@ -1,7 +1,7 @@
 ---
 title: Spring框架开发实践
 date: '2020-12-29 11:20:31'
-updated: '2021-01-07 15:47:54'
+updated: '2021-09-23 09:09:52'
 categories:
   - 2 Java - Spring Framework
 ---
@@ -17,7 +17,9 @@ categories:
 
 ## 实体类（Entity）
 
-　　常见的VO、BO、PO、DO、DTO都是实体类。各个实体类的作用可以参考[这篇文章](https://zhuanlan.zhihu.com/p/102389552)。
+　　常见的VO、BO、PO、DO、DTO都是实体类。各个实体类的作用可以参考[这篇文章](https://zhuanlan.zhihu.com/p/102389552)。参数的和返回的POJO可以加Request、Response前缀，例如“RequestVO”、“ResponseVO”。
 
-![](Spring_Framework_Development_Practice/1.jpg)
+<img src="Spring_Framework_Development_Practice/2.png" style="width:100%;"/>
+
+<img src="Spring_Framework_Development_Practice/1.jpg" style="width:100%;"/>
 

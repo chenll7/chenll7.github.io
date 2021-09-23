@@ -1,7 +1,7 @@
 ---
 title: SQL笔记
 date: '2020-11-01 11:36:11'
-updated: '2021-07-13 11:33:02'
+updated: '2021-09-23 09:09:52'
 categories:
   - 2 SQL
 ---
@@ -31,12 +31,11 @@ categories:
 
 ### Data Definition Language (DDL)
 
-　　CREATE、ALTER、DROP、RENAME、TRUNCATE、COMMENT。
-　　
+　　CREATE、ALTER、DROP、RENAME、TRUNCATE、COMMENT。　
 #### 新增列
 
 ```sql
--- 新增
+-- 新增列
 ALTER TABLE <表名> ADD ID VARCHAR(120);
 -- 设置注释
 comment on column <表名>.<字段> is '注释';
