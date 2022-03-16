@@ -1,9 +1,10 @@
 ---
 title: 以太坊Sharding笔记
 date: '2020-11-04 11:36:09'
-updated: '2021-06-11 22:22:20'
+updated: '2022-03-16 10:33:33'
 categories:
   - 1 Blockchain
+sticky: 1
 ---
 # 以太坊Sharding笔记
 
