@@ -1,9 +1,10 @@
 ---
 title: 比特币脚本与地址笔记
 date: '2020-11-01 11:36:09'
-updated: '2021-06-11 22:08:35'
+updated: '2022-03-16 10:23:59'
 categories:
   - 1 Blockchain
+sticky: 1
 ---
 # 比特币脚本与地址笔记
 
