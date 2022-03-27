@@ -1,7 +1,7 @@
 ---
 title: Linux下常见缩写含义
 date: '2020-11-01 11:36:12'
-updated: '2020-11-07 10:37:05'
+updated: '2022-03-27 16:48:20'
 categories:
   - 3 OS Usage - Linux
 ---
