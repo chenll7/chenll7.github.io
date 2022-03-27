@@ -71,8 +71,12 @@ async function main() {
     console.log(`Result`);
     console.log("#################################");
 
-    console.log(problems.join("\n"));
-    if (problems.length !== 0) exit(1);
+    if (problems.length !== 0) {
+        console.log(problems.join("\n"));
+        exit(1);
+    } else {
+        console.log("All done!");
+    }
 }
 
 main().catch(err => {
