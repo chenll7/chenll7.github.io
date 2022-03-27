@@ -34,7 +34,7 @@ async function lint(filePath) {
     const fileContent = await fsPromises.readFile(filePath);
     const frontMatter = getFrontMatter(fileContent);
     const { data: attrs } = frontMatter;
-    console.log(attrs);
+    // console.log(attrs);
 
     // Check attribute.
     if (!attrs.title) {
