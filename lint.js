@@ -15,7 +15,7 @@ function isCategoriesValid(categories, filePath) {
     if (!Array.isArray(categories)) return false;
     const filePathSplited = filePath.split(path.sep);
 
-    console.log(filePathSplited);
+    // console.log(filePathSplited);
     if (filePathSplited.length - categories.length !== 3) return false;
     for (let i = 0; i < categories.length; i++) {
         // console.log(filePathSplited[i + 2].replace("_", " "))
@@ -27,9 +27,9 @@ function isCategoriesValid(categories, filePath) {
 async function lint(filePath) {
     if (!filePath.match(/^.*\.md$/i, filePath)) return;
 
-    console.log("\n#################################");
-    console.log(`Check file ${filePath}`);
-    console.log("#################################");
+    // console.log("\n#################################");
+    // console.log(`Check file ${filePath}`);
+    // console.log("#################################");
 
     const fileContent = await fsPromises.readFile(filePath);
     const frontMatter = getFrontMatter(fileContent);

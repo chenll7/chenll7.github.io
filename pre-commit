@@ -23,10 +23,13 @@ exec 1>&2
 
 pwd
 
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
 for file in $(git diff --name-only --diff-filter=ACMRTUXB head source/_posts)
 do
 	node amend.js "$file"
 	git add "$file"
 done
+IFS=$SAVEIFS
 
 node lint.js

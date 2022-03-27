@@ -1,7 +1,7 @@
 ---
 title: Graph Basics
 date: '2020-11-01 11:36:09'
-updated: '2022-03-14 09:14:42'
+updated: '2022-03-27 17:19:53'
 categories:
   - 1 Data Structure And Algorithm
 ---
@@ -11,7 +11,7 @@ categories:
 
 - 顶点（Vertex ([pl.]Vertices)）
 
-- 连通分量（Connected Component，这个翻译好恶心啊！）：A connected component of an undirected graph is a subgraph in which any two vertices are connected to each other by paths, and which is connected to no additional vertices in the supergraph.
+- 连通分量（Connected Component）：A connected component of an undirected graph is a subgraph in which any two vertices are connected to each other by paths, and which is connected to no additional vertices in the supergraph.
 
 - 无向连通图（Undirected Connetced Graph）：对于无向图中任意两个节点v<sub>i</sub>和v<sub>j</sub>之间有路径相连。连通图具有连通性（Connectivity）。
 
