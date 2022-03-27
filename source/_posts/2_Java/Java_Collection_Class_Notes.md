@@ -1,7 +1,7 @@
 ---
 title: Java集合类笔记
 date: '2020-11-01 11:36:10'
-updated: '2021-04-21 14:08:04'
+updated: '2022-03-27 16:58:29'
 categories:
   - 2 Java
 ---
@@ -36,3 +36,14 @@ categories:
 ## Queue
 
 （喵喵喵）
+
+## Stack
+
+```java
+private Stack<Integer> stack = new Stack<>();
+// Some operations.
+stack.push(1);
+var size = stack.size();
+vat topVar = stack.peek();
+topVar = stack.pop();
+```

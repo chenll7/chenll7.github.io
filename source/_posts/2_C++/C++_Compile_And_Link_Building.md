@@ -1,7 +1,7 @@
 ---
 title: C++_Compile_And_Link_Building
 date: '2020-11-01 11:36:10'
-updated: '2020-11-07 10:37:05'
+updated: '2022-03-27 16:58:28'
 categories:
   - 2 C++
 ---
@@ -17,9 +17,17 @@ categories:
 clang++ --target=i686-pc-mingw32 hello-world.cpp
 ```
 
-clang和LLVM的关系：
+　　clang在Ubuntu下安装：
 
-![](LLVM_structure.png)
+```shell
+wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+sudo apt-add-repository "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-6.0 main"
+sudo apt update
+sudo apt install -y clang-6.0
+sudo ln -s /usr/bin/clang++-6.0 /usr/bin/clang++
+```
+
+
 
 ## GCC
 

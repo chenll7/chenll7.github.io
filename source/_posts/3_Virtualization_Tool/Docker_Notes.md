@@ -1,7 +1,7 @@
 ---
 title: Docker 笔记
 date: '2020-11-01 11:36:12'
-updated: '2022-03-16 10:30:11'
+updated: '2022-03-27 16:58:30'
 categories:
   - 3 Virtualization Tool
 ---
@@ -84,7 +84,36 @@ docker run \
 
 ### 在线安装
 
-　　在Ubuntu上安装Docker可以参考[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)。
+　　在Ubuntu18.04上安装Docker可以参考《[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)》：
+
+```shell
+# 安装必要的一些系统工具
+sudo apt update
+sudo apt -y install apt-transport-https ca-certificates curl software-properties-common
+# 安装GPG证书
+curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+# 写入软件源信息
+sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
+# 更新并安装 Docker-CE
+sudo apt -y update
+sudo apt -y install docker-ce
+# 当前用户加入docker组
+sudo usermod -a -G docker $USER
+```
+
+　　在CentOS上如下所示：
+
+```shell
+# step 1: 安装必要的一些系统工具
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+# Step 2: 添加软件源信息
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+# Step 3: 更新并安装 Docker-CE
+sudo yum makecache fast
+sudo yum -y install docker-ce
+# Step 4: 开启Docker服务
+sudo service docker start
+```
 
 ### 离线安装
 

@@ -1,9 +1,9 @@
 ---
 title: Common Algorithms
 date: '2020-11-01 11:36:09'
-updated: '2020-11-07 10:37:05'
+updated: '2022-03-27 16:50:20'
 categories:
-  - 1 Data Structure And Algorithm
+  - 1 Algorithm
 ---
 # Common Alogorithms
 

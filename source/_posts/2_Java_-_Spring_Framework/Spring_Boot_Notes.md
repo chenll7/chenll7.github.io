@@ -1,11 +1,15 @@
 ---
 title: Spring Boot Notes
 date: '2020-11-04 11:36:10'
-updated: '2020-11-07 10:59:14'
+updated: '2022-03-27 16:50:49'
 categories:
   - 2 Java - Spring Framework
 ---
 # Spring Boot Notes
+
+## Quick Start
+
+Open [Spring Initializr](https://start.spring.io/), and fill in the form, then generate a new spring boot project. If the project need the web ability, you need also add the dependency `Spring Web`.
 
 ## CLI Helper
 

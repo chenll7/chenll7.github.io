@@ -84,7 +84,7 @@ async function amend(filePath) {
 
         // Write file.
         const output = stringifyFrontMatter(frontMatter)
-        console.debug(output)
+        // console.debug(output)
         // console.log(output)
         await fsPromises.writeFile(filePath, output)
     } catch (err) {
@@ -92,7 +92,7 @@ async function amend(filePath) {
     }
 }
 
-function isFilePathValid(filePath){
+function isFilePathValid(filePath) {
     return filePath.match(/^.*\.md$/)
 }
 
@@ -133,7 +133,7 @@ async function main() {
         await getFilePaths("git ls-files --others --exclude-standard", filePaths)
     } else {
         console.log(argv[2]);
-        if(isFilePathValid(argv[2])) filePaths.push(argv[2]);
+        if (isFilePathValid(argv[2])) filePaths.push(argv[2]);
     }
 
     const tasks = [];

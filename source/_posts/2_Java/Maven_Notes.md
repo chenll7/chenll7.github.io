@@ -1,7 +1,7 @@
 ---
 title: Maven笔记
 date: '2020-11-01 11:36:10'
-updated: '2022-01-25 11:19:59'
+updated: '2022-03-27 16:58:29'
 categories:
   - 2 Java
 ---
@@ -78,13 +78,13 @@ categories:
 
 　　Archetype is a Maven project templating toolkit。
 
-　　根据官网文档[^4]，我们可以执行类似以下命令来生成原型项目：
+　　根据官网文档[^4]，我们可以执行类似以下命令来生成原型项目，一般最常用的是**maven-archetype-quickstart**：
 
 ```shell
 mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DgroupId=org.fbcll -DartifactId=demo
 ```
 
-或
+或在Powershell下：
 
 ```powershell
 mvn archetype:generate "-DarchetypeGroupId=org.apache.maven.archetypes" "-DarchetypeArtifactId=maven-archetype-quickstart" "-DarchetypeVersion=1.4" "-DgroupId=org.fbcll" "-DartifactId=demo"
@@ -100,7 +100,7 @@ mvn archetype:generate "-DarchetypeGroupId=org.apache.maven.archetypes" "-Darche
 | maven-archetype-plugin      |       An archetype to generate a sample Maven plugin.        |
 | maven-archetype-plugin-site |     An archetype to generate a sample Maven plugin site.     |
 | maven-archetype-portlet     |      An archetype to generate a sample JSR-268 Portlet.      |
-| maven-archetype-quickstart  |       An archetype to generate a sample Maven project.       |
+| **maven-archetype-quickstart** |       An archetype to generate a sample Maven project.       |
 | maven-archetype-simple      |       An archetype to generate a simple Maven project.       |
 | maven-archetype-site        | An archetype to generate a sample Maven site which demonstrates some of the supported document types like APT, XDoc, and FML and demonstrates how to i18n your site. |
 | maven-archetype-site-simple |        An archetype to generate a sample Maven site.         |
