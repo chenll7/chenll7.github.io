@@ -1,7 +1,7 @@
 ---
 title: Java Lambda表达式笔记
 date: '2021-02-03 10:02:00'
-updated: '2022-01-25 11:19:59'
+updated: '2022-04-06 14:50:27'
 categories:
   - 2 Java
 ---
@@ -59,9 +59,22 @@ final var attr = Optional.ofNullable(obj).map(obj->obj.getAttr()).orElse(default
 
 ## Stream
 
-　　以下是常见的用法：
+### 常用方法
 
-### Stream\<Double\>转Double[]
+#### Stream.reduce
+
+```java
+List<User> users = Arrays.asList(new User("John", 30), new User("Julie", 35));
+int result = users.stream()
+  .reduce(0, (partialAgeResult, user) -> partialAgeResult + user.getAge(), Integer::sum);
+assertThat(result).isEqualTo(65);
+```
+
+注：该签名的 Stream.reduce 函数的第三个参数用于供编译器判断类型，不生效。ParallelStream.reduce 的相同签名的函数第三个参数用于合并中间结果。
+
+### 和其他数据结构转化
+
+#### Stream\<Double\>转Double[]
 
 ```java
 Steam<Double> stream = new Stream.of(0.1, 0.2, 0.3);
@@ -69,7 +82,7 @@ Steam<Double> stream = new Stream.of(0.1, 0.2, 0.3);
 Double[] toBoxedDoubleArray = stream.toArray(Double[]::new);
 ```
 
-### DoubleStream转double[]
+#### DoubleStream转double[]
 
 ```java
 DoubleStream doubleStream = new DoubleStream.of(0.1, 0.2, 0.3);
@@ -77,13 +90,17 @@ DoubleStream doubleStream = new DoubleStream.of(0.1, 0.2, 0.3);
 double[] toDoubleArray = doubleStream.toArray();
 ```
 
-### DoubleStream转Stream\<Double\>
+#### DoubleStream转Stream\<Double\>
 
 ```java
 DoubleStream doubleStream = new DoubleStream.of(0.1, 0.2, 0.3);
 // 转Stream<Double>
 Stream<Double> toDoubleArray = doubleStream.boxed();
 ```
+
+## ParalleStream
+
+　　ParallelStream 使用 Fork-join-pool 作为并行化的底层框架，其是独立于 ThreadPool 的多线程并行模型。
 
 ## Collector
 
@@ -109,7 +126,7 @@ public class CollectorsTest {
 
 ### 坑
 
-　　`IntStream`、`DoubleStream`、`LongStream`的`collect`函数和`Stream`不一样，使用前最好先执行`boxed`将其转化为`Stream<Integer>`、`Stream<Double>`、`Stream<Long>`。
+　　`IntStream`、`DoubleStream`、`LongStream`的`collect`函数和`Stream`不一样，必要的时候先执行`boxed`将其转化为`Stream<Integer>`、`Stream<Double>`、`Stream<Long>`。
 
 ## 参考
 

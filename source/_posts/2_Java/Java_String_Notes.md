@@ -1,13 +1,17 @@
 ---
 title: Java字符串笔记
 date: '2021-05-14 14:49:54'
-updated: '2021-05-14 14:52:38'
+updated: '2022-04-11 11:03:58'
 categories:
   - 2 Java
 ---
 # Java字符串笔记
 
-## 字符串类String
+## String
+
+### String.format
+
+　　格式化字符串。
 
 ## StringBuffer
 
