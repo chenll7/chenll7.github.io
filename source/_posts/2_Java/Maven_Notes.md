@@ -1,7 +1,7 @@
 ---
 title: Maven笔记
 date: '2020-11-01 11:36:10'
-updated: '2022-03-27 16:58:29'
+updated: '2022-04-13 10:55:03'
 categories:
   - 2 Java
 ---
@@ -118,6 +118,49 @@ mvn -N io.takari:maven:0.7.7:wrapper
 ```
 
 会生成文件`mvnw.cmd`（Windows下使用的可执行批处理文件）、文件`mvnw`（类UNIX下使用的可执行脚本）、目录`.mvn`，并将这仨加入版本控制，就可以让所有项目参与者共享同个Maven版本。
+
+## 编译 JDK 11 项目
+
+　　默认的编译插件 org.apache.maven.plugins:maven-compiler-plugin 中 target 和 source 配置项的默认值为 1.7 。如果需要编译 JDK 11 项目，需要这么配置：
+
+```xml
+  <properties>
+    <maven.compiler.release>11</maven.compiler.release>
+    <!-- ... -->
+  </properties>
+  <!-- ... -->
+```
+
+这其实相当于以前的：
+
+```xml
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <!-- ... -->
+  </properties>
+  <!-- ... -->
+```
+
+相当于直接在插件中配置：
+
+```xml
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>11</source>
+          <target>11</target>
+        </configuration>
+      </plugin>
+    </plugins>
+    <!-- ... -->
+  </build>
+  <!-- ... -->
+```
 
 ## References
 
