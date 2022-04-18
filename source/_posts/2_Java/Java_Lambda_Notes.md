@@ -1,11 +1,11 @@
 ---
-title: Java Lambda表达式笔记
+title: Java Lambda 表达式笔记
 date: '2021-02-03 10:02:00'
-updated: '2022-04-06 14:50:27'
+updated: '2022-04-18 10:56:52'
 categories:
   - 2 Java
 ---
-# Java Lambda表达式笔记
+# Java Lambda 表达式笔记
 
 ## 函数式接口
 
