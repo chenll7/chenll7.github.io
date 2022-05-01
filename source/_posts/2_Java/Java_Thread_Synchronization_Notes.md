@@ -1,7 +1,7 @@
 ---
 title: Java 线程同步笔记
 date: '2022-04-11 11:39:24'
-updated: '2022-04-12 23:47:03'
+updated: '2022-04-27 11:00:43'
 categories:
   - 2 Java
 ---
@@ -29,8 +29,34 @@ categories:
 
 　　AtomicInteger 实现了一个乐观锁。利用 CAS（Compare-and-Swap，比较并替换），能够保证一个整型数同时只有一个线程在写入。
 
+## java.util.concurrent.CountDownLatch
+
+　　CountDown 是倒计时的意思，Latch 是门栓的意思，加起来的意思就是一个倒计时的门栓。
+　　
+　　它其实是作用于线程当中的，它就像一个门栓，一开始是关闭的，所有希望通过该门的线程都需要等待，然后开始倒计时，当倒计时一到，等待的所有线程都可以通过。[^2]
+　　
+　　 构造方法：
+```java
+// count 就是需要等待的线程数量
+public CountDownLatch(int count)
+```
+
+　　重要方法：
+```java
+// 调用此方法的线程会被阻塞，直到 CountDownLatch 的 count 为 0
+public void await() throws InterruptedException 
+
+// 和上面的 await() 作用基本一致，只是可以设置一个最长等待时间
+public boolean await(long timeout, TimeUnit unit) throws InterruptedException
+
+// 会将 count 减 1，直至为 0
+public void countDown() 
+```
+
 ## 参考
 
 [^1]: [不可不说的Java“锁”事](https://tech.meituan.com/2018/11/15/java-lock.html)
+
+[^2]: [CountDownLatch 使用详解 - 简书](https://www.jianshu.com/p/962bc7225ce8)
 
 　　
