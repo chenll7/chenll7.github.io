@@ -1,7 +1,7 @@
 ---
 title: ffmpeg 笔记
 date: '2020-11-01 11:36:11'
-updated: '2022-05-12 09:39:43'
+updated: '2022-05-12 16:39:04'
 categories:
   - 3 Image Processing Tool
 ---
@@ -49,5 +49,5 @@ ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
 
 ```shell
 # webm 保持 alpha 通道，即保持透明值
-ffmpeg -c:v libvpx-vp9 -c:v libvpx -pix_fmt yuva420p -auto-alt-ref 0 -metadata:s:v:0 alpha_mode="1" -acodec libvorbis -i input.webm result.webm
+ffmpeg -c:v libvpx-vp9 -i input.webm -pix_fmt yuva420p -auto-alt-ref 0 -metadata:s:v:0 alpha_mode="1" -acodec libvorbis result.webm
 ```

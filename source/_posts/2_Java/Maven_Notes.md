@@ -1,7 +1,7 @@
 ---
 title: Maven笔记
 date: '2020-11-01 11:36:10'
-updated: '2022-04-13 10:55:03'
+updated: '2022-05-19 10:29:42'
 categories:
   - 2 Java
 ---
@@ -23,7 +23,7 @@ categories:
 
 ## 设置文件
 
-  　　Maven的设置文件`settings.xml`有全局级别和用户级别，前者位于Maven安装目录内`${maven.home}/conf/settings.xml`，后者位于用户家目录的下的`${user.home}/.m2/settings.xml`。
+　　Maven的设置文件`settings.xml`有全局级别和用户级别，前者位于Maven安装目录内`${maven.home}/conf/settings.xml`，后者位于用户家目录的下的`${user.home}/.m2/settings.xml`。
   　　
 　　`settings.xml`的顶级元素如下所示[^3]：
 　　
@@ -119,7 +119,7 @@ mvn -N io.takari:maven:0.7.7:wrapper
 
 会生成文件`mvnw.cmd`（Windows下使用的可执行批处理文件）、文件`mvnw`（类UNIX下使用的可执行脚本）、目录`.mvn`，并将这仨加入版本控制，就可以让所有项目参与者共享同个Maven版本。
 
-## 编译 JDK 11 项目
+## 常见问题：编译 JDK 11 项目
 
 　　默认的编译插件 org.apache.maven.plugins:maven-compiler-plugin 中 target 和 source 配置项的默认值为 1.7 。如果需要编译 JDK 11 项目，需要这么配置：
 
@@ -162,6 +162,37 @@ mvn -N io.takari:maven:0.7.7:wrapper
   <!-- ... -->
 ```
 
+## 常见问题：maven-javadoc-plugin 控制台中文乱码
+
+　　如果源文件都是 UTF-8 编码的话，设置环境变量 JAVA_TOOL_OPTIONS， 值为`-Dfile.encoding=UTF-8`。
+　　
+　　同时，插件配置中：
+　　
+```xml
+<!-- Javadoc 文档生成插件-->
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-javadoc-plugin</artifactId>
+    <version>2.9.1</version>
+    <configuration>
+        <!-- 忽略生成文档中的错误，如果想看下控制台中关于生成doc错误的去掉这个参数 -->
+        <additionalparam>-Xdoclint:none</additionalparam>
+        <aggregate>true</aggregate>
+        <charset>UTF-8</charset><!-- utf-8读取文件 -->
+        <encoding>UTF-8</encoding><!-- utf-8进行编码代码 -->
+        <docencoding>UTF-8</docencoding><!-- utf-8进行编码文档 -->
+    </configuration>
+    <executions>
+        <execution>
+            <id>attach-javadocs</id>
+            <goals>
+                <goal>jar</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+```
+
 ## References
 
 [^1]: [Introduction to the Build Lifecycle]()
@@ -169,4 +200,5 @@ mvn -N io.takari:maven:0.7.7:wrapper
 [^3]: <https://maven.apache.org/settings.html>
 [^4]: <https://maven.apache.org/archetypes/maven-archetype-quickstart/>
 [^5]: <https://maven.apache.org/guides/introduction/introduction-to-archetypes.html>
+[^6]: [maven-javadoc-plugin 控制台中文乱码的解决方式](https://blog.51cto.com/u_15119353/5044191)
 

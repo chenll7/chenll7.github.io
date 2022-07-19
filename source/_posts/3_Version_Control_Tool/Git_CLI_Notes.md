@@ -1,7 +1,7 @@
 ---
 title: Git 命令行笔记
 date: '2020-11-01 11:36:12'
-updated: '2022-03-16 10:18:11'
+updated: '2022-05-13 16:29:12'
 categories:
   - 3 Version Control Tool
 ---
@@ -70,6 +70,19 @@ git log
 git log --graph
 # 每个提交只显示提交ID
 git log --graph --oneline
+```
+
+### git reflog
+
+```shell
+# 查看操作日志
+git reflog
+# 结果为：
+# 09b042f (HEAD -> master, origin/master) HEAD@{0}: commit: Some commit.
+# 0f70771 HEAD@{1}: commit (initial): Initial commit.
+# ...
+# 开头的 Hash 为本次操作后 HEAD 指向的版本
+
 ```
 
 ### git commit

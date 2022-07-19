@@ -1,7 +1,7 @@
 ---
 title: Java Lambda 表达式笔记
 date: '2021-02-03 10:02:00'
-updated: '2022-04-18 10:56:52'
+updated: '2022-06-20 08:46:38'
 categories:
   - 2 Java
 ---
@@ -98,6 +98,16 @@ DoubleStream doubleStream = new DoubleStream.of(0.1, 0.2, 0.3);
 Stream<Double> toDoubleArray = doubleStream.boxed();
 ```
 
+### 相关类
+
+#### Spliterator
+
+　　Spliterator是Java 8中加入的一个新接口；这个名字代表“可拆分迭代器”（splitable iterator）。和Iterator一样，Spliterator也用于遍历数据源中的元素，但它是为了并行执行而设计的。Java 8已经为集合框架中包含的所有数据结构提供了一个默认的Spliterator实现。集合实现了Spliterator接口，接口提供了一个spliterator方法。
+
+### 坑
+
+　　`IntStream`、`DoubleStream`、`LongStream`的`collect`函数和`Stream`不一样，必要的时候先执行`boxed`将其转化为`Stream<Integer>`、`Stream<Double>`、`Stream<Long>`。
+
 ## ParalleStream
 
 　　ParallelStream 使用 Fork-join-pool 作为并行化的底层框架，其是独立于 ThreadPool 的多线程并行模型。
@@ -123,10 +133,6 @@ public class CollectorsTest {
     }
 }
 ```
-
-### 坑
-
-　　`IntStream`、`DoubleStream`、`LongStream`的`collect`函数和`Stream`不一样，必要的时候先执行`boxed`将其转化为`Stream<Integer>`、`Stream<Double>`、`Stream<Long>`。
 
 ## 参考
 

@@ -1,7 +1,7 @@
 ---
 title: Windows 笔记
 date: '2020-11-01 11:36:12'
-updated: '2022-03-16 10:18:03'
+updated: '2022-06-30 11:23:08'
 categories:
   - 3 OS Usage
 ---
@@ -56,6 +56,14 @@ Put executed files into `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\St
 
 　　Windows搜索中（Win+q）输入“Manage app execution aliases”（"管理应用执行别名"），然后关闭这俩应用执行别名。
 
+### 合并任务栏按钮（直接修改注册表方式）
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+
+TaskbarGlomLevel（类型：REG_DWORD）项
+
+值为 0，始终合并；1，已满时合并；2，从不合并。
+
 ### 移除UWP访问本地回环地址限制
 
 #### 方法1
@@ -73,4 +81,16 @@ CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-2750798217-1343590035-123481
 #### 方法2
 
 　　使用[EnableLoopback Utility](http://www.apprcn.com/enableloopback-utility.html)，与Fiddler功能类似。
+　　
+### 修改路由
+
+```cmd
+rem 删除路由，最后一项为目标
+route delete 0.0.0.0 mask 0.0.0.0 25.202.78.254
+route delete 0.0.0.0 mask 0.0.0.0 30.18.40.254
+rem 增加路由，最后一项为目标
+route add 10.41.0.0 mask 255.255.0.0 30.18.40.254
+route add 10.21.0.0 mask 255.255.0.0 30.18.40.254
+route add 215.9.0.0 mask 255.255.0.0 30.18.40.254
+```
 
