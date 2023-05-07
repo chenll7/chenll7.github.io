@@ -1,0 +1,1872 @@
+# Main menu navigation (導航目錄)
+# --------------------------------------
+
+# format: name: link || icon
+# sub-menu
+# name || icon:
+#   name || link || icon
+
+menu:
+  # Home: / || fas fa-home
+  # Archives: /archives/ || fas fa-archive
+  # Tags: /tags/ || fas fa-tags
+  # Categories: /categories/ || fas fa-folder-open
+  # List||fas fa-list:
+  #   - Music || /music/ || fas fa-music
+  #   - Movie || /movies/ || fas fa-video
+  # Link: /link/ || fas fa-link
+  # About: /about/ || fas fa-heart
+
+# Hide the child menu items in mobile sidebar
+hide_sidebar_menu_child: false
+
+# Code Blocks (代碼相關)
+# --------------------------------------
+
+highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_copy: true # copy button
+highlight_lang: true # show the code language
+highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+code_word_wrap: false
+
+# copy settings
+# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
+copy:
+  enable: true
+  copyright:
+    enable: false
+    limit_count: 50
+
+# social settings (社交圖標設置)
+# formal:
+#   icon: link || the description
+social:
+  fab fa-github: https://github.com/chenll7 || Github
+  fas fa-envelope: mailto:fbcll@outlook.com || Email
+
+# search (搜索)
+# --------------------------------------
+
+# Algolia search
+algolia_search:
+  enable: false
+  hits:
+    per_page: 6
+
+# Local search
+local_search:
+  enable: true
+
+# Math (數學)
+# --------------------------------------
+# About the per_page
+# if you set it to true, it will load mathjax/katex script in each page (true 表示每一頁都加載js)
+# if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' in page's front-matter)
+# (false 需要時加載，須在使用的 Markdown Front-matter 加上 mathjax: true)
+
+# MathJax
+mathjax:
+  enable: false
+  per_page: false
+
+# KaTeX
+katex:
+  enable: false
+  per_page: false
+  hide_scrollbar: true
+
+# Image (圖片設置)
+# --------------------------------------
+
+# Favicon（網站圖標）
+favicon: /images/favicon.ico
+
+# Avatar (頭像)
+avatar:
+  img: /images/favicon.ico
+  effect: false
+
+# The banner image of home page
+index_img: "/images/default_index_img.jpg"
+
+# If the banner of page not setting, it will show the top_img
+default_top_img: "/images/default_top_img.jpg"
+
+# The banner image of archive page
+archive_img:
+
+# If the banner of tag page not setting, it will show the top_img
+# note: tag page, not tags page (子標籤頁面的 top_img)
+tag_img:
+
+# The banner image of tag page
+# format:
+#  - tag name: xxxxx
+tag_per_img:
+
+# If the banner of category page not setting, it will show the top_img
+# note: category page, not categories page (子分類頁面的 top_img)
+category_img:
+
+# The banner image of category page
+# format:
+#  - category name: xxxxx
+category_per_img:
+
+cover:
+  # display the cover or not (是否顯示文章封面)
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  # the position of cover in home page (封面顯示的位置)
+  # left/right/both
+  position: both
+  # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
+  default_cover:
+    - images/cover/cd77f606e9d4df190e3a731f600832e3.jpg
+    - images/cover/8f8be5d3957e3c16fff81c50552e7f4b.jpg
+    - images/cover/4a3966dc8ba0c01a5e49235963f69655.jpg
+    - images/cover/4b7ec6af2598f9f4f5361659f9703689.jpg
+    - images/cover/0b17bbf6c28bbf1b989d72c8db7e18da.jpg
+    - images/cover/085151c9c8bb999bb271d8285bbf5b01.jpg
+    - images/cover/2930ee61907251030da771cae6d59367.jpg
+    - images/cover/efaeb1f2890d2c910db028b1b3f07a4e.jpg
+    - images/cover/2e5734f5b95e9c669201696ed58fd692.jpg
+    - images/cover/2b76ef725028c1196988036e2378cb72.jpg
+    - images/cover/ff97ce3887ef0fb7f8c6e8bc136a1b10.jpg
+    - images/cover/56a318495070ff929e4d6ca5446bcc7d.jpg
+    - images/cover/9c6e71e085967deddb5a19e7af1e31f7.jpg
+    - images/cover/10dfeaf045a74f251cd85a345047a9ab.jpg
+    - images/cover/f1aa1f3bf3f630e3c6fca34f5fabb52f.jpg
+    - images/cover/1ffb09023002c974423d08b1b19673da.jpg
+    - images/cover/344ceba9633acfb2523675c519af53ae.jpg
+    - images/cover/b370af43ed8b645a0510dfe8aff1f58f.jpg
+    - images/cover/a73e178fe6f5075f1bf46ffab07a8210.jpg
+    - images/cover/7e0f874dae49ed559b2ff40c0b4ef85d.jpg
+    - images/cover/23d938bb947541aea62f0ce4d5a0438a.jpg
+    - images/cover/073fb1d9205c197f466caba89f826fde.jpg
+    - images/cover/633f0d243a85bcec92e39ab3ebf8e646.jpg
+    - images/cover/7acd0c1d9820f92513a5934ffd2b6816.jpg
+    - images/cover/8e3e886d969f4c3ca056b19d95be3cb1.jpg
+    - images/cover/9595fd11c2bb3be52d984e4be6752d2e.jpg
+    - images/cover/f73bd9a0b956779e871025b418924a58.jpg
+    - images/cover/5598c86cea5eef8d0b5d708b69502016.jpg
+    - images/cover/994dd25f0df5a146e8308dbcdf2648e2.jpg
+    - images/cover/3a784f8becd733c3e09caa314926c7fe.jpg
+    - images/cover/a2ee19c054fc25cc22778a04963f3f71.jpg
+    - images/cover/0817609f5c8a70fae54d5934448dcab5.jpg
+    - images/cover/c9534619a08ca388b6f83a64a6ce622b.jpg
+    - images/cover/57e45fe016e1b2fe0ae5dcf7838c2080.jpg
+    - images/cover/4d6cb5afcd94c95176f926e7d967d350.jpg
+    - images/cover/854c97b3752bffe511a99191c0d64097.jpg
+    - images/cover/f48a6ec12d0d41206df26a5120ef0f80.jpg
+    - images/cover/6c413ac979f75deaa6e37d475cb5152f.jpg
+    - images/cover/553006455f1a304f302e7ece69d925bc.jpg
+    - images/cover/5ffd80fbb93fd34c0fe34fa03cb135da.jpg
+    - images/cover/e541c4db70fad6b0b218595d85929c66.jpg
+    - images/cover/1fb71c9220d4f66c3f6e31c49c130d4a.jpg
+    - images/cover/55af78e92c91b4788cd2d53e6eb1e530.jpg
+    - images/cover/1a6e9ddd3cab9e28ab18178d9c0310c8.jpg
+    - images/cover/6575d4d95d81febd3582005c5deb2b5c.jpg
+    - images/cover/a6d2e093d61cb9f4ea886da97baccd8f.jpg
+    - images/cover/82fc45b499b66e294ceaf3708a1ccb75.jpg
+    - images/cover/d4a7013ce997b101d208863e5d0e8d84.jpg
+    - images/cover/3851c139f3118238d6fe49d17cc49e15.jpg
+    - images/cover/29290edf846772916f95d5ec500b6c8b.jpg
+    - images/cover/ea3eeb265d92f577dd419a3419fac205.jpg
+    - images/cover/12d39a36565ddbd3306356339d25781e.jpg
+    - images/cover/b538b23273dccbbe1a40ab30de3bd8e5.jpg
+    - images/cover/d5b018e74bd8c51814e926bc4970ac3c.jpg
+    - images/cover/a1b0af0d8268716a7b8483fc75266d81.jpg
+    - images/cover/f897aa1928a2c3578c4c507618e4c57b.jpg
+    - images/cover/4514ce72280d94968032176752126390.jpg
+    - images/cover/cd47a6e0b54a747a34d52f12da8b307d.jpg
+    - images/cover/56ad3f75682b18f2a4eaeea5249f1d56.jpg
+    - images/cover/8c3b964b55a5b4c07745dec0379bc1a1.jpg
+    - images/cover/2c42ab4d6f8235037c4d105b3d75b02b.jpg
+    - images/cover/a14a02861833af5e476fc7e1ed37cc01.jpg
+    - images/cover/afc815162654c7e617d0bf16fdb86afa.jpg
+    - images/cover/dcf305759b8d3dd3efa6c3b554010e94.jpg
+    - images/cover/29b46aa058cd511f9bfc064c6874064d.jpg
+    - images/cover/0634659b0333d24cba83da46bf18c506.jpg
+    - images/cover/722e4feb876f959d2126f4293501052d.jpg
+    - images/cover/0749a1a1ca3bfb333ee6e803347bed99.jpg
+    - images/cover/0239213a9e8c49af76a8e228fc4bf6d1.jpg
+    - images/cover/54bd7f054263a59d8b2ec33d25bd7873.jpg
+    - images/cover/5b858d3ceb47802b9eb89c375b5274e3.jpg
+    - images/cover/32610ec2fd132d60d8fa59b7dadb0cf3.jpg
+    - images/cover/b17dcdec91718f423e3d3dc0379d360a.jpg
+    - images/cover/e483c2a7d50f946ad09e6b821295665f.jpg
+    - images/cover/df111651fe021550b94a69f8ce5dfde7.jpg
+    - images/cover/77abd6874c52ba6a869ec224468e8276.jpg
+    - images/cover/317e5347f30eb4f3d0a2e7c9dfd338ce.jpg
+    - images/cover/9da4fddd24afa2fb8b4799f016fbb43b.jpg
+    - images/cover/62098c8112fe1ff2eb5d6f406223f576.jpg
+    - images/cover/4db147d881714cd2959ed71ab81ab39c.jpg
+    - images/cover/161999dd8a4d176e3a305c905dd767a4.jpg
+    - images/cover/7e224d5802b5193628e5fe858b687ba9.jpg
+    - images/cover/41b230ebdefd025db6b67d73232513ff.jpg
+    - images/cover/7da3e90c24497f4fc24d00498ee7f391.jpg
+    - images/cover/afc49747fce40eb0ec3bb574a8c5742e.jpg
+    - images/cover/25afb565ff21a0096e04204b6ae9a3ef.jpg
+    - images/cover/192bb10cdcfeb4f59cc160081766ab04.jpg
+    - images/cover/5a699d097797eb38f38d6a2a57c5a566.jpg
+    - images/cover/ea46c8f9d6f3f116d45d9859cd4f9825.jpg
+    - images/cover/e6e26380a9dd78e74dcd1d2c24674b88.jpg
+    - images/cover/436d69ae6c7c33aca7bedca2f899e709.jpg
+    - images/cover/2cf3325e35d204968f481e7065f34cf9.jpg
+    - images/cover/e3ac496e10b2ab3bbe4e7a3269107c76.jpg
+    - images/cover/14ef8b4a1b01ce27651833623c7c970c.jpg
+    - images/cover/95fa3a658ba082465d30b3646c3c02e9.jpg
+    - images/cover/ffd1edc5fb11f8d3946f0d792289f5d1.jpg
+    - images/cover/f694ea3f9dfa2ad392c243deedd86ab3.jpg
+    - images/cover/906f66e6c658af9508393d5da64445f5.jpg
+    - images/cover/abaebbc2a692f7ca86f45c132680da0a.jpg
+    - images/cover/6e97aa5e6f3b5401127e708d51eafd25.jpg
+    - images/cover/867522a57d9f84cd76b0c887607fa04a.jpg
+    - images/cover/f17780d911d1f594377b0142fecca901.jpg
+    - images/cover/30105f59f123ad650ec7743716c85955.jpg
+    - images/cover/6e6d2aa2945400113e23364f056bb8d2.jpg
+    - images/cover/1bf522ed254d7d69fe0628839fc004ba.jpg
+    - images/cover/697749a89ce38d64d1ff75cd96052f09.jpg
+    - images/cover/aeb405d4bc6ebff74e51dc4961e8c352.jpg
+    - images/cover/97164e6a0c6d95ee734965babc6651a7.jpg
+    - images/cover/8a8e635a95fcd55ed4124356601a0283.jpg
+    - images/cover/73ac2d6e292951b5bd92277778860e9e.jpg
+    - images/cover/5f3d833fd69b4961e7ed3bb1ba4b6268.jpg
+    - images/cover/3d52725d98a3b96322d1a2f5010a77ae.jpg
+    - images/cover/16b9d90a07b2325e45e38cb42e3cf194.jpg
+    - images/cover/64715c6c6772b48e3c47567122257468.jpg
+    - images/cover/324257af05ca2d870a7eb4210236ce09.jpg
+    - images/cover/9909207d54a42359e52d9f8204999b25.jpg
+    - images/cover/2b538830217cd904e0e23058c2351ceb.jpg
+    - images/cover/87654a6a2b0ca002fb2ac0766d3f69dd.jpg
+    - images/cover/2fa8c02638d5244c6014c63ec9ae189f.jpg
+    - images/cover/6d1c75f92af655c49b90da0561e0a001.jpg
+    - images/cover/b246af999e6fafec05a1517fe08b15a0.jpg
+    - images/cover/3c43feb474376aa7536553262ede71ff.jpg
+    - images/cover/b8676bc82d3805c2aed97ca41f03f12f.jpg
+    - images/cover/760d7a825f872c4707fddadc079b24d0.jpg
+    - images/cover/16a7e653b2a204a643f4847112dd5f1b.jpg
+    - images/cover/bac4ab4a04d7531bc1447c59e7efa505.jpg
+    - images/cover/b77a38ba5c74209131e4ae269202a20c.jpg
+    - images/cover/a65f7499ca14739d0529f00c2f9c84bf.jpg
+    - images/cover/3b24b141a335ee9502fbac1e16a5547b.jpg
+    - images/cover/f4b4ed3d7cf0029cabc4ae2fe77fffab.jpg
+    - images/cover/7e734bcb04a3b4621522623b1ee94c26.jpg
+    - images/cover/32d4ef144f73715a604fead764766d21.jpg
+    - images/cover/f4eaed84243ac86697b053732a4d9df6.jpg
+    - images/cover/31d58d566d5146366f3b992dd32cf1da.jpg
+    - images/cover/1db5bdd7659c8e4bc8bd7c9504387603.jpg
+    - images/cover/6bb03418c0e311e3bf88647655772646.jpg
+    - images/cover/a212e2617fa889656b1700a6ff09f493.jpg
+    - images/cover/26937285a38f3868e836c0d51d41227d.jpg
+    - images/cover/d9fb54e02a9794752c639e27c549ed9f.jpg
+    - images/cover/3a0312b8101b9320db92ca28338a679b.jpg
+    - images/cover/ca16901b66a44137f5869e29cbcfb9c9.jpg
+    - images/cover/d9eb5502c305ec8806bdbe95e1989e08.jpg
+    - images/cover/9bf44a90104f5358673c2deafb50d722.jpg
+    - images/cover/c9404f9a1f33236f1ac947873d95aba5.jpg
+    - images/cover/e42e49deb76f72b26ec9ed1e2af782ea.jpg
+    - images/cover/4f5abfabc0a8cdeead7bbad6ec56db29.jpg
+    - images/cover/ca7d6f5c2b846aceec921f701c099d2f.jpg
+    - images/cover/1fc0a4d8a9f176eb85fe8c4a2d679197.jpg
+    - images/cover/27742687ebcb7cae824a2d23c12c8045.jpg
+    - images/cover/820cf4932e8685c67b60be9783d80c88.jpg
+    - images/cover/7038fd084bad7ed10b20b4cb6195ac2c.jpg
+    - images/cover/20843c24d327aae3302ed3bbb3efab02.jpg
+    - images/cover/88aa6601634ffb0132dd5ee4d9c955c6.jpg
+    - images/cover/1949221c0b0a0fc8b623586e60d5ca2b.jpg
+    - images/cover/4a124253c0502a6760f37618e714cbf0.jpg
+    - images/cover/b1705c9d60d51e77d48207ad78f517af.jpg
+    - images/cover/74a8fe6e46e15a6672921ff6bd4e2af7.jpg
+    - images/cover/16d14b6e9b90e4f8bfef1602ce00f0e9.jpg
+    - images/cover/8667117a43394b3389a1cfeae54dd59a.jpg
+    - images/cover/1c735791a236d3f852c8628dece772d7.jpg
+    - images/cover/8ee3302735e53cfd96e34ac6fd508c95.jpg
+    - images/cover/f96703074f87025c1f92c4eb7305a71e.jpg
+    - images/cover/61e79430629ad56dae36c2b1544fc896.jpg
+    - images/cover/3e94db63c5a0a4e8bbb1b006727c57c7.jpg
+    - images/cover/e6bcbc45cb60e4f7cb3ddeed86b58ae9.jpg
+    - images/cover/e707946d5dba1cd5a9f732d259c1d5c3.jpg
+    - images/cover/4e016c394636cc6b57ea6dfd35b94fe9.jpg
+    - images/cover/909c0b0f1c9c4415f418fd7f681ee577.jpg
+    - images/cover/eac3167b28bdb8820704d14f785c6cb0.jpg
+    - images/cover/169163577fd985926c5ea1651b9828e9.jpg
+    - images/cover/230f7b814a3c6408bc46d3a578efb813.jpg
+    - images/cover/15e2f36f48ee767fa4f2e7e225e6a816.jpg
+    - images/cover/78b37247c3c0e67ed7727b9612e939c7.jpg
+    - images/cover/c78e780e8fa1735eb89a96000aa5dab9.jpg
+    - images/cover/0229688b533cf0610312c69912a29881.jpg
+    - images/cover/0be111c23a551b3d704ef190bb9e2b11.jpg
+    - images/cover/63588bc2316381874643e6460af426fb.jpg
+    - images/cover/a9c6753206906ea7d61232663537d94a.jpg
+    - images/cover/dbed587403d05ee315f9888688098887.jpg
+    - images/cover/07845870325735fa435d2c2d26a8e989.jpg
+    - images/cover/6938c3279f7a27280712534c5a14051f.jpg
+    - images/cover/681cc49b90113525ba38c901177aa246.jpg
+    - images/cover/e83394f7e5c30d379472af3087dcd99a.jpg
+    - images/cover/a3c2b42514269be77ca310406307a605.jpg
+    - images/cover/d751f90f9c5a244233c1cc670af5e786.jpg
+    - images/cover/d41a5f51820aabd351e6951a749a84bb.jpg
+    - images/cover/a3b910443fe0d580dec0f278612a291f.jpg
+    - images/cover/38281a822276cb45252a23bd2cebe588.jpg
+    - images/cover/9539e2ac1e563d36ab224c35fdbd122a.jpg
+    - images/cover/ce6ebda304ec1b415c0843c43f76706f.jpg
+    - images/cover/01e1211239c7324259f815f36ad97b5c.jpg
+    - images/cover/863fd3d7dd489a6c0b7769aa12e5f026.jpg
+    - images/cover/34efce14ce6e674bffbdf188c3746b56.jpg
+    - images/cover/c4c1c82f502c7f6143fd7eb9ab75d38c.jpg
+    - images/cover/149cbdf017a63c9a37d11c50476dda5c.jpg
+    - images/cover/0dafe075e994742ba6877126ea257942.jpg
+    - images/cover/1b6bc4715e0c02a5475152d2aa0663bf.jpg
+    - images/cover/0a6ea59a853a70ec64619635be53d8bf.jpg
+    - images/cover/3481f3400fe483e2e6782d7949bb0aec.jpg
+    - images/cover/40e09802e82f47e62bf559feb63226e7.jpg
+    - images/cover/288228199f37caecc0c5e9cf0c4d29f7.jpg
+    - images/cover/562164808eeb38315ec2d3902d88efb0.jpg
+    - images/cover/af208baa5e2ba70d5b674125e47cd969.jpg
+    - images/cover/dd440d39ce94abf8b8e659f952e6512c.jpg
+    - images/cover/482759b751d33e4ce387f369189e3af6.jpg
+    - images/cover/ca0d3635d7cd7637c380a92763ab313c.jpg
+    - images/cover/4f34911bc3fce4b685a1a8d4e21be401.jpg
+    - images/cover/e9cf294aac211117d794dcca9dd2c0c2.jpg
+    - images/cover/ab06345de3b8291f680849cc94598522.jpg
+    - images/cover/9e6b7d503f3fd8f6d13baad0c7a535fb.jpg
+    - images/cover/4562706463158e80df4372af7cb10b8b.jpg
+    - images/cover/81c2678ce230241dba9cdcf6d3fff9e3.jpg
+    - images/cover/32cf604ac100556088055645ec47ab1c.jpg
+    - images/cover/02895114292c7be9d30b608c876b1de5.jpg
+    - images/cover/cf30149a4ded078f46b2e4ae18c7cc9b.jpg
+    - images/cover/59fe73851244eea99da5d8306083d505.jpg
+    - images/cover/d2bae4cfee501be1b7c1c088d0006121.jpg
+    - images/cover/53d65ed767c394ea6c2420c68ba44b07.jpg
+    - images/cover/566cf659dc5b36031488c9ea94a8c806.jpg
+    - images/cover/24f73a30dbe0be1102bec1a2ca5755a8.jpg
+    - images/cover/0c462eda6ade1fd900e549ba1f0b78e1.jpg
+    - images/cover/05863698dc24683b23a135159726c94c.jpg
+    - images/cover/2f3dc113df22406e87b2d2fb09cc6f0e.jpg
+    - images/cover/3107ff53de22b562f432797d43576a55.jpg
+    - images/cover/81ba1e36fbd206049421051e71e733c0.jpg
+    - images/cover/7448709669a12f1d13121bb7a1feb9ad.jpg
+    - images/cover/f3496473130d8284188a1a28fd2bb141.jpg
+    - images/cover/750b5f9bec70f5f3ced5599b42ae861f.jpg
+    - images/cover/bfeb50e9f736bf1ab7efa9046ddff1c8.jpg
+    - images/cover/fe69758b655207596051bd2faf2fa77b.jpg
+    - images/cover/23e09f627f960b7e20037fa982427cca.jpg
+    - images/cover/f506c887a0618aa89eedad95a951625e.jpg
+    - images/cover/0db68bcc4c8dbfdb59a88d730e030e23.jpg
+    - images/cover/29dc459b4f85edc232e2cfe7c074e862.jpg
+    - images/cover/47f11df57535fa362d29a13101ea20ef.jpg
+    - images/cover/266ba69ee5e6021196ca29d2b9cf1f8d.jpg
+    - images/cover/4560e3d19715fb2d7eacb253d2966962.jpg
+    - images/cover/dda73e2f5c96ad7b30902c83b7de36c5.jpg
+    - images/cover/0b80c69c3dd6dd0c716b3058e2250731.jpg
+    - images/cover/47dcfdf09cd33ef62bffbf7677ffe042.jpg
+    - images/cover/807a03aac2263f8c5ee02807427c8f72.jpg
+    - images/cover/48185fb6461492008fca2557d3e0798f.jpg
+    - images/cover/f02c986509490c7178a024c6b2cbae3b.jpg
+    - images/cover/f92ef831ed26bd2d038860a99a91af3c.jpg
+    - images/cover/abbea526f404c31cc16582e72ca00bd4.jpg
+    - images/cover/89d7a14124acf52becf7cb96b0f043c6.jpg
+    - images/cover/0dd3ba9ba69d8f0504dc85b8b5068994.jpg
+    - images/cover/6f124aa974cc0b0401c7d418444961f9.jpg
+    - images/cover/fd7a2944fdb9b333ab94902345d111a3.jpg
+    - images/cover/c5adb38d35f632618e3ba0b490bf334a.jpg
+    - images/cover/afd4f85a36059d87aece9fe96cbf486b.jpg
+    - images/cover/94a8a02df11e8dc6ba46d54998cb606c.jpg
+    - images/cover/d0c280d14dc40d6177928308be7227c8.jpg
+    - images/cover/a24a2713b4ef3e3ef7f86180389eb17f.jpg
+    - images/cover/34586d1db481deb959b1ef3c4b96927e.jpg
+    - images/cover/9f1dc26ea7ad54efbb044fe674ed2f0e.jpg
+    - images/cover/32cf2112b941e4dfbe0ea51a3561ed22.jpg
+    - images/cover/de6ce7ac31e740a1fdaafc5a16ec7bf3.jpg
+    - images/cover/2c48ecfc8b3bc34678af18898287e843.jpg
+    - images/cover/535f2f7aee9ff9ed8d0824b7452eac92.jpg
+    - images/cover/e39ea6cc214fa1a791ab69912f8cced3.jpg
+    - images/cover/3f6ff4498f56bd6e99316f4f558bf804.jpg
+    - images/cover/ec204f4c07b33514ad496a74654edfb4.jpg
+    - images/cover/aa356edfbc23b8ba4e54c7d7eb17d6a6.jpg
+    - images/cover/109e100aaa2625d5608fdd1d6636ee94.jpg
+    - images/cover/6a54fab4440a93ea49f469f9fb809d84.jpg
+    - images/cover/5ee7ea3f35bd4ae98ca6937d50a52b86.jpg
+    - images/cover/221b715bdb12701d8de0ef6ec508d23d.jpg
+    - images/cover/638923fe4b5c363f427f112fd66518ce.jpg
+    - images/cover/d11a339204bc8b518468cbcde167a434.jpg
+    - images/cover/4ee75d4947c8c68167f98908a621329f.jpg
+    - images/cover/52209934ca6a134606453bf26d58665b.jpg
+    - images/cover/dd135761d80726d0cb71b3665a56987e.jpg
+    - images/cover/8f0f0aee34388fb0528f49fb6ab27411.jpg
+    - images/cover/9274bc2eb9291da8dc6cd20b54a74533.jpg
+    - images/cover/da714be0d944c7bd2dcac7f65caae5fa.jpg
+    - images/cover/57b5af7ea0e5bb429d324d80dea31423.jpg
+    - images/cover/71fcb2c530c7f706e955274885c9445d.jpg
+    - images/cover/a3135793e40d0c10214d1ab4f3a2079e.jpg
+    - images/cover/7d35200d29e7816e568bbad1e8712ec6.jpg
+    - images/cover/488434a5096d11774cca36fbb472665c.jpg
+    - images/cover/e76b85bff573da830069ea3ddc98f25e.jpg
+    - images/cover/6fa3814fb887059cfbd09d612990404b.jpg
+    - images/cover/f4c96d18ce835e0265b977676c7e659b.jpg
+    - images/cover/24f221ab1c5faa4433736671a2e2b4f8.jpg
+    - images/cover/0b4d062ca01fa5964a5ce870e12b28e0.jpg
+    - images/cover/b73d7cd3af95b411f690720f9ea9b8b0.jpg
+    - images/cover/381e8881b9c3b1d8476ce5b3918d9177.jpg
+    - images/cover/009a109f6eb94942d2bc785952402cf9.jpg
+    - images/cover/011803a9063d48e5826cf5c49239f944.jpg
+    - images/cover/66121c1ed43573c12b461b90f68d9803.jpg
+    - images/cover/dae4ee2b2b079daef140bbb60d229647.jpg
+    - images/cover/0e906c44454699e8415ab027dd1e41c6.jpg
+    - images/cover/aa6a24cde738f1be81bf51f7ed5a7219.jpg
+    - images/cover/250f9ed6dc2055ac05b94863893fea27.jpg
+    - images/cover/d54c2c0c7e96129ee3030f9aba227cbe.jpg
+    - images/cover/1454f9bf9d820ae771ad0eeb55ce1ca1.jpg
+    - images/cover/6cb101013e05766003b9f4309cea7d67.jpg
+    - images/cover/9d89d52f7e4d97e94fc0a868c027aa92.jpg
+    - images/cover/dbbf2bde9d227a6a2687f97d91c0bf0a.jpg
+    - images/cover/162551c75159db187a7c9305ddba7462.jpg
+    - images/cover/f228dc42bc0cce0316c703d1c319cb63.jpg
+    - images/cover/4756ac933a0fb1672a8e4a15c85629db.jpg
+    - images/cover/c74930a8b8d4bd3e5d329377997912a3.jpg
+    - images/cover/b65f5b35c832b23c78099ee61998e3bf.jpg
+    - images/cover/263b79030d00476355a23f23aee80d50.jpg
+    - images/cover/e41c2c47a742fa812e5141a0736134b2.jpg
+    - images/cover/2b8450711856bb612358ae16fb7367ea.jpg
+    - images/cover/09c7e3bf388074fae682bebfd1d61e29.jpg
+    - images/cover/144578c6d96a98a1fbab415548cde3c3.jpg
+    - images/cover/b2f1c5716172b466066b5bc218ff0c93.jpg
+    - images/cover/21bb323ea420a817e3332889ed1decfc.jpg
+    - images/cover/13e06c1186a08f4a0e70181f8cd51b01.jpg
+    - images/cover/ee10970c90b88a5200f5e9510ba8b721.jpg
+    - images/cover/320207dd86a6fd2bf94b4bd704146b9f.jpg
+    - images/cover/5c464741eff0a2d7013972f2121525a1.jpg
+    - images/cover/f01135b3db04475c8883aadf47f4a260.jpg
+    - images/cover/ca3a460e82a7b550c6c2f03281b32dba.jpg
+    - images/cover/df4ce525c9a1be17bc98ddeabaf09f59.jpg
+    - images/cover/1ab2aa5e86e5fcc97a461ce9d3515b2b.jpg
+    - images/cover/2d69dce3428b9bbe38b607e240b62548.jpg
+    - images/cover/60797d0f588ced4171f27782d2cdf9cd.jpg
+    - images/cover/687fce7e47038faf08261c453cd455ab.jpg
+    - images/cover/c20431be1d4a60dadc9e5aae0ef2c579.jpg
+    - images/cover/7181d571d83c0469faa694e618ad49bc.jpg
+    - images/cover/2e985c585287369123fbff851f14bac0.jpg
+    - images/cover/805448e2757db2ec28abd9d43bb7a667.jpg
+    - images/cover/25eda732cf4eae6798dd129e9f46839a.jpg
+    - images/cover/6a011ace7d1ea49ddc384ab7c75d24bc.jpg
+    - images/cover/a7692771d6bc0bf8ab1991c61de6906a.jpg
+    - images/cover/f533d3b85577ca66605aa08ce7261ed4.jpg
+    - images/cover/66a7090cea788416b0de984bfe77a9d2.jpg
+    - images/cover/e6b7c4b092b658af7d7d72f303402d30.jpg
+    - images/cover/7dfae832d433f830f706e21f8db40508.jpg
+    - images/cover/9294ed672948e4d4e836f8e3e8a5c0f9.jpg
+    - images/cover/76ad5c9e5b36ceded08c3e9376f05116.jpg
+    - images/cover/d27ff4fbe7b4754e7f987e64ef7a9b90.jpg
+    - images/cover/54e70b2ce19b876417bc0a6cf453fe36.jpg
+    - images/cover/ced80b93791c18710404ee6cdc28b56b.jpg
+    - images/cover/ab173e68e9cd67442a4d5d99ced85bbf.jpg
+    - images/cover/537800bbe1270c8c192355c8608984b8.jpg
+    - images/cover/9c29257a7f4f50ed99c7bf4ef115a8cb.jpg
+    - images/cover/e2e25c524d3d8d956063de70e2f5b82c.jpg
+    - images/cover/423b1ffc023bf2d7759ca688ca3cf1c6.jpg
+    - images/cover/349f1ae3b05c81642d620e0d545a70a9.jpg
+    - images/cover/91ab536912c2dfcd3c810f076a048a5e.jpg
+    - images/cover/23998d536d45aefcd16a880aa8079949.jpg
+    - images/cover/127b2e91fa1bda823e289cb951f11462.jpg
+    - images/cover/5abd0bb519f871e6c04495d94d5c8692.jpg
+    - images/cover/8cb8fb0ca61a92bf8ade5b92271ef0b0.jpg
+    - images/cover/8a10c18097250e5cf6a41870a20df4a0.jpg
+    - images/cover/40a7ff073fc0f6fff31f2e3f1a0d4242.jpg
+    - images/cover/7b21e117cf5b827fae1cad4ae78f327a.jpg
+    - images/cover/d85ad409203dfe4a590b3df3f81ced28.jpg
+    - images/cover/17ce3e2732ab292498367d6eb05c60a4.jpg
+    - images/cover/80e69e1713f69e845df3ca0a1767f4c4.jpg
+    - images/cover/3a8243caea7cea8d9f249aacdb8cdcef.jpg
+    - images/cover/eaf0aef4e6579cd37da8175e17c18a53.jpg
+    - images/cover/0e97f5aa8ff3cc0c1045c2f64511b9ed.jpg
+    - images/cover/20f3b00643503430c6482cbab70c7fc0.jpg
+    - images/cover/c69c24bef1369f553d12d9f4140ee023.jpg
+    - images/cover/897614d880cb00f66fb0a578f309bdbe.jpg
+    - images/cover/21496ecf31ce004583f88618ba990d8b.jpg
+    - images/cover/83080cbe08dc8ea8610b896b7c3ca09b.jpg
+    - images/cover/e108f04a6bc1a549dd538f615201727d.jpg
+    - images/cover/6e096db52272fb3bf4c877345dbbd9dd.jpg
+    - images/cover/989e67deccf27658f72f26f1d6b5855c.jpg
+    - images/cover/1855f78da12faab1497a88eb5cbe2fb0.jpg
+    - images/cover/43b8ab198b391c8e506a7025902a5e95.jpg
+    - images/cover/271cfa105d332b6eab3b519efe5f094a.jpg
+    - images/cover/81eb8ad577ea87df3dd30a749e4343e0.jpg
+    - images/cover/b0b88e79e412deffb71288673045c6ab.jpg
+    - images/cover/b20c676c9f4d859f516bfa4f45312ef9.jpg
+    - images/cover/7251a2529eee0f4eb67feba5e57bcad0.jpg
+    - images/cover/9f443f328b97108d748079e8cefeee60.jpg
+    - images/cover/83bdc80e8459d29cf1cd53cc71484fdc.jpg
+    - images/cover/da96dc6612ffd60fa564d1a18a08e68d.jpg
+    - images/cover/6d7571ef50d163727e3ef84bc01c1fff.jpg
+    - images/cover/26866b6d3d9e3331628976e3db8016a3.jpg
+    - images/cover/26183c9ef991eda3e575a0b7f2e6f301.jpg
+    - images/cover/ca5e82bd8b116a81ec3d510d569243b7.jpg
+    - images/cover/01a7b24fdc2b5e06ea4f8f8827c73332.jpg
+    - images/cover/3670f81ba9eb220c89392dd483ddbc6d.jpg
+    - images/cover/3fc3ade8172052f259a7461a50db4b82.jpg
+    - images/cover/5743044a1f7ca7a50e80938857493760.jpg
+    - images/cover/4205d2cb0e343158e6c915681f8f128c.jpg
+    - images/cover/e614507017955ca8d162754e7e628e05.jpg
+    - images/cover/e1992f1e4059a03aa2e213deb844dd23.jpg
+    - images/cover/01f8658ea90e21e64d78685f56d964cc.jpg
+    - images/cover/82a87a95b336fc75150fb80b975ff8e4.jpg
+    - images/cover/e746e679c29c02f420193006072c4b1e.jpg
+    - images/cover/4394dd0faa26019875eaab14fb5c5190.jpg
+    - images/cover/d10664af2740ce3da2d6cabeff236019.jpg
+    - images/cover/6b4822807d2be4fe5f80919205ee55f4.jpg
+    - images/cover/5ba8d40928b6fa992574986e86f63d68.jpg
+    - images/cover/9afd9160480b6e0f1abd0d19b0802c9e.jpg
+    - images/cover/a25301a11c82454627efc32f0f6c5d9d.jpg
+    - images/cover/eba1539dd2891d063bfd5789d7a99176.jpg
+    - images/cover/1f77629b9237bd4cbe8e570b89e47c07.jpg
+    - images/cover/86b9b0611fb36924c4c538112f0628be.jpg
+    - images/cover/53a07d607973c154b85ec97ab28461dd.jpg
+    - images/cover/0b25ec9d6adaa3f6ec8d5fb730f0c5b4.jpg
+    - images/cover/f61dc6d48e6d90482ce60f4903a5623b.jpg
+    - images/cover/1508941eba01fadbff9a7cd779d2f7c7.jpg
+    - images/cover/2c72aad7703f151895ef3e847f1bc231.jpg
+    - images/cover/1fdd10bbe52f4fa5c588fc367bd21f1d.jpg
+    - images/cover/2380a9ced9474b4741042c7cfae99b20.jpg
+    - images/cover/e1156baf9a909e8989e4fc1f21e3be85.jpg
+    - images/cover/06e20e6d9af3deefb9ef3cc5ee935d64.jpg
+    - images/cover/947202d70b3056ffb11c54dd3670a702.jpg
+    - images/cover/fe4525b37c214292bd7ede784f93bec3.jpg
+    - images/cover/e76ad07cc8b7933bed63358f9f9d9092.jpg
+    - images/cover/d131c56c3781f426105e6f4109ebeb90.jpg
+    - images/cover/f2e7d6b4e73c68428e6dbe4b5f8cc290.jpg
+    - images/cover/24ae091439e2046bc6ed2760691b42bc.jpg
+    - images/cover/3f5033ec1f2fc73b0d5188822895dc90.jpg
+    - images/cover/49363f1f0e02734b74e5bff2e958ffe8.jpg
+    - images/cover/88b091d8a09a85f918e41eb2ea67e717.jpg
+    - images/cover/890604296615954f51b094aa4a223529.jpg
+    - images/cover/fad6e13bdbfb3ee45a12ab593480e2a5.jpg
+    - images/cover/448fe0cc146975f05d7a3727e1cd0423.jpg
+    - images/cover/b34575025f56e31e29d1e145affae088.jpg
+    - images/cover/2d8cdc4c9dace74ce24ed37df195c344.jpg
+    - images/cover/20843c301e14932a788dcdc5db995915.jpg
+    - images/cover/50088cc5b978e38bf8e8534f9977f216.jpg
+    - images/cover/3a32f6a8958683b717099b73b9c9ec45.jpg
+    - images/cover/3813b67ca74cb8e885faa2898323416f.jpg
+    - images/cover/8c03404f1f5bc59a6b56b5c88e4f0e64.jpg
+    - images/cover/bce093cf522d986d3ea249b146c8b902.jpg
+    - images/cover/ab2d869df9ee51bbdbf69db2b70efa46.jpg
+    - images/cover/83f98b63fdbf9bb970776edb6e8f20a7.jpg
+    - images/cover/ab735cd9f820069d8a914770d1a4004d.jpg
+    - images/cover/8a6250539f4ec35b219a575adea9845f.jpg
+    - images/cover/8ab4d445247347e102481a38f23e1719.jpg
+    - images/cover/8bbf4c1663cc40179819833a7f3a8897.jpg
+    - images/cover/4983ad15e64c75a95d5a478e2fec955f.jpg
+    - images/cover/ff2d4641a382e27b866bc57cbcd4ba2a.jpg
+    - images/cover/a3cc3650348756b1d9bafd46f771bcdc.jpg
+    - images/cover/f013a0fd9f09fba4bef1b8d9c1d9a248.jpg
+    - images/cover/d9348415b6d34f9d2190178231f4767d.jpg
+    - images/cover/bd10b5e3adfe6551dd7eef6d5b5efcfc.jpg
+    - images/cover/1bd632d696392bf0f4077693a6aac61e.jpg
+    - images/cover/856ac669566869da47280aade1421f65.jpg
+    - images/cover/959b372ed7c714f4fbb9c05755d8e55f.jpg
+    - images/cover/0dac28b94be93bd60d6758c9b7c25938.jpg
+    - images/cover/d6bb7d18c022dd1e29d64958fefda59a.jpg
+    - images/cover/5009ddd447a0c54ebe36d46e9b8aedba.jpg
+    - images/cover/65e37a7cedcaefe16f68002bbae23475.jpg
+    - images/cover/8d7527d82a3c380ab5725b24ef5f499f.jpg
+    - images/cover/c09b76eccd507437db30e31f38fcd48f.jpg
+    - images/cover/5c02d2bed0c1868335cabd9f8b8dec62.jpg
+    - images/cover/46d104bbe3c11dfc1868ceba5570a053.jpg
+    - images/cover/cc67eeadb82966cc27590fae25e9b8b3.jpg
+    - images/cover/222e35f0c866a636e54d5313f4136934.jpg
+    - images/cover/a0faed4fd26d3b02decee5b072eb9e31.jpg
+    - images/cover/4696133ce9e32ae4d52f5c5e633c44f8.jpg
+    - images/cover/d88b5a64859d2bea4340aa62a6dea39a.jpg
+    - images/cover/4e09f8e145f426253f1f423b143a2f98.jpg
+    - images/cover/dfad82d6009c324cdc31c0f1968f1b21.jpg
+    - images/cover/6b49112333b98ca7acc3dd0b9ce34210.jpg
+    - images/cover/7d97f563504c7a7af1682e4856984062.jpg
+    - images/cover/a7827ed5f59236f493f1e6058b30c156.jpg
+    - images/cover/dd7bfd8b7b15bf697c0b701e4558942e.jpg
+    - images/cover/92a6e2dfbbfe7d5a6bcd9493a4ecd562.jpg
+    - images/cover/9d5610216fb56db17774748f17ab5901.jpg
+    - images/cover/e3b9f0c43f44e75144382d7ef3d5f8b5.jpg
+    - images/cover/229b33160e454353ff174a9f3da452a5.jpg
+    - images/cover/a6f0a15de53145daa2fb38d31434eb16.jpg
+    - images/cover/f558c1c8c3b46023190fc55eb4005cf3.jpg
+    - images/cover/d466694197fedcd3120f28204f805a7e.jpg
+    - images/cover/506e306dd329e496a3fe178a9b974ff8.jpg
+    - images/cover/4d73dc6b09e80df9d5f321bd1b7c2af5.jpg
+    - images/cover/42d3831769e90cf718bf9e5a21f9885b.jpg
+    - images/cover/0eb6c406ec499418b96ed3a50ccf8f18.jpg
+    - images/cover/5d4b29eb3d70ff4ebad3a5d6b90430b5.jpg
+    - images/cover/5bb8ac9f7bf47be46eea806ee9170af5.jpg
+    - images/cover/763d9e041a7e97046c929cac7e86c333.jpg
+    - images/cover/168ddfb2302d22e7878920ff6cf8620c.jpg
+    - images/cover/8e872fd29cafccaf31c12e83d8599c54.jpg
+    - images/cover/89a1dea2ee1c207378c373698c5b2c35.jpg
+    - images/cover/56bae57fa093009b3d30aa31ad009ac7.jpg
+    - images/cover/129726f5fb640216541f1b470478f7f5.jpg
+    - images/cover/ac12e2ac408f208116fca1e56fc6082c.jpg
+    - images/cover/d2c34e1caa94500a40d5c3a6c6f76e77.jpg
+    - images/cover/b59366215871e7c6bf7bd8a3728b54d7.jpg
+    - images/cover/466fde2a13b1ea065bfc106c817d5e53.jpg
+    - images/cover/fa44e5621369a2786484bcbff776200f.jpg
+    - images/cover/818f32f12c424670ffed8b770ff56b81.jpg
+    - images/cover/cf282bd58b54863d741f81307122d91a.jpg
+    - images/cover/91ee07e87e8be622b20beab460343567.jpg
+    - images/cover/4b00854c8d76e06a476e8280838ec0c0.jpg
+    - images/cover/f1f46af4bf9b38e973c73a667a921300.jpg
+    - images/cover/c065ebff625339fc046bf43366b30e6e.jpg
+    - images/cover/b87ec76f99da5d3723da852c34a0525f.jpg
+    - images/cover/1fc8532a66b75de389b60c4688560f9a.jpg
+    - images/cover/1a39e73f65ddd5326a5a93a362170210.jpg
+    - images/cover/39e949485dfa93c83e661ce29106e485.jpg
+    - images/cover/2cb8c85fc6eb5ec5bf8719b795810038.jpg
+    - images/cover/aa1b592dc1fe62ed632b46520082e00b.jpg
+    - images/cover/13caeb5212dc42ff5a6480d639bae57f.jpg
+    - images/cover/e0f2e65ad40a7b04f929f209027aac3d.jpg
+    - images/cover/5efdb5f2c82aca568c0b00f05236c708.jpg
+    - images/cover/972dce887fdaaea147de42254d5f64c1.jpg
+    - images/cover/d246b4285bb64930b45b38289742806c.jpg
+    - images/cover/fe24275d4aeee23d0b342f86e83e8870.jpg
+    - images/cover/4b25ec81d7ad57d04e7fc97ccc8fc472.jpg
+    - images/cover/5dc2fec5b334bf4a4f1bc55d1c8ec598.jpg
+    - images/cover/c4ee635ba0bc1f2d30d505a54652a57b.jpg
+    - images/cover/67bb146fc0c60c6a15f84212d810629b.jpg
+    - images/cover/89b23f8f43fde453b414efebf418dd94.jpg
+    - images/cover/bc4f3861e2c14f5368fa9009edf2db56.jpg
+    - images/cover/3d6d170a6c5d706a14764526c02c340c.jpg
+    - images/cover/0eae7ca9005f549141003d40e1d048df.jpg
+    - images/cover/0c69e7e1184e6fa82f114bd4fc085e7e.jpg
+    - images/cover/4791173fac4891f10b040ada576e8f03.jpg
+    - images/cover/cc124062118eb50b43966791b99dd99c.jpg
+    - images/cover/a15d1b060d565bd77f3954efb7bdf396.jpg
+    - images/cover/d5412ab0f9574334cb82952375bc4f3a.jpg
+    - images/cover/4f20615bc1970c565c158045c536999e.jpg
+    - images/cover/dc6709b404b24e51e3599904b83b2b41.jpg
+    - images/cover/86bb0142cca734a96bbf43bb99573677.jpg
+    - images/cover/0980a964941d1fbc4c7334974c79a85a.jpg
+    - images/cover/11288e52c697b2b8ff0fc284645dd4d4.jpg
+    - images/cover/d9da87a1e3f043d646fba46ba8d132fd.jpg
+    - images/cover/730f90c6c764efefe987f9e6eb98bd04.jpg
+    - images/cover/6f7e8f1c9fb07537925109ea41fb8758.jpg
+    - images/cover/e05bff96e94ea94927e8650b25337459.jpg
+    - images/cover/8634bb9e4c584282c4f5370cc33d1f59.jpg
+    - images/cover/946d8e898b049fbb66ac2eb5cf3e051f.jpg
+    - images/cover/74e67921a3f2ad46206fda884ce7efab.jpg
+    - images/cover/b14737e793a1c261ab6283d52063d908.jpg
+    - images/cover/b8696edb929245ffac602ce2b6ec9787.jpg
+    - images/cover/58c83223e9827e0c103c005f83fc7207.jpg
+    - images/cover/753a97c0a0594ad27789038d7398453e.jpg
+    - images/cover/287a6408ca9dbcd5c52e8b2091eb504f.jpg
+    - images/cover/1f7d624990dd8976e9badb42bbf5487b.jpg
+    - images/cover/dcd1b1a85f754193c44d44458faf91f0.jpg
+    - images/cover/0fd492bd11dbdcb92f49322b05a3ffce.jpg
+    - images/cover/22526511e364796de0f6dff40a6649fe.jpg
+    - images/cover/701cc3b7ced3c1c84947e1ddb40f95b3.jpg
+    - images/cover/171b955f81f805447293b8120cad4eb5.jpg
+    - images/cover/36df6452e11b69c34e052b5f07f2a5e8.jpg
+    - images/cover/2dbfeddc435f18adec5d2471b6b3de2d.jpg
+    - images/cover/f5faaa9dd53529aad150bd593ed35e0d.jpg
+    - images/cover/30602edf954f3bd0224ed840823401b8.jpg
+    - images/cover/75f4253e71cf02071f94e866e1733839.jpg
+    - images/cover/af54fccb74c367ebf34be8e9db4c6517.jpg
+    - images/cover/27a460fb48e7547a6a0e4975526f249f.jpg
+    - images/cover/d2dea939b59cceb95835bb502e57ae61.jpg
+    - images/cover/0ce3074cd998fa5b815004de5305b3f1.jpg
+    - images/cover/907fc80ffeac17572ad695cf5d152807.jpg
+    - images/cover/813dd31d562e130ee90d1f9808b51250.jpg
+    - images/cover/13671885032e954304330c2b665afe71.jpg
+    - images/cover/7ea31013d9ee869d44b0ec7216bbd550.jpg
+    - images/cover/94e6eaeab773c9d3d992a9b0bdad4b58.jpg
+    - images/cover/3332dc02ec2a2d24c21fa2f38874ff44.jpg
+    - images/cover/9a4ca79d5b3782b84b553ee70e8211bd.jpg
+    - images/cover/2cbdaefd1e69cbb952965b6f89015e74.jpg
+    - images/cover/0b5a58f14325fa3d362f2fe139e8ed31.jpg
+    - images/cover/5142d5eb86b4e5a7894becc5ae2878a4.jpg
+    - images/cover/d91b58ffc6cc3048ff95574f00b09449.jpg
+    - images/cover/19f46a3997a9f8219f8c7ed29c5fec53.jpg
+    - images/cover/66ffb1c65866bf5b3395f1f2d7c6949a.jpg
+    - images/cover/ab4e952909b0ddf8111f6e486c16cd03.jpg
+    - images/cover/2cbc1a4008d224f9229b3346266349db.jpg
+    - images/cover/00361e81c0c06eb247675d6223781608.jpg
+    - images/cover/0348abbbc434fac60d744607a5ba7fb8.jpg
+    - images/cover/bce8211000556f58be89cee8ab94a4c8.jpg
+    - images/cover/6671767cbd8284ec408e0093fc6f4d6e.jpg
+    - images/cover/57e07e2f9847400eeb18e53191dfbf40.jpg
+    - images/cover/4524bcaab004f3e25a2bb7ee7f5e7408.jpg
+    - images/cover/bdc06737c381b84c111209c4a346bb8b.jpg
+    - images/cover/0ebf944abf54590d2e4edee5415332cd.jpg
+    - images/cover/98b04f6f5fc97be6d738daa9525b4b7b.jpg
+    - images/cover/3a5cb7090ad97e66931b5dbdef5dc505.jpg
+    - images/cover/3476f5f388a6d456033caf2d90632daf.jpg
+    - images/cover/7b260f260ad8d8d25f23403257b3396c.jpg
+    - images/cover/db1aa0745c24a28787e8fe227b67a5f2.jpg
+    - images/cover/65ef2e1ea6bdcba1d72d97be6c273bb4.jpg
+    - images/cover/7307121b840e86b0e5590149a3957dfc.jpg
+    - images/cover/86bb08a32c760198354e4f18723fdce3.jpg
+    - images/cover/0fa1b7d23289fa12fcbed2d5aaf9aedc.jpg
+    - images/cover/fe05facab28ea2edea444915b6ad21e8.jpg
+    - images/cover/166f02946e2ddd1a6d990661d51fde92.jpg
+    - images/cover/e26d0238af0d605368a0917b8d06d0ab.jpg
+    - images/cover/b633a295b629584ebfb267ec9880931b.jpg
+    - images/cover/964ed658509efc3c2038a4ea376da67f.jpg
+    - images/cover/28d75ec1a6939adbf404599f14f36844.jpg
+    - images/cover/40675fd3c6f7bcc418bc27e65b641af0.jpg
+    - images/cover/25a723f38a7cab37061d9ac958e27a8d.jpg
+    - images/cover/3517fccba403e019f4a727b80291d8f7.jpg
+    - images/cover/c01401eb011161b13a53b1dfb2c0f18f.jpg
+    - images/cover/b8cd1eada876d5590705a4fd84062332.jpg
+    - images/cover/9de320a83ba067433bc835b6a0213897.jpg
+    - images/cover/2da064a02381f044f34be00fe0015330.jpg
+    - images/cover/a8ce2c01400ff4d1584b58aa96ab78cf.jpg
+    - images/cover/e3322175447df44b17a2b5e25f942c04.jpg
+    - images/cover/7d6c8fe4b35d6bb7599eb0a439230068.jpg
+    - images/cover/3bfe9d0e56d537d82a0b41840ff8de6d.jpg
+    - images/cover/52408513090bfbab34c06e624ec968cd.jpg
+    - images/cover/2cec9cbf7fb9c314305b1685ad8987d3.jpg
+    - images/cover/abd0954b02b86fdd152e509172edc982.jpg
+    - images/cover/8bc4a23d93a120f289ec18349bc59b70.jpg
+    - images/cover/24b85c60935caa3144ccaac0f2ddd396.jpg
+    - images/cover/62540dca9bf8a2d8fcd4da2314ccd71b.jpg
+    - images/cover/217490607b82a3daf64f876ac92c73bc.jpg
+    - images/cover/eadc7de6dae197f3fc414fc186e897dc.jpg
+    - images/cover/b47df78230086a13374ab76572854e81.jpg
+    - images/cover/f5e475a762056ccf91c19f18b0ebe70b.jpg
+    - images/cover/a5bedb856fb21d1728d2c5e2a83968b3.jpg
+    - images/cover/5e33a6fe65f586c92f5c7b7e4b59821f.jpg
+    - images/cover/7e95c663d2811bcbbf6acc3925acb213.jpg
+    - images/cover/c863888b218105e129bd7cb4427ae2b0.jpg
+    - images/cover/5fd37ef90655cea98fe6f4b485cd381a.jpg
+    - images/cover/dad67b5d0b4182b7cfe1126831ec3139.jpg
+    - images/cover/bf3719b3b9c6f897ffaee43ad2b45228.jpg
+    - images/cover/3c0a25544d86489547c44b832efe558b.jpg
+    - images/cover/ff4491676df7ee401d97046f9720ed7a.jpg
+    - images/cover/74c5b91d0505fea5761177ad5fc54b79.jpg
+    - images/cover/8e574fcf8ba8dc6cd08e37517854d8d0.jpg
+    - images/cover/636bf1034c577225f0b09d3a5317e9cc.jpg
+    - images/cover/bc7cc1485c9af9a3ea15be2353cf0ba2.jpg
+    - images/cover/8ce57aa4bcf820d9a36e4355fe1b4dc2.jpg
+    - images/cover/af67839e7b2f23f765443b6a65a9d540.jpg
+    - images/cover/866229b921fdb3e84a0986fc2b88b877.jpg
+    - images/cover/658d960b59c48c4c66d3e743b1dd3b80.jpg
+    - images/cover/eef6f8a12ad8385526b1bfe00d303349.jpg
+    - images/cover/97f2f53f65d47e13b540ab871685a8f7.jpg
+    - images/cover/02cf005944c2193b14b9e66ea63116d9.jpg
+    - images/cover/f7e7677dded1c1ba636f497d78a1b131.jpg
+    - images/cover/662864a23878c16d9e9c920207ca3ada.jpg
+    - images/cover/bfe58c8ebbeab4f7812379edc9486356.jpg
+    - images/cover/2330ddd0c0a7c756b7492ffa6df73f63.jpg
+    - images/cover/a183cd0a4614cacceb018e143337cd70.jpg
+    - images/cover/92634c829e0bd3449cc1c046412eab82.jpg
+    - images/cover/f552f73d45976ca4ee1891f7fd4989f7.jpg
+    - images/cover/7ffa84f8dd8143b4cbb4d037a6094df4.jpg
+    - images/cover/982d2dd407a553c6fded64996ce49129.jpg
+    - images/cover/34bb140ad31f95e31d648a999da66ab1.jpg
+    - images/cover/4782f4a8889908651aa7756c12784a50.jpg
+    - images/cover/b64fb1a3f708fefe8efed69c4c796160.jpg
+    - images/cover/161aaba821f93d2cf83eac06d2b9a1ef.jpg
+    - images/cover/ddad49eb5b145caf43fc58b3f172e82b.jpg
+    - images/cover/950e47e2cbce7acef2a4d9432bbda6be.jpg
+    - images/cover/380eed78c6f328a07d6b4a3d4bc93336.jpg
+    - images/cover/2b32b8de4fbc4b67731d56a36a1049b2.jpg
+    - images/cover/4e2eee3dcbc47730df9b0e6637cdaf22.jpg
+    - images/cover/2cfbc5f6ea6af23e206e5023ba1c76ec.jpg
+    - images/cover/5ac523ce5e268a9177ed998dffee7571.jpg
+    - images/cover/ebaa6a74d50fec8ef83bead445b983b1.jpg
+    - images/cover/767711db5acaa0365330775303682c21.jpg
+    - images/cover/5439e7927abef65bb422c7dea7c221eb.jpg
+    - images/cover/650f8527ab0f1923ccdfdcd34502cfcc.jpg
+    - images/cover/d5f129ada9a764b9380ec1848f0e0a46.jpg
+    - images/cover/591b345fcb5ee54056aabc52d3e9f256.jpg
+    - images/cover/b387cc7a850148089f5ca022f6483b5c.jpg
+    - images/cover/456d8e3849385af9bad5402ded76fb27.jpg
+    - images/cover/7dfe6dc1982a2ba785e58feef24823b5.jpg
+    - images/cover/1f79afe0e9d2a5fb164625bdfd62eadb.jpg
+    - images/cover/4039175f7b553762bebb00ced9612240.jpg
+    - images/cover/257355af94b35d4bf0ce59505f35b6ff.jpg
+    - images/cover/943698dc97505aa19bae0d1c60cc9471.jpg
+    - images/cover/34721cdd520e2acd678929d1c90c6342.jpg
+    - images/cover/0da1f0383401934c3d6edb4551575c4d.jpg
+    - images/cover/cc6baf3e81157fa69f382ce97614d5ae.jpg
+    - images/cover/573e9e559e91a4ea92c5ce4ff3bf6e0a.jpg
+    - images/cover/a22598f204221fdae1ff079322485794.jpg
+    - images/cover/03d86b7602974dd48c643dc122b62ac1.jpg
+    - images/cover/3f975a24c48986338f9e0d8276a63d30.jpg
+    - images/cover/20dd691a7df91d2f1dcde0c8d4095833.jpg
+    - images/cover/bf06278fa9ce65b6cf28ac239fcaec38.jpg
+    - images/cover/79633e7b07c08416c1394453de1c2336.jpg
+    - images/cover/f78772ae09e4bdc634e909d8c202213b.jpg
+    - images/cover/a7ccc5b1827677e024457db54d947a17.jpg
+    - images/cover/0598b55a5b0cda486d956bbe4c8db1bb.jpg
+    - images/cover/609819ce96dbe2f1fe9183d97f1815c1.jpg
+    - images/cover/67aa61085f3e79d81230a3342e8424a4.jpg
+    - images/cover/10ba4f10ce40ed8ef3473c6f4236183e.jpg
+    - images/cover/f1a75c7c8446aee0f658ca29a2aa7c10.jpg
+    - images/cover/2aa8942ed72f5c5208f5b958c7f88895.jpg
+    - images/cover/3fbea27960c170b665a1975aa8a7d8af.jpg
+    - images/cover/3efa94fe0f13cd78aa0b106f5093be4a.jpg
+    - images/cover/4e49e4c7bd38965924cea1b7cf76a42c.jpg
+    - images/cover/91ae1bf3829b3d82ae4e59743501f451.jpg
+    - images/cover/668b0b845854cfb63a50dd902b26f1a8.jpg
+    - images/cover/affb24b326a20ab1ab8c6be3abe256d0.jpg
+    - images/cover/83cb059616642e86a18ef42dc6f27eb9.jpg
+    - images/cover/0ce2ea55cb2a9761bb1a004f2f3ea9e0.jpg
+    - images/cover/c7a3a3e3bb4c2219051acf05ad97c6f1.jpg
+    - images/cover/6038d346339f646e513f0f82892f497d.jpg
+    - images/cover/9fd91bc11219577934912f47cdf38612.jpg
+    - images/cover/3b1cc8d64c4f5a3f95d11e4521ca5bc2.jpg
+    - images/cover/6b4b72caafd060e1d84ae4a7ea0b6c9b.jpg
+    - images/cover/289f858e61ed66cd0a900629adf3f937.jpg
+    - images/cover/33545100f9b99e716feb338cccad1378.jpg
+    - images/cover/19176eb68bf0e19b2a4b245e2d68dcee.jpg
+    - images/cover/4aafdb5e6c3a929c4b533901ca4ac60e.jpg
+    - images/cover/33431128ab60c346a1aa684ddd87be4a.jpg
+    - images/cover/895b4ea119e9c798f1be380eb21ebb8c.jpg
+    - images/cover/5d068e8b10ae5968ec981419b72c7d52.jpg
+    - images/cover/e2847d9eba38ad7fd2dea724e6b1ef16.jpg
+    - images/cover/2abc62d7f463a7c98da46f24a3979ee8.jpg
+    - images/cover/682109aa141dba18aef4169e376ebbdc.jpg
+    - images/cover/9b8db3ca82c46f212ad68059cb4d5917.jpg
+    - images/cover/811eb127ea1130a0365b328568e7dadc.jpg
+    - images/cover/9ae54dbc8c229298466efce1cbc7bdf6.jpg
+    - images/cover/e479d3be6b743b1cd34fa90d8880fdde.jpg
+    - images/cover/7ffb016d39c271307ffc1b437453671e.jpg
+    - images/cover/7f1a7795530d5f7e1095f9c1e335b2fa.jpg
+    - images/cover/e3e75fc78f66515652b2e4ddec1eaec4.jpg
+    - images/cover/7267ed2693355f30c979d064e940fb4b.jpg
+    - images/cover/358fceeb6b42ab301074aede33d8c708.jpg
+    - images/cover/9453a9705d346dfc658a5ddb53237e73.jpg
+    - images/cover/5625c317429c3fc781bd98a6926a7d4b.jpg
+    - images/cover/ad56289e7dea5acb3c18d92f23dbf6e1.jpg
+    - images/cover/b51c3f509ada694194892de3bf8b53f4.jpg
+    - images/cover/5d524abed5228ae462cc901d64f53888.jpg
+    - images/cover/fd9aeea14d00f6d834b87ac36d63e9f3.jpg
+    - images/cover/2847a1f2ddca5e029134279b09453790.jpg
+    - images/cover/5900e4ebe539792d4e29a3f1a2076300.jpg
+    - images/cover/41e2d2a2391372d9d0bd504498e0a588.jpg
+    - images/cover/cfa4c3e3fe465bd027c678bbac23d7d5.jpg
+    - images/cover/402e41b43d891f6f798c3adbd0d6cb46.jpg
+    - images/cover/e1304e0c458bdba6d93de1a9bee82ef6.jpg
+    - images/cover/438a55e5eb3b1567aeed7f214ef042bd.jpg
+    - images/cover/e5858ec10a97ec430517a0555d7dce47.jpg
+    - images/cover/76cf9085d83d652e40c8a06e73944cf5.jpg
+    - images/cover/83e57c386157597134fa1515bfe7b3c3.jpg
+    - images/cover/17a28835298b87098b781cfa950d0619.jpg
+    - images/cover/44fc458560d214cea785d1b1c6cca00f.jpg
+    - images/cover/5d638185d53b9f1eb52f53bb7cf0c201.jpg
+    - images/cover/2ab6e9bc17b0b4f459d27d844bcdbd50.jpg
+    - images/cover/b1bdb5ad54535721b835c2896f05e3c2.jpg
+    - images/cover/7d3abe71acf15e270fb411f568cf70d9.jpg
+    - images/cover/8fc67c5c3a1be97bc36e91bde6993028.jpg
+    - images/cover/e343bd8ab7553898fda2ebbfd8f266a0.jpg
+    - images/cover/b028ca49e9603dbbb30935998469c5b9.jpg
+    - images/cover/b309be3d5b52b1bd67e277f30a3df5d9.jpg
+    - images/cover/babf5248c5649a3740f29d8d2ca5d475.jpg
+    - images/cover/59aff996df57ccfcc138d6c5f31b71bf.jpg
+    - images/cover/049bd84e63aaa680a571005d86131b70.jpg
+    - images/cover/78523e8d23e82225f5f24763d3d700c9.jpg
+    - images/cover/d7ad90188f18b106545819a227c38497.jpg
+    - images/cover/1cd34bdd29bcb4f00c4f2f0552df1562.jpg
+    - images/cover/a451711864e94e4ae6ac62476aa21bb1.jpg
+    - images/cover/31d9cfc7b90e3bbec9ea840138d30a97.jpg
+    - images/cover/931f7e5b9113cbc63290b005b15b0edc.jpg
+    - images/cover/98ab8a8c682092298aaa9d202f455723.jpg
+    - images/cover/d3c5558946d8cde59c09e4e2fa9e7b1c.jpg
+    - images/cover/efeec36218afc7f6736aaaaf1029e126.jpg
+    - images/cover/27a701d6f4718204af5f954c0dd3303d.jpg
+    - images/cover/31c45effe113d8cb4b13a86bbe6a6acb.jpg
+    - images/cover/efc072a366725264edb6224cde9de614.jpg
+    - images/cover/a0dfc654e1d6bcf2386cba55cc696a2b.jpg
+    - images/cover/9e3178be6e0fb1b663d80be138d6fe12.jpg
+    - images/cover/96aafa853160a0113f9e857d4bd05dc9.jpg
+    - images/cover/700af80ff3bfa13947177753c502ea5b.jpg
+    - images/cover/a64fee0f148fb85befd19a83840f6e22.jpg
+    - images/cover/cdc795a357cc776d81dd581124b4c1c4.jpg
+    - images/cover/ca15164ab6151d267521a6bfd7db6f1d.jpg
+    - images/cover/88cb9bd9f0b8d1b06b7842915c2a8f32.jpg
+    - images/cover/bf71c0ef50bc7e46c7a5ac16e6493093.jpg
+    - images/cover/6019f28a8b0fa9eb863342b0f9c2af75.jpg
+    - images/cover/b46e6b78841871efafbf6f05f1c1b8dd.jpg
+    - images/cover/4ca7eb631941bc5abf7dd4a40d3ca23a.jpg
+    - images/cover/81241b9dd3db74737ca81e53d2a98e10.jpg
+    - images/cover/865ad0dc819a656bd9bee005cc4a4ebe.jpg
+    - images/cover/cce4ab4a62bf6ce2b3ef30c37a68f267.jpg
+    - images/cover/e36a5218a93ad6eb813c1a710dcbef08.jpg
+    - images/cover/4e571bc3e85561e037861453531fcc04.jpg
+    - images/cover/bef6fa3d96045319af8e423566778820.jpg
+    - images/cover/1bd5684a94ff14345f1cd20ac05098cd.jpg
+    - images/cover/625e9aa6c5ff2eef296b69886b1165fd.jpg
+    - images/cover/204d291486424b0d0d7d2953a5e2b32d.jpg
+    - images/cover/819428c8a5f0a5475bd091ab6cb5c388.jpg
+    - images/cover/e7a03e869c702163e578d323368bdf9e.jpg
+    - images/cover/27e0d0fb8c4aadf83a5b36bd71d52f6d.jpg
+    - images/cover/890e2a039cc08e85c21de2056091c2e8.jpg
+    - images/cover/1fad4a93e06062bbb8261574643c3bce.jpg
+    - images/cover/ec033b4b69a2e6ddea9c91f77735cc71.jpg
+    - images/cover/114c870878e64ecbf5a4e0f516b7053c.jpg
+    - images/cover/e4606286b862ef95597921eebdaf9c46.jpg
+    - images/cover/dc716ad0a031701fc8613669128f7f3c.jpg
+    - images/cover/d7042fb72eb6c6acc4d2b0d1d631142b.jpg
+    - images/cover/48b95c191eb002f3e250bab53c3207af.jpg
+    - images/cover/d3e0596a5b5a3ea6b2fb34f831a520cf.jpg
+    - images/cover/19bc14968327e1c329643e6a67b20cfa.jpg
+    - images/cover/76d895cfef5cacbe6a158ef21948ccd3.jpg
+    - images/cover/9c1ae44e4b052cfe9e7f2578843da46c.jpg
+    - images/cover/3ee8e434162ca2da34b28fbc154cc9bb.jpg
+    - images/cover/dd8e32f993a7363ec78fd6737cca8f5f.jpg
+    - images/cover/ae37487836757e9953b39cfea95e4699.jpg
+    - images/cover/34dbfcb020efdd2b58cf894e2e25d33d.jpg
+    - images/cover/2090a8723f336b25739f986c84d7b634.jpg
+    - images/cover/19050ec229bfa7a2bde72e8390edc46d.jpg
+    - images/cover/2beb086a68c3251f8d3d899ec1ff3fce.jpg
+    - images/cover/182cc503463001b599d919da44c8a81d.jpg
+    - images/cover/338bc74329428789517cc6f1e4fea45b.jpg
+    - images/cover/6cc73fd5aa1a1b39f26f0c7fb6ed1339.jpg
+    - images/cover/300d4f02abd67a4c9e185be5cbaf95a1.jpg
+    - images/cover/539762b5fd20cadacff2cb9a6fccb54d.jpg
+    - images/cover/c5e24934e2d3c5dde9eeec0a419adb57.jpg
+    - images/cover/a0739f0383751553f76291e9887775de.jpg
+    - images/cover/994293b061598ad051e394447cc6e39f.jpg
+    - images/cover/933fb3b7572f5c5bbd49e7f709eb3ffe.jpg
+    - images/cover/dd3e81f8ed4a829fe24d19bdf3407002.jpg
+    - images/cover/6713d1acd27c52745468e3ac685bbb9e.jpg
+    - images/cover/95b50bb227e922be5c0a31d69c4a6706.jpg
+    - images/cover/88ebf6fefe35f747175f35b1b6e348d9.jpg
+    - images/cover/bbebe810e669a18723afb6ea2718e978.jpg
+    - images/cover/51a21182241dfacb1aa7a31a3eb5e698.jpg
+    - images/cover/b1a3fc2cff691b5d0e4375c047f859c6.jpg
+    - images/cover/edd5a2f60e894e86e80eee6f290d2b8e.jpg
+    - images/cover/d475c7053c8f5786cfbcfe0ae751c2c8.jpg
+    - images/cover/189525edc56114c0d99ffd15827b64de.jpg
+    - images/cover/50bb9f546a77a5553bc1d91cc80a67aa.jpg
+    - images/cover/8174b80c5480a78705e4bd79e89bb16b.jpg
+    - images/cover/15aca8386141d6377ca6178b3ffa603f.jpg
+    - images/cover/79dc7fbe204efdb36a402a2d11b9dd4d.jpg
+    - images/cover/8baea13f9d6ab68098adfc36c9166682.jpg
+    - images/cover/9202974e9978d3c74c021a5c0d2db2d8.jpg
+    - images/cover/59b7c1f37e0cefbeebe4ba7f5909a5d8.jpg
+    - images/cover/28651c8772d3338a872d55eb57181f9a.jpg
+    - images/cover/4cd2b78d73ea5db7834c637599f13413.jpg
+    - images/cover/f48020fb8bc9c70ca605247979eff2c4.jpg
+    - images/cover/10ad852efd7a54894ddc21a45df76711.jpg
+    - images/cover/0c33e854aa0ea8f6bcc7965edf85af63.jpg
+    - images/cover/468914984b16642db2f807cf41bd64a4.jpg
+    - images/cover/96133e74ed1915b646f89234ddc81846.jpg
+    - images/cover/1f478221863c123593af8ac256c73d9e.jpg
+    - images/cover/51a19f40c785b7f1664c566c8758c530.jpg
+    - images/cover/ca66ff52f9c6d0edcf9bce42a466196f.jpg
+    - images/cover/b37b9cf74c5242804e2c2ac206faaddf.jpg
+    - images/cover/976e5368f7158663c1e8491fc9b55f69.jpg
+    - images/cover/7a777c0841223fdd728aef3742360204.jpg
+    - images/cover/879d4da59b8a236759d90aac0bff084a.jpg
+    - images/cover/3699560a3ba353a90e1068e8201445ee.jpg
+    - images/cover/8768c688137d04ec81e2284fdacf3897.jpg
+    - images/cover/52cd5906077a00c2994afa2a8a0d63dd.jpg
+    - images/cover/0ea5e500a01c51f102ad86c3595d9ee0.jpg
+    - images/cover/6bd5c98256b1abe9a50063701580f451.jpg
+    - images/cover/76d487c8cc193327de59676f3a84bcad.jpg
+    - images/cover/506eab5307d38ec2e2eebbf5bea8850e.jpg
+    - images/cover/b0f163df9739822e800409b692e3d0e7.jpg
+    - images/cover/69cc243e3197b7254535ce6ae8da2bbe.jpg
+    - images/cover/53da25b49647844550540d1ff2f9c8b2.jpg
+    - images/cover/e7992f7dc894512636bf7b128b17a3cb.jpg
+    - images/cover/69f7e0c7fdf1f0537a6220de2d6e6188.jpg
+    - images/cover/985b0e16fc0a7322d16aa636f0ed7472.jpg
+    - images/cover/b3aadb957451bc3c5bc1af8a67559c92.jpg
+    - images/cover/887c9098b766b342f4416ce8e705aab1.jpg
+    - images/cover/14b978489d447417d66d983bba2b72eb.jpg
+    - images/cover/f158529f318878e1e493b74f6bdafec8.jpg
+    - images/cover/f4461f5dca28971008f0bd8d7fd618d0.jpg
+    - images/cover/52d08016a23838a2fb82a2ce1233d4d6.jpg
+    - images/cover/ef13bb995fa316cecbd9bdc84651bf59.jpg
+    - images/cover/3d8a4638f5f84948ef2eb5d3da54e377.jpg
+    - images/cover/55c1bc10d88f25313faa04ac47cdaa3f.jpg
+    - images/cover/cc46a73d8a8e07092814f4ced8b8a5f9.jpg
+    - images/cover/a36731f6f557f3fcfb7885446f30fb5c.jpg
+    - images/cover/7224c59cdfbdf8d288f8e05b7a94d1b0.jpg
+    - images/cover/c773b75e28931fd68a1d999fa08c2a18.jpg
+    - images/cover/03617df5a5719bdcbc7193834c8edd42.jpg
+    - images/cover/21f8ce80dacf80c007277de3d78ea3de.jpg
+    - images/cover/374ac1c06fc51b02ff2e316b9d285c70.jpg
+    - images/cover/45944557490ede9d476fa5a86e8a962e.jpg
+    - images/cover/cf1b6b891eaee3db402425d1bcdb97dc.jpg
+    - images/cover/3599ef15500a30088cadf02f06b1e1e9.jpg
+    - images/cover/833f7111a26d7832ab38fde51b58469c.jpg
+    - images/cover/de1c85f7f5e983c3b63934f17fe1f57d.jpg
+    - images/cover/c997626dc86c84de4f2e2b008992c584.jpg
+    - images/cover/48c0bac15393406ca3ef498764fd6f61.jpg
+    - images/cover/bd4f01f7df1f4c15f6c2fabff12154c0.jpg
+    - images/cover/092bcbce38a953046fde7ab78bd86e6d.jpg
+    - images/cover/30b2cf11e59c965a4c63a9922a8c27b4.jpg
+    - images/cover/effd9f8f4dd08f62cb80e39d67cd99c5.jpg
+    - images/cover/13d57deca98b229c16d7e0984716ea14.jpg
+    - images/cover/50e661a7bea685aa6f6c149984797c27.jpg
+    - images/cover/3a201f30e60a28f948488cd6fe1bfe75.jpg
+    - images/cover/677596cfa5ad556cf218159d09b51ebb.jpg
+    - images/cover/e4ee5047d03bd5ea04bea19d8e717a69.jpg
+    - images/cover/a710045b1f42f303d8f8b5bf3f2df83d.jpg
+    - images/cover/41838114bbcb768069ad69b5ef6b4d40.jpg
+    - images/cover/73f44d93e8747a2d9920ce69eda051ad.jpg
+    - images/cover/ac8cb247982540b53d381c797c89afdd.jpg
+    - images/cover/958198c32e75251f0266905b23545a23.jpg
+    - images/cover/1aa111e9fe571c67d3fe0d1d5c4af0d0.jpg
+    - images/cover/8ef5207ad4d009e030d2368af65a132e.jpg
+    - images/cover/a90ec2c645056e967122f6185825f9eb.jpg
+    - images/cover/21f8b0e69a237e5646ba1dadff9d9cd8.jpg
+    - images/cover/1208711a611add265f789622e62d9c8b.jpg
+    - images/cover/1a66c9ba1d218219c7d24e168a61e409.jpg
+    - images/cover/2f7e66fd17a6d4b72da724566b9bf846.jpg
+    - images/cover/7a9e3e2c90dc86560a38a513d3dc2cd4.jpg
+    - images/cover/ab72b92d317ac75d4dfd7a00b6396e64.jpg
+    - images/cover/bd0e81e0ae97bccb81757b89f8b2cd65.jpg
+    - images/cover/573473ac1a2e3b7d72f90e24b523bc5b.jpg
+    - images/cover/011d75b688337709a9d7ab9daec477ac.jpg
+    - images/cover/ba193aeaf41d914ff2d5753ead451889.jpg
+    - images/cover/6f15a5d1184012bac45b5fc2d5d7e95f.jpg
+    - images/cover/72895d6858db627800496659b9c74556.jpg
+    - images/cover/a04918e83eb48330f3ad4fa086a42504.jpg
+    - images/cover/fe1bf8deb07cb933fc71341ef9a5bc37.jpg
+    - images/cover/77e878de281ae8741f24987ddab9552b.jpg
+    - images/cover/37822a10381dd67a8d92538371a74979.jpg
+    - images/cover/e7bf8bf57a0a2efafd26dd6480259fa6.jpg
+    - images/cover/113effca79a9d3ee3a6fcf8a9bc127a3.jpg
+    - images/cover/5ae6ce14ecd89b8c12556e847903358f.jpg
+    - images/cover/de731cf9367cf84474b6d3878e926c0e.jpg
+    - images/cover/6b86671a7024bdc99d06aeeac58c0a3b.jpg
+    - images/cover/8e39eddf96b0b8cf8aad586af3a1a750.jpg
+    - images/cover/d44af3ff0e819da29a27037df5b3fa7e.jpg
+    - images/cover/6fdd326391f15d75a4240d8c85e5fa4b.jpg
+    - images/cover/1dc7b92ba5ce3d4296ff5e19f005b706.jpg
+    - images/cover/040a490a063c85af27cae675a2900aaf.jpg
+    - images/cover/40389c431a36873973a344a7d26997c9.jpg
+    - images/cover/92e4e9913c820697a6bbfb8a2f2e1463.jpg
+    - images/cover/741ada620b25bb6bf853ae3dd8c8733a.jpg
+    - images/cover/316ed26298976784eabcafc9178db94a.jpg
+    - images/cover/5d973f6f9199c862f3de460dcb3d3cbd.jpg
+    - images/cover/de1c62479492157db9ae34a1558d595d.jpg
+    - images/cover/39db320740dba34a15ffa8909456645a.jpg
+    - images/cover/8a5a10656d581bd6b3dbbe8b31463ca4.jpg
+    - images/cover/f463acec0ab69ca0abdc8b4f634483f8.jpg
+    - images/cover/660a54f9583efb07e7a2cd00caac1bf0.jpg
+    - images/cover/3e2e76f1318158a7069f9121e00178f8.jpg
+    - images/cover/a39c139dad2ef650c5d173d4a3a0a86c.jpg
+    - images/cover/ac92b4a1ad9f9027d0104737977dbbda.jpg
+    - images/cover/31e9fcdc09f844d15848bf717b21dfd5.jpg
+    - images/cover/4e6538300177c3b1f8f357232eb1b912.jpg
+    - images/cover/7cd5242b4f920be5a05a5055814bd169.jpg
+    - images/cover/a4fd85ee83ddd90c0763ebd751d994cc.jpg
+    - images/cover/a287ff0e990302207820b5ee287ef8a5.jpg
+    - images/cover/176c5ca8ff07f9dc8857c805ce9b3712.jpg
+    - images/cover/1cc28d09a64a17b945a8fbe12b855c41.jpg
+    - images/cover/bd77cf522c8d4e0a5258abd8ba957c7b.jpg
+    - images/cover/74912bd499a0d9ac191ad36c869d97bc.jpg
+    - images/cover/9730b7d8f497d0410c4a14e3881316f8.jpg
+    - images/cover/0c4a1f24f6dcb707980514b501666e26.jpg
+    - images/cover/8d787e9d98d36965d54e9537bb126d61.jpg
+    - images/cover/329f3ed0ca2047c9c63d849b17709556.jpg
+    - images/cover/bbd868fdc1ba2e4630d63308b58814f8.jpg
+    - images/cover/c3b8392cc13621b0706314d37dd2ce17.jpg
+    - images/cover/b82e9b3018776aca32d12e6af0567f08.jpg
+    - images/cover/c57b218e3c2673bd88f16a9b802c756c.jpg
+    - images/cover/f60549e80a30aa9a88ca9688e22a76a0.jpg
+    - images/cover/3f8e9d331bf6774afebcb1a1487bbcae.jpg
+    - images/cover/e7a9311a958a45a33355dc776f168d82.jpg
+    - images/cover/cfc5e20e12bb509d567df4b55a784857.jpg
+    - images/cover/c77015d7a0d1089993e661c447305e4f.jpg
+    - images/cover/2996f62768a073950025fb69f4b87864.jpg
+    - images/cover/07111b536866e526abd9fffb52561d58.jpg
+    - images/cover/a7a9e8dd51859cba552773e08c824fbd.jpg
+    - images/cover/b3269c01c2b41aadd15e6b3238f28393.jpg
+    - images/cover/e6b07604b4c34a95f204fd467755fbc8.jpg
+
+
+# Replace Broken Images (替換無法顯示的圖片)
+error_img:
+  flink: /img/friend_404.gif
+  post_page: /img/404.jpg
+
+# A simple 404 page
+error_404:
+  enable: false
+  subtitle: 'Page Not Found'
+  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+
+post_meta:
+  page: # Home Page
+    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_format: date # date/relative 顯示日期還是相對日期
+    categories: true # true or false 主頁是否顯示分類
+    tags: false # true or false 主頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
+  post:
+    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    date_format: date # date/relative 顯示日期還是相對日期
+    categories: true # true or false 文章頁是否顯示分類
+    tags: true # true or false 文章頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
+
+# wordcount (字數統計)
+wordcount:
+  enable: false
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# Display the article introduction on homepage
+# 1: description
+# 2: both (if the description exists, it will show description, or show the auto_excerpt)
+# 3: auto_excerpt (default)
+# false: do not show the article introduction
+index_post_content:
+  method: 3
+  length: 500 # if you set method to 2 or 3, the length need to config
+
+# Post
+# --------------------------------------
+
+# toc (目錄)
+toc:
+  enable: true
+  number: true
+
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Sponsor/reward
+reward:
+  enable: false
+  QR_code:
+    # - img: /img/wechat.jpg
+    #   link:
+    #   text: wechat
+    # - img: /img/alipay.jpg
+    #   link:
+    #   text: alipay
+
+# Related Articles
+related_post:
+  enable: true
+  limit: 6 # Number of posts displayed
+  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+
+# figcaption (圖片描述文字)
+photofigcaption: false
+
+# anchor
+# when you scroll in post, the URL will update according to header id.
+anchor: true
+
+# Displays outdated notice for a post (文章過期提醒)
+noticeOutdate:
+  enable: false
+  style: flat # style: simple/flat
+  limit_day: 500 # When will it be shown
+  position: top # position: top/bottom
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
+
+# Share System (分享功能)
+# --------------------------------------
+
+# AddThis
+# https://www.addthis.com/
+addThis:
+  enable: false
+  pubid:
+
+# Share.js
+# https://github.com/overtrue/share.js
+sharejs:
+  enable: true
+  sites: facebook,twitter,wechat,weibo,qq
+
+# AddToAny
+# https://www.addtoany.com/
+addtoany:
+  enable: false
+  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
+
+# Comments System
+# --------------------------------------
+
+comments:
+  # Up to two comments system, the first will be shown as default
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
+  use:
+    - Utterances
+  # - Valine
+  # - Disqus
+  text: true # Display the comment name next to the button
+  # lazyload: The comment system will be load when comment element enters the browser's viewport.
+  # If you set it to true, the comment count will be invalid
+  lazyload: false
+  count: true # Display comment count in top_img
+
+# disqus
+# https://disqus.com/
+disqus:
+  shortname:
+
+# Alternative Disqus - Render comments with Disqus API
+# DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
+# https://github.com/SukkaW/DisqusJS
+disqusjs:
+  shortname:
+  siteName:
+  apikey:
+  api:
+  nocomment: # display when a blog post or an article has no comment attached
+  admin:
+  adminLabel:
+
+# livere (來必力)
+# https://www.livere.com/
+livere:
+  uid:
+
+# gitalk
+# https://github.com/gitalk/gitalk
+gitalk:
+  client_id: d7b75cbe4cf3c10bd4a3
+  client_secret: 844166cabdc9b8780978897a58d3f7c7299ebe1e
+  repo: chenll7.github.io
+  owner: chenll7
+  admin: ["chenll7"]
+  language: en # en, zh-CN, zh-TW, es-ES, fr, ru
+  perPage: 10 # Pagination size, with maximum 100.
+  distractionFreeMode: false # Facebook-like distraction free mode.
+  pagerDirection: last # Comment sorting direction, available values are last and first.
+  createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
+
+# valine
+# https://valine.js.org
+valine:
+  appId: # leancloud application app id
+  appKey: # leancloud application app key
+  pageSize: 10 # comment list page size
+  avatar: monsterid # gravatar style https://valine.js.org/#/avatar
+  lang: en # i18n: zh-CN/zh-TW/en/ja
+  placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)
+  guest_info: nick,mail,link # valine comment header info (nick/mail/link)
+  recordIP: false # Record reviewer IP
+  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  bg: # valine background
+  emojiCDN: # emoji CDN
+  enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: nick,mail # required fields (nick/mail)
+  option:
+
+# utterances
+# https://utteranc.es/
+utterances:
+  repo: chenll7/chenll7.github.io
+  # Issue Mapping: pathname/url/title/og:title
+  issue_term: pathname
+  # Theme: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
+  light_theme: github-light
+  dark_theme: photon-dark
+
+# Facebook Comments Plugin
+# https://developers.facebook.com/docs/plugins/comments/
+facebook_comments:
+  app_id:
+  user_id: # optional
+  pageSize: 10 # The number of comments to show
+  order_by: social # social/time/reverse_time
+  lang: en_US # Language en_US/zh_CN/zh_TW and so on
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
+
+# Chat Services
+# --------------------------------------
+
+# Chat Button [recommend]
+# It will create a button in the bottom right corner of website, and hide the origin button
+chat_btn: false
+
+# The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
+chat_hide_show: false
+
+# chatra
+# https://chatra.io/
+chatra:
+  enable: false
+  id:
+
+# tidio
+# https://www.tidio.com/
+tidio:
+  enable: false
+  public_key:
+
+# daovoice
+# http://daovoice.io/
+daovoice:
+  enable: false
+  app_id:
+
+# gitter
+# https://gitter.im/
+gitter:
+  enable: false
+  room:
+
+# crisp
+# https://crisp.chat/en/
+crisp:
+  enable: false
+  website_id:
+
+# Footer Settings
+# --------------------------------------
+footer:
+  owner:
+    enable: true
+    since: 2020
+  custom_text:
+  copyright: true # Copyright of theme and framework
+  ICP: # Chinese ICP License
+    enable: false
+    url:
+    text:
+    icon: /images/favicon.ico
+
+# Analysis
+# --------------------------------------
+
+# Baidu Analytics
+# https://tongji.baidu.com/web/welcome/login
+baidu_analytics:
+
+# Google Analytics
+# https://analytics.google.com/analytics/web/
+google_analytics:
+
+# Tencent Analytics ID
+# https://mta.qq.com
+tencent_analytics:
+
+# CNZZ Analytics
+# https://www.umeng.com/
+cnzz_analytics:
+
+# Advertisement
+# --------------------------------------
+
+# Google Adsense (谷歌廣告)
+google_adsense:
+  enable: false
+  auto_ads: true
+  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+  client:
+  enable_page_level_ads: true
+
+# Insert ads manually (手動插入廣告)
+# ad:
+#   index:
+#   aside:
+#   post:
+
+# Verification (站長驗證)
+# --------------------------------------
+
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+google_site_verification:
+
+# Bing Webmaster tools verification setting
+# See: https://www.bing.com/webmaster/
+bing_site_verification:
+
+# Baidu Webmaster tools verification setting
+# See: https://ziyuan.baidu.com/site/
+baidu_site_verification:
+
+# 360 Webmaster tools verification setting
+# see http://zhanzhang.so.com/
+qihu_site_verification:
+
+# Yandex Webmaster tools verification setting
+# see https://webmaster.yandex.com/
+yandex_site_verification:
+
+# Beautify/Effect (美化/效果)
+# --------------------------------------
+
+# Theme color for customize
+# Notice: color value must in double quotes like "#000" or may cause error!
+
+# theme_color:
+#   enable: true
+#   main: "#49B1F5"
+#   paginator: "#00c4b6"
+#   button_hover: "#FF7242"
+#   text_selection: "#00c4b6"
+#   link_color: "#99a9bf"
+#   meta_color: "#858585"
+#   hr_color: "#A4D8FA"
+#   code_foreground: "#F47466"
+#   code_background: "rgba(27, 31, 35, .05)"
+#   toc_color: "#00c4b6"
+#   blockquote_padding_color: "#49b1f5"
+#   blockquote_background_color: "#49b1f5"
+
+# The top_img settings of home page
+# default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
+# The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
+index_site_info_top:
+# The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
+index_top_img_height:
+
+# The user interface setting of category and tag page (category和tag頁的UI設置)
+# index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
+# default - same as archives UI 默認跟archives頁面UI一樣
+category_ui: # 留空或 index
+tag_ui: # 留空或 index
+
+# Website Background (設置網站背景)
+# can set it to color or image (可設置圖片 或者 顔色)
+# The formal of image: url(http://xxxxxx.com/xxx.jpg)
+background:
+
+# Footer Background
+footer_bg: false
+
+# the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
+rightside-bottom:
+
+# Enter transitions (開啓網頁進入效果)
+enter_transitions: true
+
+# Background effects (背景特效)
+# --------------------------------------
+
+# canvas_ribbon (靜止彩帶背景)
+# See: https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: false
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
+  mobile: false
+
+# Fluttering Ribbon (動態彩帶)
+canvas_fluttering_ribbon:
+  enable: false
+  mobile: false
+
+# canvas_nest
+# https://github.com/hustcc/canvas-nest.js
+canvas_nest:
+  enable: false
+  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  opacity: 0.7 # the opacity of line (0~1), default: 0.5.
+  zIndex: -1 # z-index property of the background, default: -1.
+  count: 99 # the number of lines, default: 99.
+  mobile: false
+
+# Typewriter Effect (打字效果)
+# https://github.com/disjukr/activate-power-mode
+activate_power_mode:
+  enable: false
+  colorful: true # open particle animation (冒光特效)
+  shake: true #  open shake (抖動特效)
+  mobile: false
+
+# Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
+fireworks:
+  enable: false
+  zIndex: 9999 # -1 or 9999
+  mobile: false
+
+# Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
+click_heart:
+  enable: false
+  mobile: false
+
+# Mouse click effects: words (鼠標點擊效果: 文字)
+ClickShowText:
+  enable: false
+  text:
+    # - I
+    # - LOVE
+    # - YOU
+  fontSize: 15px
+  mobile: false
+
+# Default display mode (網站默認的顯示模式)
+# light (default) / dark
+display_mode: light
+
+# Beautify (美化頁面顯示)
+beautify:
+  enable: false
+  field: post # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: '#F47466'
+
+# Global font settings
+# Don't modify the following settings unless you know how they work (非必要不要修改)
+font:
+  global-font-size:
+  code-font-size:
+  font-family:
+  code-font-family:
+
+# Font settings for the site title and site subtitle
+# 左上角網站名字 主頁居中網站名字
+blog_title_font:
+  font_link:
+  font-family:
+
+# The setting of divider icon (水平分隔線圖標設置)
+hr_icon:
+  enable: true
+  icon: # the unicode value of Font Awesome icon, such as '\3423'
+  icon-top:
+
+# the subtitle on homepage (主頁subtitle)
+subtitle:
+  enable: false
+  # Typewriter Effect (打字效果)
+  effect: true
+  # loop (循環打字)
+  loop: true
+  # source調用第三方服務
+  # source: false 關閉調用
+  # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
+  # source: 2  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: 3  調用一句網（簡體） http://yijuzhan.com/
+  # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
+  source: false
+  # 如果有英文逗號' , ',請使用轉義字元 &#44;
+  # 如果有英文雙引號' " ',請使用轉義字元 &quot;
+  # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
+  # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
+  sub:
+
+# Loading Animation (加載動畫)
+preloader: false
+
+# aside (側邊欄)
+# --------------------------------------
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true # display on mobile
+  position: left # left or right
+  card_author:
+    enable: true
+    description:
+    button:
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/chenll7
+  card_announcement:
+    enable: true
+    content: Hi there!
+  card_recent_post:
+    enable: true
+    limit: 5 # if set 0 will show all
+    sort: date # date or updated
+  card_categories:
+    enable: true
+    limit: 0 # if set 0 will show all
+    expand: none # none/true/false
+  card_tags:
+    enable: true
+    limit: 40 # if set 0 will show all
+    color: false
+  card_archives:
+    enable: true
+    type: monthly # yearly or monthly
+    format: MMMM YYYY # eg: YYYY年MM月
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+    limit: 8 # if set 0 will show all
+  card_webinfo:
+    enable: false
+    post_count: true
+    last_push_date: true
+
+# busuanzi count for PV / UV in site
+# 訪問人數
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+# Time difference between publish date and now (網頁運行時間)
+# Formal: Month/Day/Year Time or Year/Month/Day Time
+runtimeshow:
+  enable: false
+  publish_date:
+
+# Aside widget - Newest Comments
+newest_comments:
+  enable: false
+  limit: 6
+  avatar: true
+  leancloud:
+    enable: false
+    appId: # leancloud application app id
+    appKey: # leancloud application app key
+    serverURL: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+    default_avatar: # mp/identicon/monsterid/wavatar/retro/robohash/blank
+  github_issues:
+    enable: false
+    repo:
+  disqus:
+    enable: false
+    forum:
+    api_key:
+
+# Bottom right button (右下角按鈕)
+# --------------------------------------
+
+# Conversion between Traditional and Simplified Chinese (簡繁轉換)
+translate:
+  enable: false
+  # The text of a button
+  default: 繁
+  # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
+  defaultEncoding: 2
+  # Time delay
+  translateDelay: 0
+  # The text of the button when the language is Simplified Chinese
+  msgToTraditionalChinese: '繁'
+  # The text of the button when the language is Traditional Chinese
+  msgToSimplifiedChinese: '簡'
+
+# Read Mode (閲讀模式)
+readmode: true
+
+# dark mode
+darkmode:
+  enable: true
+  # Toggle Button to switch dark/light mode
+  button: true
+  # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
+  # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
+  # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
+  # autoChangeMode: false
+  autoChangeMode: false
+
+# Lightbox (圖片大圖查看模式)
+# --------------------------------------
+# You can only choose one, or neither (只能選擇一個 或者 兩個都不選)
+
+# medium-zoom
+# https://github.com/francoischalifour/medium-zoom
+medium_zoom: false
+
+# fancybox
+# http://fancyapps.com/fancybox/3/
+fancybox: true
+
+# Tag Plugins settings (標籤外掛)
+# --------------------------------------
+
+# mermaid
+# see https://github.com/knsv/mermaid
+mermaid:
+  enable: false
+  # built-in themes: default/forest/dark/neutral
+  theme: default
+
+# Note (Bootstrap Callout)
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: flat
+  icons: true
+  border_radius: 3
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
+
+# other
+# --------------------------------------
+
+# Artitalk
+# see https://artitalk.js.org/
+artitalk:
+  appId:
+  appKey:
+  option:
+
+# Pjax [Beta]
+# It may contain bugs and unstable, give feedback when you find the bugs.
+# https://github.com/MoOx/pjax
+pjax:
+  enable: false
+  exclude:
+    # - xxxx
+    # - xxxx
+
+# Inject the css and script (aplayer/meting)
+aplayerInject:
+  enable: false
+  per_page: true
+
+# Snackbar (Toast Notification 彈窗)
+# https://github.com/polonel/SnackBar
+# position 彈窗位置
+# 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+snackbar:
+  enable: false
+  position: bottom-left
+  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
+  bg_dark: '#121212' # The background color of Toast Notification in dark mode
+
+# Baidu Push (百度推送)
+baidu_push: false
+
+# https://instant.page/
+# prefetch (預加載)
+instantpage: false
+
+# https://github.com/vinta/pangu.js
+# Insert a space between Chinese character and English character (中英文之間添加空格)
+pangu:
+  enable: false
+  field: site # site/post
+
+# Lazyload (圖片懶加載)
+# https://github.com/verlok/lazyload
+lazyload:
+  enable: false
+  post: /img/loading.gif
+
+touch_icon: "/images/favicon.jpg"
+
+# PWA
+# See https://github.com/JLHwung/hexo-offline
+# ---------------
+pwa:
+  enable: true
+#   manifest: /image/pwa/manifest.json
+  apple_touch_icon: "/images/favicon.jpg"
+#   favicon_32_32: /image/pwa/32.png
+#   favicon_16_16: /image/pwa/16.png
+#   mask_icon: /image/pwa/safari-pinned-tab.svg
+
+# Disable Baidu transformation on mobile devices (禁止百度轉碼)
+disable_baidu_transformation: true
+
+# Open graph meta tags
+# https://developers.facebook.com/docs/sharing/webmasters/
+Open_Graph_meta: true
+
+# Caches the contents in a fragment, speed up the generation (開啟hexo自帶的緩存,加快生成速度)
+fragment_cache: true
+
+# Inject
+# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
+inject:
+  head:
+    # - <link rel="stylesheet" href="/xxx.css">
+  bottom:
+    # - <script src="xxxx"></script>
+
+# CDN
+# Don't modify the following settings unless you know how they work
+# 非必要請不要修改
+CDN:
+  # main
+  main_css: /css/index.css
+  jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+  main: /js/main.js
+  utils: /js/utils.js
+
+  # pjax
+  pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
+
+  # comments
+  gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
+  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
+  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
+  disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
+  utterances: https://utteranc.es/client.js
+  twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
+
+  # share
+  addtoany: https://static.addtoany.com/menu/page.js
+  sharejs: https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js
+  sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
+
+  # search
+  local_search: /js/search/local-search.js
+  algolia_js: /js/search/algolia.js
+  algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
+  algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
+
+  # math
+  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+  katex_copytex: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js
+  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css
+  mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+
+  # count
+  busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+
+  # background effect
+  canvas_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js
+  canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
+  canvas_nest: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js
+
+  lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
+  instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
+  typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
+  pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
+
+  # photo
+  fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
+  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
+  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js
+
+  # snackbar
+  snackbar_css: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css
+  snackbar: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js
+
+  # effect
+  activate_power_mode: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js
+  fireworks: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js
+  click_heart: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js
+  ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
+
+  # fontawesome
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+
+  # Conversion between Traditional and Simplified Chinese
+  translate: /js/tw_cn.js
+
+  # justifiedGallery
+  justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
+  justifiedGallery_css: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css
+
+  # aplayer
+  aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+  aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
+  meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
+
+  # Prism.js
+  prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
+  prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+  prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
+
+  artitalk: https://cdn.jsdelivr.net/npm/artitalk
