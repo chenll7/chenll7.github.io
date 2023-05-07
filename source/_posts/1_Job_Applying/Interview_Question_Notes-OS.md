@@ -1,0 +1,167 @@
+---
+title: 面试题笔记——操作系统
+date: '2020-11-01 11:36:10'
+updated: '2023-05-07 20:03:13'
+categories:
+  - 1 Job Applying
+---
+# 面试题笔记——操作系统
+
+- **堆和栈的区别是什么？**
+
+　　栈区（stack）— 由编译器自动分配释放 ，存放函数的参数值，局部变量的值等。其操作方式类似于数据结构中的栈。在Windows下,栈是向低地址扩展的数据结 构，是一块连续的内存的区域。这句话的意思是栈顶的地址和栈的最大容量是系统预先规定好的，在WINDOWS下，栈的大小是2M（也有的说是1M，总之是 一个编译时就确定的常数），如果申请的空间超过栈的剩余空间时，将提示overflow。因此，能从栈获得的空间较小。
+
+　　堆区（heap） — 一般由程序员分配释放， 若程序员不释放，程序结束时可能由OS回收。堆是向高地址扩展的数据结构，是不连续的内存区域。windows和linux对堆的管理方式可能完全不一样。堆的大小受限于计算机系统中有效的虚拟内存。由此可见，堆获得的空间比较灵活，也比较大。
+
+　　在C++中，内存分成5个区，他们分别是堆（new）、栈、自由存储区（malloc）、全局/静态存储区和常量存储区。
+
+- **进程切换的时候操作系统会做哪些事情？**
+
+　　（待补充）
+
+- **进程之间的通信方法都有哪些？**
+
+　　（待补充）
+
+- **死锁的条件**
+
+　　（待补充）
+
+- **用两种方式将.π、65536、"ABCDEFG"这三个值连续写到磁盘文件上，一种是文本方式，一种是二进制方式，问文件的大小分别是多少？**
+
+　　（待补充）
+
+- **进程同步的几种方式**
+
+1. 信号量：一般是记录型信号量
+2. 管程：管程是由一个或多个过程、一个初始化序列和局部数据组成的软件模块。在任何时候，只能有一个进程在管程中执行，调用管程的任何其他进程都被阻塞，以等待管程可用。
+3. 消息传递：源进程通过send(destination,message)发送消息，目的进程通过receive(source,message)接收消息。
+
+- **读者写者问题**[^1]
+
+模型：
+
+　　有一些读者线程和写者线程要访问资源。
+
+要求：
+
+　　临界区内读写互斥，写写互斥。
+
+额外知识：
+
+　　记录型信号量semaphore的wait操作（P操作）和signal操作（V操作）是原子化操作。
+
+　　wait操作是指如果信号量的值等于0，那么等待，直到信号量变回正数，就给它减1，继续执行后面操作。
+
+　　signal操作是指信号量加1。
+
+方案：
+
+（1）读者优先：有读者进入临界区后，阻塞写者进入；有写者进入临界区后，阻塞读者和写者进入。
+
+```cpp
+semaphore fmutex=1, rdcntmutex=1;
+//fmutex --> access to file; rdcntmutex --> access to readcount
+int readcount = 0;
+//每个读者线程跑这个函数
+void reader(){
+    while(1){
+        wait(rdcntmutex);
+        if(0 == readcount)wait(fmutex);
+        readcount = readcount + 1;
+        signal(rdcntmutex);
+
+        //Do read operation ...
+
+        wait(rdcntmutex);
+        readcount = readcount - 1;
+        if(0 == readcount)signal(fmutex);
+        signal(rdcntmutex);
+    }
+}
+//每个写者线程跑这个函数
+void writer(){
+    while(1){
+        wait(fmutex);
+        //Do write operation ...
+        signal(fmutex);
+    }
+}
+```
+
+（2）写者优先：增加个队列。写者进入队列时会阻塞后面读者进入队列，等待此时临界区所有读者读完后写者一个一个进入临界区。如果队列里没有写者后，允许读者进入。
+
+```cpp
+semaphore fmutex=1, rdcntmutex=1, wtcntmutex=1, queue=1;
+//fmutex --> access to file; rdcntmutex --> access to readcount
+//wtcntmutex --> access to writecount
+int readcount = 0, writecount = 0;
+void reader(){
+    while(1){
+        wait(queue);
+        wait(rdcntmutex);
+        if(0 == readcount)wait(fmutex);
+        readcount = readcount + 1;
+        signal(rdcntmutex);
+        signal(queue);
+        //Do read operation ...
+        wait(rdcntmutex);
+        readcount = readcount - 1;
+        if(0 == readcount)signal(fmutex);
+        signal(rdcntmutex);
+    }
+}
+void writer(){
+    while(1){
+        wait(wtcntmutex);
+        if(0 == writecount)wait(queue);
+        writecount = writecount + 1;
+        signal(wtcntmutex);
+        wait(fmutex);
+        //Do write operation ...
+        signal(fmutex);
+        wait(wtcntmutex);
+        writecount = writecount - 1;
+        if(0 == writecount)signal(queue);
+        signal(wtcntmutex);
+    }
+}
+```
+
+　　从实现上来说，增加了queue信号量，写者队列有成员就会一直占着queue信号量。读者如果想要进入读者队列（即让readcount自增），需要获得queue信号量。
+
+（3）公平竞争：写者进入队列时会阻塞后面读者和写者进入队列。等此时临界区所有读者读完后，队列里唯一一个写者进入临界区。然后队列就可以再随机进读者或者写者。
+
+```cpp
+semaphore fmutex=1, rdcntmutex=1, queue=1;
+//fmutex --> access to file; rdcntmutex --> access to readcount
+int readcount = 0;
+void reader(){
+    while(1){
+        wait(queue);
+        wait(rdcntmutex);
+        if(0 == readcount)wait(fmutex);
+        readcount = readcount + 1;
+        signal(rdcntmutex);
+        signal(queue);
+        //Do read operation ...
+        wait(rdcntmutex);
+        readcount = readcount - 1;
+        if(0 == readcount)signal(fmutex);
+        signal(rdcntmutex);
+    }
+}
+void writer(){
+    while(1){
+        wait(queue);
+        wait(fmutex);
+        signal(queue);
+        //Do write operation ...
+        signal(fmutex);
+    }
+}
+```
+
+## 参考
+
+[^1]: <https://blog.csdn.net/cz_hyf/article/details/4443551>
