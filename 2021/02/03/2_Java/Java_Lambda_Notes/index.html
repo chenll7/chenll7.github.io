@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Java Lambda 表达式笔记 | Chenll's Blog</title><meta name="author" content="Chenll"><meta name="copyright" content="Chenll"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Java Lambda 表达式笔记 函数式接口 由于Java是静态强类型语言，不像Javascript中一样函数是一等公民。JDK8的java.util.function包提供了很多函数式接口来支持Java的函数式编程，详见链接：  Supplier&lt;T&gt;：无参数，返回一个结果。 Consumer&lt;T&gt;：代表了接受一个输入参数并且无返回的操作。  自定义函数式接口 1234">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java Lambda 表达式笔记">
+<meta property="og:url" content="https://chenll7.github.io/2021/02/03/2_Java/Java_Lambda_Notes/index.html">
+<meta property="og:site_name" content="Chenll&#39;s Blog">
+<meta property="og:description" content="Java Lambda 表达式笔记 函数式接口 由于Java是静态强类型语言，不像Javascript中一样函数是一等公民。JDK8的java.util.function包提供了很多函数式接口来支持Java的函数式编程，详见链接：  Supplier&lt;T&gt;：无参数，返回一个结果。 Consumer&lt;T&gt;：代表了接受一个输入参数并且无返回的操作。  自定义函数式接口 1234">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://chenll7.github.io/images/cover/41838114bbcb768069ad69b5ef6b4d40.jpg">
+<meta property="article:published_time" content="2021-02-03T02:02:00.000Z">
+<meta property="article:modified_time" content="2023-05-07T12:03:24.000Z">
+<meta property="article:author" content="Chenll">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://chenll7.github.io/images/cover/41838114bbcb768069ad69b5ef6b4d40.jpg"><link rel="shortcut icon" href="/images/favicon.ico"><link rel="canonical" href="https://chenll7.github.io/2021/02/03/2_Java/Java_Lambda_Notes/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="manifest" href="/"/><link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.jpg"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-07 20:03:24'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/images/favicon.ico" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">204</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">59</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/images/cover/41838114bbcb768069ad69b5ef6b4d40.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Chenll's Blog</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><h1 class="post-title">Java Lambda 表达式笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-02-03T02:02:00.000Z" title="Created 2021-02-03 10:02:00">2021-02-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-05-07T12:03:24.000Z" title="Updated 2023-05-07 20:03:24">2023-05-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/2-Java/">2 Java</a></span></div><div class="meta-secondline"> </div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>Java Lambda 表达式笔记</h1>
+<h2 id="函数式接口">函数式接口</h2>
+<p>由于Java是静态强类型语言，不像Javascript中一样函数是一等公民。JDK8的java.util.function包提供了很多函数式接口来支持Java的函数式编程，详见<a target="_blank" rel="noopener" href="https://www.runoob.com/java/java8-functional-interfaces.html">链接</a>：</p>
+<ul>
+<li><code>Supplier&lt;T&gt;</code>：无参数，返回一个结果。</li>
+<li><code>Consumer&lt;T&gt;</code>：代表了接受一个输入参数并且无返回的操作。</li>
+</ul>
+<p>自定义函数式接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Miaomiao</span></span>&#123;</span><br><span class="line">    <span class="meta">@FunctionalInterface</span></span><br><span class="line">    <span class="class"><span class="keyword">interface</span> <span class="title">Action</span></span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">int</span> <span class="title">invoke</span><span class="params">(<span class="keyword">int</span> i)</span></span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Action action = i -&gt; i;</span><br><span class="line">        System.out.println(action.invoke(<span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Optional">Optional</h2>
+<p>使用Optional进行函数式编程可以避免某些情况下使用if表达式对对象是否为null进行判断。</p>
+<h3 id="使用Optional-ofNullable">使用Optional.ofNullable</h3>
+<p>我们一般用<code>Optional.ofNullable</code>来包裹一个可能为null的对象。例如，</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> <span class="keyword">var</span> optionalObj = Optional.ofNullable(obj);</span><br></pre></td></tr></table></figure>
+<p>如果obj为null，则值与<code>Optional.empty()</code>相同，即空Optional对象。</p>
+<h3 id="使用Optional-map和Optional-orElse">使用Optional.map和Optional.orElse</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> <span class="keyword">var</span> attr = Optional.ofNullable(obj).map(obj-&gt;obj.getAttr()).orElse(defaultValue);</span><br></pre></td></tr></table></figure>
+<p><code>Optional.map</code>返回Optional对象。若为非空Optional对象，返回被Optional包裹的Lambda函数的返回值；若为空Optional对象，返回为空Optional对象。<br>
+　　<code>Optional.orElse</code>方法：If a value is present, returns the value, otherwise returns other。</p>
+<h3 id="Optional-flatMap">Optional.flatMap</h3>
+<p><code>Optional.flatMap</code>返回Optional对象。<code>Optional.flatMap</code>中Lambda函数必须返回Optional对象，会原样作为<code>Optional.flatMap</code>的返回值。</p>
+<h2 id="Stream">Stream</h2>
+<h3 id="常用方法">常用方法</h3>
+<h4 id="Stream-reduce">Stream.reduce</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">List&lt;User&gt; users = Arrays.asList(<span class="keyword">new</span> User(<span class="string">&quot;John&quot;</span>, <span class="number">30</span>), <span class="keyword">new</span> User(<span class="string">&quot;Julie&quot;</span>, <span class="number">35</span>));</span><br><span class="line"><span class="comment">// 单参数函数签名版，以第一个元素为初始值，Lambda 函数会执行1次</span></span><br><span class="line">Optional&lt;Integer&gt; max = users.stream()</span><br><span class="line">  .reduce((accum, user) -&gt; accum.getAge() &gt; user.getAge() ? accum : user);</span><br><span class="line"><span class="comment">// 三参数函数签名版，因为有初始值，Lambda 函数会执行2次</span></span><br><span class="line"><span class="keyword">int</span> sum = users.stream()</span><br><span class="line">  .reduce(<span class="number">0</span>, (accum, user) -&gt; accum + user.getAge(), Integer::sum);</span><br><span class="line">assertThat(result).isEqualTo(<span class="number">65</span>);</span><br></pre></td></tr></table></figure>
+<p>注：该签名的 Stream.reduce 函数的第三个参数用于供编译器判断类型，不生效。ParallelStream.reduce 的相同签名的函数第三个参数用于合并中间结果。</p>
+<h3 id="和其他数据结构转化">和其他数据结构转化</h3>
+<h4 id="Stream-Double-转Double">Stream&lt;Double&gt;转Double[]</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Steam&lt;Double&gt; stream = <span class="keyword">new</span> Stream.of(<span class="number">0.1</span>, <span class="number">0.2</span>, <span class="number">0.3</span>);</span><br><span class="line"><span class="comment">// 转double[]</span></span><br><span class="line">Double[] toBoxedDoubleArray = stream.toArray(Double[]::<span class="keyword">new</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="DoubleStream转double">DoubleStream转double[]</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DoubleStream doubleStream = <span class="keyword">new</span> DoubleStream.of(<span class="number">0.1</span>, <span class="number">0.2</span>, <span class="number">0.3</span>);</span><br><span class="line"><span class="comment">// 转Double[]</span></span><br><span class="line"><span class="keyword">double</span>[] toDoubleArray = doubleStream.toArray();</span><br></pre></td></tr></table></figure>
+<h4 id="DoubleStream转Stream-Double">DoubleStream转Stream&lt;Double&gt;</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DoubleStream doubleStream = <span class="keyword">new</span> DoubleStream.of(<span class="number">0.1</span>, <span class="number">0.2</span>, <span class="number">0.3</span>);</span><br><span class="line"><span class="comment">// 转Stream&lt;Double&gt;</span></span><br><span class="line">Stream&lt;Double&gt; toDoubleArray = doubleStream.boxed();</span><br></pre></td></tr></table></figure>
+<h3 id="相关类">相关类</h3>
+<h4 id="Spliterator">Spliterator</h4>
+<p>Spliterator是Java 8中加入的一个新接口；这个名字代表“可拆分迭代器”（splitable iterator）。和Iterator一样，Spliterator也用于遍历数据源中的元素，但它是为了并行执行而设计的。Java 8已经为集合框架中包含的所有数据结构提供了一个默认的Spliterator实现。集合实现了Spliterator接口，接口提供了一个spliterator方法。</p>
+<h3 id="坑">坑</h3>
+<p><code>IntStream</code>、<code>DoubleStream</code>、<code>LongStream</code>的<code>collect</code>函数和<code>Stream</code>不一样，必要的时候先执行<code>boxed</code>将其转化为<code>Stream&lt;Integer&gt;</code>、<code>Stream&lt;Double&gt;</code>、<code>Stream&lt;Long&gt;</code>。</p>
+<h2 id="ParalleStream">ParalleStream</h2>
+<p>ParallelStream 使用 Fork-join-pool 作为并行化的底层框架，其是独立于 ThreadPool 的多线程并行模型。</p>
+<h2 id="Collector">Collector</h2>
+<p>Stream的collect方法接受一个Collector对象以收集Stream的元素组成一种容器类型。</p>
+<p>工具类<code>Collectors</code>能够生成日常常用的Collector对象。</p>
+<p>以下是常用方法<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>：</p>
+<h3 id="Collectors-toList">Collectors.toList</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CollectorsTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">toListTest</span><span class="params">(List&lt;String&gt; list)</span> </span>&#123;</span><br><span class="line">        List&lt;String&gt; ll = list.stream().collect(Collectors.toList());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        List&lt;String&gt; list = Arrays.asList(<span class="string">&quot;123&quot;</span>,<span class="string">&quot;456&quot;</span>,<span class="string">&quot;789&quot;</span>,<span class="string">&quot;1101&quot;</span>,<span class="string">&quot;212121121&quot;</span>,<span class="string">&quot;asdaa&quot;</span>,<span class="string">&quot;3e3e3e&quot;</span>,<span class="string">&quot;2321eew&quot;</span>);</span><br><span class="line">        toListTest(list);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="参考">参考</h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/V1haoge/p/10748925.html">Java基础系列-Collector和Collectors</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Chenll</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://chenll7.github.io/2021/02/03/2_Java/Java_Lambda_Notes/">https://chenll7.github.io/2021/02/03/2_Java/Java_Lambda_Notes/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/images/cover/41838114bbcb768069ad69b5ef6b4d40.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/02/13/7_Japanese/Japanese_Auxiliary_Notes/"><img class="prev-cover" src="/images/cover/01a7b24fdc2b5e06ea4f8f8827c73332.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">日语助词笔记</div></div></a></div><div class="next-post pull-right"><a href="/2021/01/30/3_Network_Tool/you-get_Notes/"><img class="next-cover" src="/images/cover/47dcfdf09cd33ef62bffbf7677ffe042.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">you-get笔记</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="utterances-wrap"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/images/favicon.ico" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Chenll</div><div class="author-info__description">Don't want to work, but to play.</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">204</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">59</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/chenll7"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/chenll7" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:fbcll@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">Hi there!</div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Java Lambda 表达式笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.1.</span> <span class="toc-text">函数式接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optional"><span class="toc-number">1.2.</span> <span class="toc-text">Optional</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Optional-ofNullable"><span class="toc-number">1.2.1.</span> <span class="toc-text">使用Optional.ofNullable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Optional-map%E5%92%8COptional-orElse"><span class="toc-number">1.2.2.</span> <span class="toc-text">使用Optional.map和Optional.orElse</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Optional-flatMap"><span class="toc-number">1.2.3.</span> <span class="toc-text">Optional.flatMap</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stream"><span class="toc-number">1.3.</span> <span class="toc-text">Stream</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.1.</span> <span class="toc-text">常用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Stream-reduce"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">Stream.reduce</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C%E5%85%B6%E4%BB%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%BD%AC%E5%8C%96"><span class="toc-number">1.3.2.</span> <span class="toc-text">和其他数据结构转化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Stream-Double-%E8%BD%ACDouble"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">Stream&lt;Double&gt;转Double[]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DoubleStream%E8%BD%ACdouble"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">DoubleStream转double[]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DoubleStream%E8%BD%ACStream-Double"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">DoubleStream转Stream&lt;Double&gt;</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E7%B1%BB"><span class="toc-number">1.3.3.</span> <span class="toc-text">相关类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Spliterator"><span class="toc-number">1.3.3.1.</span> <span class="toc-text">Spliterator</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9D%91"><span class="toc-number">1.3.4.</span> <span class="toc-text">坑</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ParalleStream"><span class="toc-number">1.4.</span> <span class="toc-text">ParalleStream</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collector"><span class="toc-number">1.5.</span> <span class="toc-text">Collector</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Collectors-toList"><span class="toc-number">1.5.1.</span> <span class="toc-text">Collectors.toList</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">1.6.</span> <span class="toc-text">参考</span></a></li></ol></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/09/10/2_Java_-_Spring_Framework/Spring_Boot_Transaction_Notes/" title="Spring Boot 事务笔记"><img src="/images/cover/994293b061598ad051e394447cc6e39f.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring Boot 事务笔记"/></a><div class="content"><a class="title" href="/2022/09/10/2_Java_-_Spring_Framework/Spring_Boot_Transaction_Notes/" title="Spring Boot 事务笔记">Spring Boot 事务笔记</a><time datetime="2022-09-10T15:05:20.000Z" title="Created 2022-09-10 23:05:20">2022-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/26/1_Embedded_System/Embedded_System_Notes/" title="嵌入式系统笔记"><img src="/images/cover/1dc7b92ba5ce3d4296ff5e19f005b706.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="嵌入式系统笔记"/></a><div class="content"><a class="title" href="/2022/07/26/1_Embedded_System/Embedded_System_Notes/" title="嵌入式系统笔记">嵌入式系统笔记</a><time datetime="2022-07-26T14:42:05.000Z" title="Created 2022-07-26 22:42:05">2022-07-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/26/1_Data_Mining/Data_Mining_Notes/" title="数据挖掘笔记"><img src="/images/cover/02cf005944c2193b14b9e66ea63116d9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据挖掘笔记"/></a><div class="content"><a class="title" href="/2022/07/26/1_Data_Mining/Data_Mining_Notes/" title="数据挖掘笔记">数据挖掘笔记</a><time datetime="2022-07-26T14:15:25.000Z" title="Created 2022-07-26 22:15:25">2022-07-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/12/3_Image_Processing_Tool/Convert_Webm_Format_to_GIF_Format/" title="Webm 格式贴图转 GIF 格式"><img src="/images/cover/20dd691a7df91d2f1dcde0c8d4095833.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Webm 格式贴图转 GIF 格式"/></a><div class="content"><a class="title" href="/2022/05/12/3_Image_Processing_Tool/Convert_Webm_Format_to_GIF_Format/" title="Webm 格式贴图转 GIF 格式">Webm 格式贴图转 GIF 格式</a><time datetime="2022-05-12T01:32:18.000Z" title="Created 2022-05-12 09:32:18">2022-05-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/03/3_Project_Management_Tool/JIRA_Notes/" title="JIRA 笔记"><img src="/images/cover/8d7527d82a3c380ab5725b24ef5f499f.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JIRA 笔记"/></a><div class="content"><a class="title" href="/2022/05/03/3_Project_Management_Tool/JIRA_Notes/" title="JIRA 笔记">JIRA 笔记</a><time datetime="2022-05-03T13:33:15.000Z" title="Created 2022-05-03 21:33:15">2022-05-03</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Chenll</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadUtterances () {
+  let ele = document.createElement('script')
+  ele.setAttribute('id', 'utterances_comment')
+  ele.setAttribute('src', 'https://utteranc.es/client.js')
+  ele.setAttribute('repo', 'chenll7/chenll7.github.io')
+  ele.setAttribute('issue-term', 'pathname')
+  let nowTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'photon-dark' : 'github-light'
+  ele.setAttribute('theme', nowTheme)
+  ele.setAttribute('crossorigin', 'anonymous')
+  ele.setAttribute('async', 'true')
+  document.getElementById('utterances-wrap').insertAdjacentElement('afterbegin',ele)
+}
+
+function utterancesTheme () {
+  if (document.querySelector('.utterances-frame')) {
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'photon-dark' : 'github-light'
+    const message = {
+      type: 'set-theme',
+      theme: theme
+    };
+    const iframe = document.querySelector('.utterances-frame');
+    iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+  }
+}
+
+if ('Utterances' === 'Utterances' || !false) {
+  if (false) btf.loadComment(document.getElementById('utterances-wrap'), loadUtterances)
+  else loadUtterances()
+} else {
+  function loadOtherComment () {
+    loadUtterances()
+  }
+}</script></div></div></body></html>
