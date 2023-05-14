@@ -1258,11 +1258,11 @@
     
     
     <entry>
-      <title>包管理器 pacman 笔记</title>
-      <link href="2020/11/01/3_OS_Usage_-_Linux/Package_Manager_pacman_Notes/"/>
-      <url>2020/11/01/3_OS_Usage_-_Linux/Package_Manager_pacman_Notes/</url>
+      <title>Linux Shell 下执行多任务</title>
+      <link href="2020/11/01/3_OS_Usage_-_Linux/Run_Multiple_Jobs_in_Linux_Shell_Session/"/>
+      <url>2020/11/01/3_OS_Usage_-_Linux/Run_Multiple_Jobs_in_Linux_Shell_Session/</url>
       
-        <content type="html"><![CDATA[<h1>包管理器 pacman 笔记</h1><h2 id="基础知识">基础知识</h2><ul><li><p>安装包：<code>pacman -S &lt;包名&gt;</code></p></li><li><p>同步数据库：<code>pacman -Sy</code></p></li><li><p>强制数据库更新和升级：<code>pacman Syyu</code></p></li><li><p>搜索包：<code>pacman -Ss &lt;关键字&gt;</code></p></li><li><p>设置国内镜像源：<code>pacman-mirrors --country China &amp;&amp; pacman -Syyu</code></p></li></ul><h2 id="参考">参考</h2>]]></content>
+        <content type="html"><![CDATA[<h1>Linux Shell 会话下执行多任务</h1><p>Linux的Shell会话中，可以运行一个前台任务和多个后台任务。</p><h2 id="查看当前运行的任务">查看当前运行的任务</h2><p>使用</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">jobs</span></span><br></pre></td></tr></table></figure><p>查看当前有多少在后台运行的命令。jobs -l选项可显示所有任务的PID，jobs的状态可以是running、stopped、terminated。但是如果任务被终止了（kill），shell 从当前的shell环境已知的列表中删除任务的进程标识；也就是说，jobs命令显示的是当前shell环境中所起的后台正在运行或者被挂起的任务信息。</p><h2 id="直接将一个进程扔到后台执行">直接将一个进程扔到后台执行</h2><p>在命令后加“&amp;”。</p><h2 id="将一个前台进程扔到后台执行">将一个前台进程扔到后台执行</h2><p>Ctrl+Z将前台进程转入后台，并处于挂起状态。再用bg（或者bg %&lt;jobs命令中查到的序号&gt;）让它在后台跑起来。</p><h2 id="将一个后台进程拉倒前台执行">将一个后台进程拉倒前台执行</h2><p>用fg（或者fg %&lt;jobs命令中查到的序号&gt;）。</p><h2 id="敲重点！！！">敲重点！！！</h2><p>一个不停在向屏幕（标准输出流）打印字符的进程放到后台运行（用&amp;或者用Ctrl+Z加bg）时，仍然会向屏幕打印字符。这时候除了关闭shell，即使Ctrl+C或者Ctrl+Z也无法阻止打印，因为Ctrl+C和Ctrl+Z只想前台进程发送信号。这时候应该在混乱中输入fg将后台进程拉到前台，然后再用Ctrl+C、Ctrl+Z或者其他方法处理。</p><h2 id="参考">参考</h2>]]></content>
       
       
       <categories>
@@ -1277,11 +1277,11 @@
     
     
     <entry>
-      <title>Linux Shell 下执行多任务</title>
-      <link href="2020/11/01/3_OS_Usage_-_Linux/Run_Multiple_Jobs_in_Linux_Shell_Session/"/>
-      <url>2020/11/01/3_OS_Usage_-_Linux/Run_Multiple_Jobs_in_Linux_Shell_Session/</url>
+      <title>包管理器 pacman 笔记</title>
+      <link href="2020/11/01/3_OS_Usage_-_Linux/Package_Manager_pacman_Notes/"/>
+      <url>2020/11/01/3_OS_Usage_-_Linux/Package_Manager_pacman_Notes/</url>
       
-        <content type="html"><![CDATA[<h1>Linux Shell 会话下执行多任务</h1><p>Linux的Shell会话中，可以运行一个前台任务和多个后台任务。</p><h2 id="查看当前运行的任务">查看当前运行的任务</h2><p>使用</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">jobs</span></span><br></pre></td></tr></table></figure><p>查看当前有多少在后台运行的命令。jobs -l选项可显示所有任务的PID，jobs的状态可以是running、stopped、terminated。但是如果任务被终止了（kill），shell 从当前的shell环境已知的列表中删除任务的进程标识；也就是说，jobs命令显示的是当前shell环境中所起的后台正在运行或者被挂起的任务信息。</p><h2 id="直接将一个进程扔到后台执行">直接将一个进程扔到后台执行</h2><p>在命令后加“&amp;”。</p><h2 id="将一个前台进程扔到后台执行">将一个前台进程扔到后台执行</h2><p>Ctrl+Z将前台进程转入后台，并处于挂起状态。再用bg（或者bg %&lt;jobs命令中查到的序号&gt;）让它在后台跑起来。</p><h2 id="将一个后台进程拉倒前台执行">将一个后台进程拉倒前台执行</h2><p>用fg（或者fg %&lt;jobs命令中查到的序号&gt;）。</p><h2 id="敲重点！！！">敲重点！！！</h2><p>一个不停在向屏幕（标准输出流）打印字符的进程放到后台运行（用&amp;或者用Ctrl+Z加bg）时，仍然会向屏幕打印字符。这时候除了关闭shell，即使Ctrl+C或者Ctrl+Z也无法阻止打印，因为Ctrl+C和Ctrl+Z只想前台进程发送信号。这时候应该在混乱中输入fg将后台进程拉到前台，然后再用Ctrl+C、Ctrl+Z或者其他方法处理。</p><h2 id="参考">参考</h2>]]></content>
+        <content type="html"><![CDATA[<h1>包管理器 pacman 笔记</h1><h2 id="基础知识">基础知识</h2><ul><li><p>安装包：<code>pacman -S &lt;包名&gt;</code></p></li><li><p>同步数据库：<code>pacman -Sy</code></p></li><li><p>强制数据库更新和升级：<code>pacman Syyu</code></p></li><li><p>搜索包：<code>pacman -Ss &lt;关键字&gt;</code></p></li><li><p>设置国内镜像源：<code>pacman-mirrors --country China &amp;&amp; pacman -Syyu</code></p></li></ul><h2 id="参考">参考</h2>]]></content>
       
       
       <categories>
@@ -3814,27 +3814,6 @@
       <categories>
           
           <category> 3 OS Usage - Linux </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>前端：Bootstrap的安装与使用</title>
-      <link href="2017/12/09/2_Frontend_-_Bootstrap/%E5%89%8D%E7%AB%AF%EF%BC%9ABootstrap%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
-      <url>2017/12/09/2_Frontend_-_Bootstrap/%E5%89%8D%E7%AB%AF%EF%BC%9ABootstrap%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-      
-        <content type="html"><![CDATA[<p>介绍一下用Node.js安装Bootstrap，并编译less成html调用的CSS和js。</p><p>参考：</p><ul><li><a href="https://v3.bootcss.com/getting-started/">https://v3.bootcss.com/getting-started/</a></li><li><a href="https://www.cnblogs.com/xnlc/p/3836697.html">https://www.cnblogs.com/xnlc/p/3836697.html</a></li></ul><h1>下载Bootstrap源码包</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install bootstrap@3</span><br></pre></td></tr></table></figure><p>从node_module里把boostrap拿出来就是源码包了。</p><h1>安装grunt</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g grunt-cli</span><br></pre></td></tr></table></figure><p>进入/bootstrap/根目录，然后执行</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><p>命令。npm 将读取 package.json 文件并自动安装此文件中列出的所有被依赖的扩展包。然后用</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grunt dist</span><br></pre></td></tr></table></figure><p>就可以编译了，输出在boostrap/dist目录里。</p><p>其他命令：</p><p>grunt watch （监测文件的改变，并运行指定的 Grunt 任务）<br>监测 Less 源码文件的改变，并自动重新将其编译为 CSS 文件。</p><p>grunt test （运行测试用例）<br>在 PhantomJS 环境中运行 JSHint 和 QUnit 自动化测试用例。</p><p>grunt docs （编译并测试文档中的资源文件）<br>编译并测试 CSS、JavaScript 和其他资源文件。在本地环境下通过 bundle exec jekyll serve 运行 Bootstrap 文档时需要用到这些资源文件。</p><p>grunt （重新构建所有内容并运行测试用例）<br>编译并压缩 CSS 和 JavaScript 文件、构建文档站点、对文档做 HTML5 校验、重新生成定制工具所需的资源文件等，都需要 Jekyll 工具。这些只有在你对 Bootstrap 深度研究时才有用。</p><h1>最后</h1><p>然后就是熟悉less语法的问题。less目录下的varibles.less有bootstrap所有的变量，比较重要。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 2 Frontend </category>
-          
-          <category> Bootstrap </category>
           
       </categories>
       
