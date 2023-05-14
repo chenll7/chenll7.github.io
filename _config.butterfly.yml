@@ -42,7 +42,7 @@ copy:
 #   icon: link || the description
 social:
   fab fa-github: https://github.com/chenll7 || Github
-  fas fa-envelope: mailto:fbcll@outlook.com || Email
+  fas fa-envelope: mailto:chenll7@outlook.com || Email
 
 # search (搜索)
 # --------------------------------------
@@ -185,89 +185,32 @@ cover:
     - images/cover/8c3b964b55a5b4c07745dec0379bc1a1.jpg
     - images/cover/2c42ab4d6f8235037c4d105b3d75b02b.jpg
     - images/cover/a14a02861833af5e476fc7e1ed37cc01.jpg
-    - images/cover/afc815162654c7e617d0bf16fdb86afa.jpg
     - images/cover/dcf305759b8d3dd3efa6c3b554010e94.jpg
     - images/cover/29b46aa058cd511f9bfc064c6874064d.jpg
-    - images/cover/0634659b0333d24cba83da46bf18c506.jpg
-    - images/cover/722e4feb876f959d2126f4293501052d.jpg
-    - images/cover/0749a1a1ca3bfb333ee6e803347bed99.jpg
-    - images/cover/0239213a9e8c49af76a8e228fc4bf6d1.jpg
-    - images/cover/54bd7f054263a59d8b2ec33d25bd7873.jpg
-    - images/cover/5b858d3ceb47802b9eb89c375b5274e3.jpg
-    - images/cover/32610ec2fd132d60d8fa59b7dadb0cf3.jpg
-    - images/cover/b17dcdec91718f423e3d3dc0379d360a.jpg
-    - images/cover/e483c2a7d50f946ad09e6b821295665f.jpg
-    - images/cover/df111651fe021550b94a69f8ce5dfde7.jpg
-    - images/cover/77abd6874c52ba6a869ec224468e8276.jpg
-    - images/cover/317e5347f30eb4f3d0a2e7c9dfd338ce.jpg
-    - images/cover/9da4fddd24afa2fb8b4799f016fbb43b.jpg
-    - images/cover/62098c8112fe1ff2eb5d6f406223f576.jpg
-    - images/cover/4db147d881714cd2959ed71ab81ab39c.jpg
-    - images/cover/161999dd8a4d176e3a305c905dd767a4.jpg
-    - images/cover/7e224d5802b5193628e5fe858b687ba9.jpg
-    - images/cover/41b230ebdefd025db6b67d73232513ff.jpg
-    - images/cover/7da3e90c24497f4fc24d00498ee7f391.jpg
-    - images/cover/afc49747fce40eb0ec3bb574a8c5742e.jpg
-    - images/cover/25afb565ff21a0096e04204b6ae9a3ef.jpg
-    - images/cover/192bb10cdcfeb4f59cc160081766ab04.jpg
-    - images/cover/5a699d097797eb38f38d6a2a57c5a566.jpg
-    - images/cover/ea46c8f9d6f3f116d45d9859cd4f9825.jpg
-    - images/cover/e6e26380a9dd78e74dcd1d2c24674b88.jpg
-    - images/cover/436d69ae6c7c33aca7bedca2f899e709.jpg
-    - images/cover/2cf3325e35d204968f481e7065f34cf9.jpg
-    - images/cover/e3ac496e10b2ab3bbe4e7a3269107c76.jpg
-    - images/cover/14ef8b4a1b01ce27651833623c7c970c.jpg
-    - images/cover/95fa3a658ba082465d30b3646c3c02e9.jpg
-    - images/cover/ffd1edc5fb11f8d3946f0d792289f5d1.jpg
-    - images/cover/f694ea3f9dfa2ad392c243deedd86ab3.jpg
-    - images/cover/906f66e6c658af9508393d5da64445f5.jpg
-    - images/cover/abaebbc2a692f7ca86f45c132680da0a.jpg
-    - images/cover/6e97aa5e6f3b5401127e708d51eafd25.jpg
-    - images/cover/867522a57d9f84cd76b0c887607fa04a.jpg
-    - images/cover/f17780d911d1f594377b0142fecca901.jpg
-    - images/cover/30105f59f123ad650ec7743716c85955.jpg
-    - images/cover/6e6d2aa2945400113e23364f056bb8d2.jpg
-    - images/cover/1bf522ed254d7d69fe0628839fc004ba.jpg
-    - images/cover/697749a89ce38d64d1ff75cd96052f09.jpg
-    - images/cover/aeb405d4bc6ebff74e51dc4961e8c352.jpg
-    - images/cover/97164e6a0c6d95ee734965babc6651a7.jpg
-    - images/cover/8a8e635a95fcd55ed4124356601a0283.jpg
-    - images/cover/73ac2d6e292951b5bd92277778860e9e.jpg
-    - images/cover/5f3d833fd69b4961e7ed3bb1ba4b6268.jpg
-    - images/cover/3d52725d98a3b96322d1a2f5010a77ae.jpg
-    - images/cover/16b9d90a07b2325e45e38cb42e3cf194.jpg
-    - images/cover/64715c6c6772b48e3c47567122257468.jpg
-    - images/cover/324257af05ca2d870a7eb4210236ce09.jpg
-    - images/cover/9909207d54a42359e52d9f8204999b25.jpg
-    - images/cover/2b538830217cd904e0e23058c2351ceb.jpg
-    - images/cover/87654a6a2b0ca002fb2ac0766d3f69dd.jpg
-    - images/cover/2fa8c02638d5244c6014c63ec9ae189f.jpg
-    - images/cover/6d1c75f92af655c49b90da0561e0a001.jpg
-    - images/cover/b246af999e6fafec05a1517fe08b15a0.jpg
-    - images/cover/3c43feb474376aa7536553262ede71ff.jpg
-    - images/cover/b8676bc82d3805c2aed97ca41f03f12f.jpg
-    - images/cover/760d7a825f872c4707fddadc079b24d0.jpg
-    - images/cover/16a7e653b2a204a643f4847112dd5f1b.jpg
-    - images/cover/bac4ab4a04d7531bc1447c59e7efa505.jpg
-    - images/cover/b77a38ba5c74209131e4ae269202a20c.jpg
-    - images/cover/a65f7499ca14739d0529f00c2f9c84bf.jpg
-    - images/cover/3b24b141a335ee9502fbac1e16a5547b.jpg
-    - images/cover/f4b4ed3d7cf0029cabc4ae2fe77fffab.jpg
-    - images/cover/7e734bcb04a3b4621522623b1ee94c26.jpg
-    - images/cover/32d4ef144f73715a604fead764766d21.jpg
-    - images/cover/f4eaed84243ac86697b053732a4d9df6.jpg
-    - images/cover/31d58d566d5146366f3b992dd32cf1da.jpg
-    - images/cover/1db5bdd7659c8e4bc8bd7c9504387603.jpg
-    - images/cover/6bb03418c0e311e3bf88647655772646.jpg
-    - images/cover/a212e2617fa889656b1700a6ff09f493.jpg
-    - images/cover/26937285a38f3868e836c0d51d41227d.jpg
-    - images/cover/d9fb54e02a9794752c639e27c549ed9f.jpg
-    - images/cover/3a0312b8101b9320db92ca28338a679b.jpg
-    - images/cover/ca16901b66a44137f5869e29cbcfb9c9.jpg
-    - images/cover/d9eb5502c305ec8806bdbe95e1989e08.jpg
-    - images/cover/9bf44a90104f5358673c2deafb50d722.jpg
-    - images/cover/c9404f9a1f33236f1ac947873d95aba5.jpg
-    - images/cover/e42e49deb76f72b26ec9ed1e2af782ea.jpg
+    - images/cover/7cd5242b4f920be5a05a5055814bd169.jpg
+    - images/cover/07111b536866e526abd9fffb52561d58.jpg
+    - images/cover/a7a9e8dd51859cba552773e08c824fbd.jpg
+    - images/cover/316ed26298976784eabcafc9178db94a.jpg
+    - images/cover/040a490a063c85af27cae675a2900aaf.jpg
+    - images/cover/40389c431a36873973a344a7d26997c9.jpg
+    - images/cover/de1c62479492157db9ae34a1558d595d.jpg
+    - images/cover/39db320740dba34a15ffa8909456645a.jpg
+    - images/cover/ac92b4a1ad9f9027d0104737977dbbda.jpg
+    - images/cover/31e9fcdc09f844d15848bf717b21dfd5.jpg
+    - images/cover/4e6538300177c3b1f8f357232eb1b912.jpg
+    - images/cover/a4fd85ee83ddd90c0763ebd751d994cc.jpg
+    - images/cover/1cc28d09a64a17b945a8fbe12b855c41.jpg
+    - images/cover/74912bd499a0d9ac191ad36c869d97bc.jpg
+    - images/cover/9730b7d8f497d0410c4a14e3881316f8.jpg
+    - images/cover/0c4a1f24f6dcb707980514b501666e26.jpg
+    - images/cover/8d787e9d98d36965d54e9537bb126d61.jpg
+    - images/cover/329f3ed0ca2047c9c63d849b17709556.jpg
+    - images/cover/b3269c01c2b41aadd15e6b3238f28393.jpg
+    - images/cover/e6b07604b4c34a95f204fd467755fbc8.jpg
+    - images/cover/8a5a10656d581bd6b3dbbe8b31463ca4.jpg
+    - images/cover/1dc7b92ba5ce3d4296ff5e19f005b706.jpg
+    - images/cover/b82e9b3018776aca32d12e6af0567f08.jpg
+    - images/cover/c57b218e3c2673bd88f16a9b802c756c.jpg
     - images/cover/4f5abfabc0a8cdeead7bbad6ec56db29.jpg
     - images/cover/ca7d6f5c2b846aceec921f701c099d2f.jpg
     - images/cover/1fc0a4d8a9f176eb85fe8c4a2d679197.jpg
@@ -275,7 +218,6 @@ cover:
     - images/cover/820cf4932e8685c67b60be9783d80c88.jpg
     - images/cover/7038fd084bad7ed10b20b4cb6195ac2c.jpg
     - images/cover/20843c24d327aae3302ed3bbb3efab02.jpg
-    - images/cover/88aa6601634ffb0132dd5ee4d9c955c6.jpg
     - images/cover/1949221c0b0a0fc8b623586e60d5ca2b.jpg
     - images/cover/4a124253c0502a6760f37618e714cbf0.jpg
     - images/cover/b1705c9d60d51e77d48207ad78f517af.jpg
@@ -306,9 +248,86 @@ cover:
     - images/cover/6938c3279f7a27280712534c5a14051f.jpg
     - images/cover/681cc49b90113525ba38c901177aa246.jpg
     - images/cover/e83394f7e5c30d379472af3087dcd99a.jpg
+    - images/cover/722e4feb876f959d2126f4293501052d.jpg
+    - images/cover/0749a1a1ca3bfb333ee6e803347bed99.jpg
+    - images/cover/0239213a9e8c49af76a8e228fc4bf6d1.jpg
+    - images/cover/54bd7f054263a59d8b2ec33d25bd7873.jpg
+    - images/cover/5b858d3ceb47802b9eb89c375b5274e3.jpg
+    - images/cover/32610ec2fd132d60d8fa59b7dadb0cf3.jpg
+    - images/cover/b17dcdec91718f423e3d3dc0379d360a.jpg
+    - images/cover/e483c2a7d50f946ad09e6b821295665f.jpg
+    - images/cover/df111651fe021550b94a69f8ce5dfde7.jpg
+    - images/cover/77abd6874c52ba6a869ec224468e8276.jpg
+    - images/cover/317e5347f30eb4f3d0a2e7c9dfd338ce.jpg
+    - images/cover/9da4fddd24afa2fb8b4799f016fbb43b.jpg
+    - images/cover/62098c8112fe1ff2eb5d6f406223f576.jpg
+    - images/cover/4db147d881714cd2959ed71ab81ab39c.jpg
+    - images/cover/161999dd8a4d176e3a305c905dd767a4.jpg
+    - images/cover/7e224d5802b5193628e5fe858b687ba9.jpg
+    - images/cover/41b230ebdefd025db6b67d73232513ff.jpg
+    - images/cover/7da3e90c24497f4fc24d00498ee7f391.jpg
+    - images/cover/afc49747fce40eb0ec3bb574a8c5742e.jpg
+    - images/cover/25afb565ff21a0096e04204b6ae9a3ef.jpg
+    - images/cover/192bb10cdcfeb4f59cc160081766ab04.jpg
+    - images/cover/ea46c8f9d6f3f116d45d9859cd4f9825.jpg
+    - images/cover/e6e26380a9dd78e74dcd1d2c24674b88.jpg
+    - images/cover/436d69ae6c7c33aca7bedca2f899e709.jpg
+    - images/cover/2cf3325e35d204968f481e7065f34cf9.jpg
+    - images/cover/e3ac496e10b2ab3bbe4e7a3269107c76.jpg
+    - images/cover/14ef8b4a1b01ce27651833623c7c970c.jpg
+    - images/cover/95fa3a658ba082465d30b3646c3c02e9.jpg
+    - images/cover/ffd1edc5fb11f8d3946f0d792289f5d1.jpg
+    - images/cover/f694ea3f9dfa2ad392c243deedd86ab3.jpg
+    - images/cover/906f66e6c658af9508393d5da64445f5.jpg
+    - images/cover/abaebbc2a692f7ca86f45c132680da0a.jpg
+    - images/cover/6e97aa5e6f3b5401127e708d51eafd25.jpg
+    - images/cover/867522a57d9f84cd76b0c887607fa04a.jpg
+    - images/cover/f17780d911d1f594377b0142fecca901.jpg
+    - images/cover/30105f59f123ad650ec7743716c85955.jpg
+    - images/cover/6e6d2aa2945400113e23364f056bb8d2.jpg
+    - images/cover/1bf522ed254d7d69fe0628839fc004ba.jpg
+    - images/cover/697749a89ce38d64d1ff75cd96052f09.jpg
+    - images/cover/aeb405d4bc6ebff74e51dc4961e8c352.jpg
+    - images/cover/97164e6a0c6d95ee734965babc6651a7.jpg
+    - images/cover/16a7e653b2a204a643f4847112dd5f1b.jpg
+    - images/cover/bac4ab4a04d7531bc1447c59e7efa505.jpg
+    - images/cover/b77a38ba5c74209131e4ae269202a20c.jpg
+    - images/cover/a65f7499ca14739d0529f00c2f9c84bf.jpg
+    - images/cover/3b24b141a335ee9502fbac1e16a5547b.jpg
+    - images/cover/f4b4ed3d7cf0029cabc4ae2fe77fffab.jpg
+    - images/cover/7e734bcb04a3b4621522623b1ee94c26.jpg
+    - images/cover/32d4ef144f73715a604fead764766d21.jpg
+    - images/cover/f4eaed84243ac86697b053732a4d9df6.jpg
+    - images/cover/31d58d566d5146366f3b992dd32cf1da.jpg
+    - images/cover/1db5bdd7659c8e4bc8bd7c9504387603.jpg
+    - images/cover/6bb03418c0e311e3bf88647655772646.jpg
+    - images/cover/a212e2617fa889656b1700a6ff09f493.jpg
+    - images/cover/26937285a38f3868e836c0d51d41227d.jpg
+    - images/cover/d9fb54e02a9794752c639e27c549ed9f.jpg
+    - images/cover/3a0312b8101b9320db92ca28338a679b.jpg
+    - images/cover/ca16901b66a44137f5869e29cbcfb9c9.jpg
+    - images/cover/d9eb5502c305ec8806bdbe95e1989e08.jpg
+    - images/cover/9bf44a90104f5358673c2deafb50d722.jpg
+    - images/cover/c9404f9a1f33236f1ac947873d95aba5.jpg
+    - images/cover/e42e49deb76f72b26ec9ed1e2af782ea.jpg
+    - images/cover/8a8e635a95fcd55ed4124356601a0283.jpg
+    - images/cover/73ac2d6e292951b5bd92277778860e9e.jpg
+    - images/cover/5f3d833fd69b4961e7ed3bb1ba4b6268.jpg
+    - images/cover/3d52725d98a3b96322d1a2f5010a77ae.jpg
+    - images/cover/16b9d90a07b2325e45e38cb42e3cf194.jpg
+    - images/cover/64715c6c6772b48e3c47567122257468.jpg
+    - images/cover/324257af05ca2d870a7eb4210236ce09.jpg
+    - images/cover/9909207d54a42359e52d9f8204999b25.jpg
+    - images/cover/2b538830217cd904e0e23058c2351ceb.jpg
+    - images/cover/87654a6a2b0ca002fb2ac0766d3f69dd.jpg
+    - images/cover/2fa8c02638d5244c6014c63ec9ae189f.jpg
+    - images/cover/6d1c75f92af655c49b90da0561e0a001.jpg
+    - images/cover/b246af999e6fafec05a1517fe08b15a0.jpg
+    - images/cover/3c43feb474376aa7536553262ede71ff.jpg
+    - images/cover/b8676bc82d3805c2aed97ca41f03f12f.jpg
+    - images/cover/760d7a825f872c4707fddadc079b24d0.jpg
     - images/cover/a3c2b42514269be77ca310406307a605.jpg
     - images/cover/d751f90f9c5a244233c1cc670af5e786.jpg
-    - images/cover/d41a5f51820aabd351e6951a749a84bb.jpg
     - images/cover/a3b910443fe0d580dec0f278612a291f.jpg
     - images/cover/38281a822276cb45252a23bd2cebe588.jpg
     - images/cover/9539e2ac1e563d36ab224c35fdbd122a.jpg
@@ -317,14 +336,10 @@ cover:
     - images/cover/863fd3d7dd489a6c0b7769aa12e5f026.jpg
     - images/cover/34efce14ce6e674bffbdf188c3746b56.jpg
     - images/cover/c4c1c82f502c7f6143fd7eb9ab75d38c.jpg
-    - images/cover/149cbdf017a63c9a37d11c50476dda5c.jpg
-    - images/cover/0dafe075e994742ba6877126ea257942.jpg
     - images/cover/1b6bc4715e0c02a5475152d2aa0663bf.jpg
     - images/cover/0a6ea59a853a70ec64619635be53d8bf.jpg
     - images/cover/3481f3400fe483e2e6782d7949bb0aec.jpg
-    - images/cover/40e09802e82f47e62bf559feb63226e7.jpg
     - images/cover/288228199f37caecc0c5e9cf0c4d29f7.jpg
-    - images/cover/562164808eeb38315ec2d3902d88efb0.jpg
     - images/cover/af208baa5e2ba70d5b674125e47cd969.jpg
     - images/cover/dd440d39ce94abf8b8e659f952e6512c.jpg
     - images/cover/482759b751d33e4ce387f369189e3af6.jpg
@@ -365,7 +380,6 @@ cover:
     - images/cover/47dcfdf09cd33ef62bffbf7677ffe042.jpg
     - images/cover/807a03aac2263f8c5ee02807427c8f72.jpg
     - images/cover/48185fb6461492008fca2557d3e0798f.jpg
-    - images/cover/f02c986509490c7178a024c6b2cbae3b.jpg
     - images/cover/f92ef831ed26bd2d038860a99a91af3c.jpg
     - images/cover/abbea526f404c31cc16582e72ca00bd4.jpg
     - images/cover/89d7a14124acf52becf7cb96b0f043c6.jpg
@@ -376,10 +390,7 @@ cover:
     - images/cover/afd4f85a36059d87aece9fe96cbf486b.jpg
     - images/cover/94a8a02df11e8dc6ba46d54998cb606c.jpg
     - images/cover/d0c280d14dc40d6177928308be7227c8.jpg
-    - images/cover/a24a2713b4ef3e3ef7f86180389eb17f.jpg
     - images/cover/34586d1db481deb959b1ef3c4b96927e.jpg
-    - images/cover/9f1dc26ea7ad54efbb044fe674ed2f0e.jpg
-    - images/cover/32cf2112b941e4dfbe0ea51a3561ed22.jpg
     - images/cover/de6ce7ac31e740a1fdaafc5a16ec7bf3.jpg
     - images/cover/2c48ecfc8b3bc34678af18898287e843.jpg
     - images/cover/535f2f7aee9ff9ed8d0824b7452eac92.jpg
@@ -397,7 +408,6 @@ cover:
     - images/cover/52209934ca6a134606453bf26d58665b.jpg
     - images/cover/dd135761d80726d0cb71b3665a56987e.jpg
     - images/cover/8f0f0aee34388fb0528f49fb6ab27411.jpg
-    - images/cover/9274bc2eb9291da8dc6cd20b54a74533.jpg
     - images/cover/da714be0d944c7bd2dcac7f65caae5fa.jpg
     - images/cover/57b5af7ea0e5bb429d324d80dea31423.jpg
     - images/cover/71fcb2c530c7f706e955274885c9445d.jpg
@@ -405,22 +415,17 @@ cover:
     - images/cover/7d35200d29e7816e568bbad1e8712ec6.jpg
     - images/cover/488434a5096d11774cca36fbb472665c.jpg
     - images/cover/e76b85bff573da830069ea3ddc98f25e.jpg
-    - images/cover/6fa3814fb887059cfbd09d612990404b.jpg
-    - images/cover/f4c96d18ce835e0265b977676c7e659b.jpg
     - images/cover/24f221ab1c5faa4433736671a2e2b4f8.jpg
     - images/cover/0b4d062ca01fa5964a5ce870e12b28e0.jpg
     - images/cover/b73d7cd3af95b411f690720f9ea9b8b0.jpg
     - images/cover/381e8881b9c3b1d8476ce5b3918d9177.jpg
     - images/cover/009a109f6eb94942d2bc785952402cf9.jpg
     - images/cover/011803a9063d48e5826cf5c49239f944.jpg
-    - images/cover/66121c1ed43573c12b461b90f68d9803.jpg
     - images/cover/dae4ee2b2b079daef140bbb60d229647.jpg
     - images/cover/0e906c44454699e8415ab027dd1e41c6.jpg
     - images/cover/aa6a24cde738f1be81bf51f7ed5a7219.jpg
     - images/cover/250f9ed6dc2055ac05b94863893fea27.jpg
     - images/cover/d54c2c0c7e96129ee3030f9aba227cbe.jpg
-    - images/cover/1454f9bf9d820ae771ad0eeb55ce1ca1.jpg
-    - images/cover/6cb101013e05766003b9f4309cea7d67.jpg
     - images/cover/9d89d52f7e4d97e94fc0a868c027aa92.jpg
     - images/cover/dbbf2bde9d227a6a2687f97d91c0bf0a.jpg
     - images/cover/162551c75159db187a7c9305ddba7462.jpg
@@ -438,14 +443,10 @@ cover:
     - images/cover/13e06c1186a08f4a0e70181f8cd51b01.jpg
     - images/cover/ee10970c90b88a5200f5e9510ba8b721.jpg
     - images/cover/320207dd86a6fd2bf94b4bd704146b9f.jpg
-    - images/cover/5c464741eff0a2d7013972f2121525a1.jpg
-    - images/cover/f01135b3db04475c8883aadf47f4a260.jpg
     - images/cover/ca3a460e82a7b550c6c2f03281b32dba.jpg
     - images/cover/df4ce525c9a1be17bc98ddeabaf09f59.jpg
     - images/cover/1ab2aa5e86e5fcc97a461ce9d3515b2b.jpg
     - images/cover/2d69dce3428b9bbe38b607e240b62548.jpg
-    - images/cover/60797d0f588ced4171f27782d2cdf9cd.jpg
-    - images/cover/687fce7e47038faf08261c453cd455ab.jpg
     - images/cover/c20431be1d4a60dadc9e5aae0ef2c579.jpg
     - images/cover/7181d571d83c0469faa694e618ad49bc.jpg
     - images/cover/2e985c585287369123fbff851f14bac0.jpg
@@ -485,6 +486,7 @@ cover:
     - images/cover/20f3b00643503430c6482cbab70c7fc0.jpg
     - images/cover/c69c24bef1369f553d12d9f4140ee023.jpg
     - images/cover/897614d880cb00f66fb0a578f309bdbe.jpg
+    - images/cover/f60549e80a30aa9a88ca9688e22a76a0.jpg
     - images/cover/21496ecf31ce004583f88618ba990d8b.jpg
     - images/cover/83080cbe08dc8ea8610b896b7c3ca09b.jpg
     - images/cover/e108f04a6bc1a549dd538f615201727d.jpg
@@ -527,8 +529,21 @@ cover:
     - images/cover/0b25ec9d6adaa3f6ec8d5fb730f0c5b4.jpg
     - images/cover/f61dc6d48e6d90482ce60f4903a5623b.jpg
     - images/cover/1508941eba01fadbff9a7cd779d2f7c7.jpg
-    - images/cover/2c72aad7703f151895ef3e847f1bc231.jpg
+    - images/cover/2c5a6fa30a31feee95f0bc42d9cedebf.jpg
+    - images/cover/ff2d4641a382e27b866bc57cbcd4ba2a.jpg
+    - images/cover/3a32f6a8958683b717099b73b9c9ec45.jpg
+    - images/cover/3813b67ca74cb8e885faa2898323416f.jpg
+    - images/cover/8c03404f1f5bc59a6b56b5c88e4f0e64.jpg
+    - images/cover/bce093cf522d986d3ea249b146c8b902.jpg
+    - images/cover/ab2d869df9ee51bbdbf69db2b70efa46.jpg
+    - images/cover/83f98b63fdbf9bb970776edb6e8f20a7.jpg
+    - images/cover/ab735cd9f820069d8a914770d1a4004d.jpg
+    - images/cover/8a6250539f4ec35b219a575adea9845f.jpg
+    - images/cover/8ab4d445247347e102481a38f23e1719.jpg
+    - images/cover/8bbf4c1663cc40179819833a7f3a8897.jpg
+    - images/cover/4983ad15e64c75a95d5a478e2fec955f.jpg
     - images/cover/1fdd10bbe52f4fa5c588fc367bd21f1d.jpg
+    - images/cover/2c72aad7703f151895ef3e847f1bc231.jpg
     - images/cover/2380a9ced9474b4741042c7cfae99b20.jpg
     - images/cover/e1156baf9a909e8989e4fc1f21e3be85.jpg
     - images/cover/06e20e6d9af3deefb9ef3cc5ee935d64.jpg
@@ -548,18 +563,18 @@ cover:
     - images/cover/2d8cdc4c9dace74ce24ed37df195c344.jpg
     - images/cover/20843c301e14932a788dcdc5db995915.jpg
     - images/cover/50088cc5b978e38bf8e8534f9977f216.jpg
-    - images/cover/3a32f6a8958683b717099b73b9c9ec45.jpg
-    - images/cover/3813b67ca74cb8e885faa2898323416f.jpg
-    - images/cover/8c03404f1f5bc59a6b56b5c88e4f0e64.jpg
-    - images/cover/bce093cf522d986d3ea249b146c8b902.jpg
-    - images/cover/ab2d869df9ee51bbdbf69db2b70efa46.jpg
-    - images/cover/83f98b63fdbf9bb970776edb6e8f20a7.jpg
-    - images/cover/ab735cd9f820069d8a914770d1a4004d.jpg
-    - images/cover/8a6250539f4ec35b219a575adea9845f.jpg
-    - images/cover/8ab4d445247347e102481a38f23e1719.jpg
-    - images/cover/8bbf4c1663cc40179819833a7f3a8897.jpg
-    - images/cover/4983ad15e64c75a95d5a478e2fec955f.jpg
-    - images/cover/ff2d4641a382e27b866bc57cbcd4ba2a.jpg
+    - images/cover/3d923e947d16b11c62035940e10a2f77.jpg
+    - images/cover/c8080c2c96696ff82f727436100773c5.jpg
+    - images/cover/f426f4a85d653d5b064d236171ddeabb.jpg
+    - images/cover/adbfa16aa168540b23f44c6a97b2f5e0.jpg
+    - images/cover/1e56d0fbc3246f5621cbde00153d8a58.jpg
+    - images/cover/87cef15948aeddfe5dcccc667911a6ef.jpg
+    - images/cover/2dce437545d68edf15a3dfa070486f1e.jpg
+    - images/cover/ecb764ed5a6163940096c90b9879dbe0.jpg
+    - images/cover/a4755f27011f2b50939638a90e89c751.jpg
+    - images/cover/8ede9e9d49f8ec23c0ae7e7785fcce4c.jpg
+    - images/cover/219774b0f6aadde773a81703f16a4647.jpg
+    - images/cover/2a7bd1b4438d5003753a75ee3161b3a5.jpg
     - images/cover/a3cc3650348756b1d9bafd46f771bcdc.jpg
     - images/cover/f013a0fd9f09fba4bef1b8d9c1d9a248.jpg
     - images/cover/d9348415b6d34f9d2190178231f4767d.jpg
@@ -612,7 +627,6 @@ cover:
     - images/cover/fa44e5621369a2786484bcbff776200f.jpg
     - images/cover/818f32f12c424670ffed8b770ff56b81.jpg
     - images/cover/cf282bd58b54863d741f81307122d91a.jpg
-    - images/cover/91ee07e87e8be622b20beab460343567.jpg
     - images/cover/4b00854c8d76e06a476e8280838ec0c0.jpg
     - images/cover/f1f46af4bf9b38e973c73a667a921300.jpg
     - images/cover/c065ebff625339fc046bf43366b30e6e.jpg
@@ -640,32 +654,191 @@ cover:
     - images/cover/4791173fac4891f10b040ada576e8f03.jpg
     - images/cover/cc124062118eb50b43966791b99dd99c.jpg
     - images/cover/a15d1b060d565bd77f3954efb7bdf396.jpg
+    - images/cover/660a54f9583efb07e7a2cd00caac1bf0.jpg
+    - images/cover/3e2e76f1318158a7069f9121e00178f8.jpg
+    - images/cover/a39c139dad2ef650c5d173d4a3a0a86c.jpg
+    - images/cover/f5204f85400631d764af09017c676e8b.jpg
+    - images/cover/59f6ad872ccb30a593a2e9950b0545b8.jpg
+    - images/cover/7e9c4f7ab16b3908db848e177721a20f.jpg
+    - images/cover/ece5cc49f109f2abf00ea3c95f9421e1.jpg
+    - images/cover/2c92dfdad9851b15eaca245c4408076c.jpg
+    - images/cover/b7e5415c6ceac3db98fd8080894b1e93.jpg
+    - images/cover/4ddb47b80ef777009d4aceda25fb4a5f.jpg
+    - images/cover/aa8170a3d22e2d825db8479342baa055.jpg
+    - images/cover/e91f8397147adb932bfe58b91263ebbe.jpg
+    - images/cover/d661e47f7b5ef7f6693862cd3c786545.jpg
+    - images/cover/283507e394f62b1840f0d906fef68e87.jpg
+    - images/cover/33d6db51d24f9a1c4472c34ecf69cbe9.jpg
+    - images/cover/994f7af98758328971e1b0f724ede6e0.jpg
+    - images/cover/69f156a6d90b3b3678649867a9d68ff6.jpg
+    - images/cover/f20350446d4015d979502e31cfb03927.jpg
+    - images/cover/58afa73a896e706bca55c28557b46e6b.jpg
+    - images/cover/be1231ad327d174238b1c09119212f71.jpg
+    - images/cover/4be41b6e7546a158e8591cc478688e67.jpg
+    - images/cover/b108c094cfd08f53f53accd8d945ecc9.jpg
+    - images/cover/faf10f9ea5bcc1fac1cb20b2e4207689.jpg
+    - images/cover/b95d339cf5613afeb13cfd72a4ecca34.jpg
+    - images/cover/cb7054accf85aafc2b67ba08ad334a4f.jpg
+    - images/cover/60f099c5251595760e58c805f6b4b6e3.jpg
+    - images/cover/2f13ddfca2ca49e8f741a5c4e243a3ac.jpg
+    - images/cover/63e35e95b1555c1fff3d26f24807dbba.jpg
+    - images/cover/7e69d9dd3952ae008aff831cf05e3734.jpg
+    - images/cover/b97b07801d70674fbe7e25927322a8d7.jpg
+    - images/cover/2ae54d4cb410d5300011b68e5bed4f30.jpg
+    - images/cover/2d9ba260692a6b163fd55c730939f871.jpg
+    - images/cover/e99e4a59cee05e85d1d13c5d759bbffe.jpg
+    - images/cover/d445f0294ba12adc1e5784ee3094ec17.jpg
+    - images/cover/e57c50255ed9dd56e35eda53971fca8e.jpg
+    - images/cover/1237291931aac6e98d667740536bef3b.jpg
+    - images/cover/6edc57b90ec16257cb64c8d08c08590e.jpg
+    - images/cover/9f38cb2ecf63fa82489d1fe5331288c2.jpg
+    - images/cover/e2ad44a9b8a8048800c5c9009ece3c44.jpg
+    - images/cover/642ff9afd14f8c0c0614a20fe315907c.jpg
+    - images/cover/c05ab06415bd8f907f198a14a8ac6a6e.jpg
+    - images/cover/e35858bec4a68f7fc63ac014796e775e.jpg
+    - images/cover/5710182a8a0bcdbd454065bcd4509965.jpg
+    - images/cover/ef72b8eea4afd51f37b2237ef3b0b7fc.jpg
+    - images/cover/caf75a91c5950b780b306d0f7ae19d9b.jpg
+    - images/cover/f30c1f3a434c2f696a6bd576cdf43c15.jpg
+    - images/cover/f9167c33f0bf7facb435fb4db552b0db.jpg
+    - images/cover/9ed80f664f94c475db896c6c3393357b.jpg
+    - images/cover/f0e212c2d39c20feb2365aa3cc4bfa06.jpg
+    - images/cover/584e4bfe610bf2ac76313572d4cb5341.jpg
+    - images/cover/239a4a148cc99c431bc58111aa5acc56.jpg
+    - images/cover/6761baa178eb21da72c2be05e0020999.jpg
+    - images/cover/52d1849b4bb8d4c5caa3c3e9695984d7.jpg
+    - images/cover/4c38101118bdcf1c965a1890f6f22492.jpg
+    - images/cover/8d546c309f5b6caaede229678cf3a3ac.jpg
+    - images/cover/06dc2c49c10c171e4ee637b41c2e593c.jpg
+    - images/cover/d18211067eb5bc4e96edb0d550331c88.jpg
+    - images/cover/f676917285490a9be3ca8e91728e9946.jpg
+    - images/cover/9834e6923ab8da75b4f84e6b40a86bf6.jpg
+    - images/cover/9fc0e2e46f154bc061f36b8728f7187b.jpg
+    - images/cover/1ecdf0f9204fe1a6873f6b449189a81f.jpg
+    - images/cover/0af8c172c3e566bca0aa821e3ffea2a6.jpg
+    - images/cover/1c8ed9d6dca1479b71e8f603c5743d3f.jpg
+    - images/cover/5093f0cdea95552a20845836cfe21101.jpg
+    - images/cover/6c9d41e6a5c8aed1a2b405715284b0d0.jpg
+    - images/cover/0ca552e57d8914632de2d601e93256ed.jpg
+    - images/cover/392142f4743d39bfb181456e4567f43e.jpg
+    - images/cover/bd77cf522c8d4e0a5258abd8ba957c7b.jpg
+    - images/cover/3f8e9d331bf6774afebcb1a1487bbcae.jpg
+    - images/cover/c44f1a2cdbfd1f70392734a9739715b9.jpg
+    - images/cover/fe732cdc1879a3a378d8307ad947126a.jpg
+    - images/cover/036e466dcde7263e9ea912ed25ef4688.jpg
+    - images/cover/182b84caf9ae4b9b5b63bdef81d9cfbc.jpg
+    - images/cover/ad6b9b6853d3331cac5db89aab18d364.jpg
+    - images/cover/1ca32518afd04e831fbf7509685713f0.jpg
+    - images/cover/c869761157262f11651726288853e3a2.jpg
+    - images/cover/d48e9318259bfc84eb271f1721b5af02.jpg
+    - images/cover/48d54b07a79eb1053d0daa1de1cf09cf.jpg
+    - images/cover/409acc994149943bbaa3b9e4ea028769.jpg
+    - images/cover/18749f64645fd3ff94d78b8f9a477616.jpg
+    - images/cover/b23c606e60f105df510d2a6bd970f949.jpg
+    - images/cover/2e443aeb4ed97d8b0f8c7d22cb005b90.jpg
+    - images/cover/ef3fee9038ced96ce8ca6cacb4b15fed.jpg
+    - images/cover/b95df83df619836382a451d9e15fbe22.jpg
+    - images/cover/506ba9194fad87d5a82ad59d234ca7de.jpg
+    - images/cover/3a071dc80642eaa33891e5e88207d64c.jpg
+    - images/cover/2a7a726360f721edb4aad86abf072697.jpg
+    - images/cover/1ea0023812e47c789f4f953a28fbedb3.jpg
+    - images/cover/f598cadb2eec7097cc06c701f558af71.jpg
+    - images/cover/78849abc0afedb859d5341a1437ea43d.jpg
+    - images/cover/fd81abc9d4cc8a96c1aa05178f6a0f10.jpg
+    - images/cover/e4ad8fb3eb4b44c87df5dac5e3863d7c.jpg
+    - images/cover/d5f634b280e415cf10c7c1a71945ad6b.jpg
+    - images/cover/db72c4ece368ceac6ab3bf57d44d57c3.jpg
+    - images/cover/c3e3ac1558f029b258c64032991bdcdc.jpg
+    - images/cover/cf3929ae1bce5e60aeaf23e5b34d70bc.jpg
+    - images/cover/b44a3e542c2c4c6ed7501c084e644320.jpg
+    - images/cover/283b6249bda2e96ec255cf2c2de6defd.jpg
+    - images/cover/2db6a7462f1b9a383d435fab5c0db380.jpg
+    - images/cover/e955019f58f0fc94eb4e86e4db941cdb.jpg
+    - images/cover/e7b9fc580ed03d280cf1b496e6502fd6.jpg
+    - images/cover/cdc8bea30c3a10943f8a30712b3afca4.jpg
+    - images/cover/9662ec0df1912d2b286473fed65ed1c4.jpg
+    - images/cover/9c04f89539049c700ae2763455018b40.jpg
+    - images/cover/9493078c1943b9247e83b05abceaf252.jpg
+    - images/cover/424abf5cd59e11390ef8391a51c547d5.jpg
+    - images/cover/0e74420e9743b27c4747ab15e8c262da.jpg
+    - images/cover/3e2f7c5d8a86d52f42acae3e49106fa2.jpg
+    - images/cover/4a28053ac4034b1295604e13c0b6d0cb.jpg
+    - images/cover/3d533e0e430b1890609917bff8ec7159.jpg
+    - images/cover/64a123ee751a8a789d5c39b96d10852f.jpg
+    - images/cover/640d1765c24f3862db6333f992381377.jpg
+    - images/cover/54ceecb1bb30eab73bfaad685b5ea135.jpg
+    - images/cover/e88f4d0440f34b386d788f2edadd27e5.jpg
+    - images/cover/9185a1b075af4634fa20f7d942af2220.jpg
+    - images/cover/d8f780f4efe86b81317a314673015500.jpg
+    - images/cover/bd614e159ca514a4ca4948f81ac88269.jpg
+    - images/cover/0b5f290ae49a46f8fefe4c8cadfcff7b.jpg
+    - images/cover/51fa12bb5f4444b17f3a6e6c6018773d.jpg
+    - images/cover/89246faa46029bd594b4dcc3d2d96b0b.jpg
+    - images/cover/79856aa22a28779ac6cb0bee906a4c5e.jpg
+    - images/cover/6f8e54b32fc9847d988a73ecd5157642.jpg
+    - images/cover/b808128e81d858549df681d46db6a013.jpg
+    - images/cover/31767cb13f0d7b4f31e2eadee64fe4c2.jpg
+    - images/cover/0baa9431f5a07ec4278a457107beb992.jpg
+    - images/cover/2ec18f23806e4b48812ffacb05257216.jpg
+    - images/cover/1158a36508643f3d40b284458bf9ae64.jpg
+    - images/cover/8c26ce11eac4d5490d15eec16c86599c.jpg
+    - images/cover/590b77fe9d566a1a4512bdcf52ef4fcb.jpg
+    - images/cover/594aaef62a97adf573cc5151c0e6fe88.jpg
+    - images/cover/e8b6c09fba4e90b40f1a8ce39e7d802d.jpg
+    - images/cover/5936b4797e00d833c3c8bdf28485f25f.jpg
+    - images/cover/7d972e18aa6a1dff88d38688bb8baedd.jpg
+    - images/cover/4d0256da1f03ce39fe8d90609de6b4d2.jpg
+    - images/cover/578e5cf22b43d8e985a9eaec37b841f2.jpg
+    - images/cover/17e2e84a7dbe75703f00b0051a784474.jpg
+    - images/cover/8745e386343dae34e255ab11bfd4a571.jpg
+    - images/cover/479747b14187e5e925f741b829815a05.jpg
+    - images/cover/e7bc6bfc56de8500534a45a0dba5a15b.jpg
+    - images/cover/4f14d68c39c1e0c6785c504ae85adb91.jpg
+    - images/cover/f8a6e3eae8f52c91b70845d53f5ce6b5.jpg
+    - images/cover/48718b90050aa5bbbee90507bf022da8.jpg
+    - images/cover/723aa57738fae8337a16e942d72d299c.jpg
+    - images/cover/7b03e13536dd96c2de874553e6403397.jpg
+    - images/cover/b2faf6956ff92c8fa83420f548194ca9.jpg
+    - images/cover/a6df3f133474cd8a50b55fbdb5178a04.jpg
+    - images/cover/91d621640fc0bd927158ce791aea8cfb.jpg
+    - images/cover/65f45a0abd6b4795a97aa00cd4772587.jpg
+    - images/cover/baae0ff3e7ccdd52353cf1740f0aa15a.jpg
+    - images/cover/b49ee118c8e15be742be7c3168989e30.jpg
+    - images/cover/2fd7d31fca581c2930a636ae8b1c48fc.jpg
+    - images/cover/13b5ba20caa6ffc32083cbb328facd6c.jpg
+    - images/cover/4c8c53a38044a1ef980500cca7aedd1f.jpg
+    - images/cover/c4571fe571ac7354c41d754184f8b3a8.jpg
+    - images/cover/ee19eb9a8ec7a27ef9f1a863b293ee5c.jpg
+    - images/cover/e05eb35c5728b7046853dbf94f7e9814.jpg
+    - images/cover/806f28e1d58a9f201163c971c2d1b05f.jpg
+    - images/cover/fa66c11808ba359f56cd3ca19e7c9d9a.jpg
+    - images/cover/c93252d6cc273063be13b6528cc7f190.jpg
+    - images/cover/2ed9158babf66f6080fe40d3560dd395.jpg
+    - images/cover/7c6bd30d57c262d3e4444f2c067a9906.jpg
+    - images/cover/61884f14cc988133b23fc4e17dcd19c6.jpg
+    - images/cover/4e7e0e142eedbfa0d15ec27b1cc02c00.jpg
+    - images/cover/ddb125f3b3995718ab54e9db2884d69c.jpg
+    - images/cover/d050e5319ee5797143781be85105a958.jpg
+    - images/cover/dbe9b1c5b4524a2a023e4f6a55323d02.jpg
+    - images/cover/ac5f108796e72fda6c1c4b84862eed6a.jpg
+    - images/cover/6fdd326391f15d75a4240d8c85e5fa4b.jpg
+    - images/cover/5d973f6f9199c862f3de460dcb3d3cbd.jpg
     - images/cover/d5412ab0f9574334cb82952375bc4f3a.jpg
-    - images/cover/4f20615bc1970c565c158045c536999e.jpg
-    - images/cover/dc6709b404b24e51e3599904b83b2b41.jpg
     - images/cover/86bb0142cca734a96bbf43bb99573677.jpg
     - images/cover/0980a964941d1fbc4c7334974c79a85a.jpg
     - images/cover/11288e52c697b2b8ff0fc284645dd4d4.jpg
-    - images/cover/d9da87a1e3f043d646fba46ba8d132fd.jpg
-    - images/cover/730f90c6c764efefe987f9e6eb98bd04.jpg
     - images/cover/6f7e8f1c9fb07537925109ea41fb8758.jpg
     - images/cover/e05bff96e94ea94927e8650b25337459.jpg
-    - images/cover/8634bb9e4c584282c4f5370cc33d1f59.jpg
-    - images/cover/946d8e898b049fbb66ac2eb5cf3e051f.jpg
     - images/cover/74e67921a3f2ad46206fda884ce7efab.jpg
     - images/cover/b14737e793a1c261ab6283d52063d908.jpg
     - images/cover/b8696edb929245ffac602ce2b6ec9787.jpg
     - images/cover/58c83223e9827e0c103c005f83fc7207.jpg
-    - images/cover/753a97c0a0594ad27789038d7398453e.jpg
     - images/cover/287a6408ca9dbcd5c52e8b2091eb504f.jpg
     - images/cover/1f7d624990dd8976e9badb42bbf5487b.jpg
     - images/cover/dcd1b1a85f754193c44d44458faf91f0.jpg
     - images/cover/0fd492bd11dbdcb92f49322b05a3ffce.jpg
-    - images/cover/22526511e364796de0f6dff40a6649fe.jpg
-    - images/cover/701cc3b7ced3c1c84947e1ddb40f95b3.jpg
     - images/cover/171b955f81f805447293b8120cad4eb5.jpg
     - images/cover/36df6452e11b69c34e052b5f07f2a5e8.jpg
-    - images/cover/2dbfeddc435f18adec5d2471b6b3de2d.jpg
     - images/cover/f5faaa9dd53529aad150bd593ed35e0d.jpg
     - images/cover/30602edf954f3bd0224ed840823401b8.jpg
     - images/cover/75f4253e71cf02071f94e866e1733839.jpg
@@ -692,7 +865,6 @@ cover:
     - images/cover/0348abbbc434fac60d744607a5ba7fb8.jpg
     - images/cover/bce8211000556f58be89cee8ab94a4c8.jpg
     - images/cover/6671767cbd8284ec408e0093fc6f4d6e.jpg
-    - images/cover/57e07e2f9847400eeb18e53191dfbf40.jpg
     - images/cover/4524bcaab004f3e25a2bb7ee7f5e7408.jpg
     - images/cover/bdc06737c381b84c111209c4a346bb8b.jpg
     - images/cover/0ebf944abf54590d2e4edee5415332cd.jpg
@@ -775,7 +947,6 @@ cover:
     - images/cover/ebaa6a74d50fec8ef83bead445b983b1.jpg
     - images/cover/767711db5acaa0365330775303682c21.jpg
     - images/cover/5439e7927abef65bb422c7dea7c221eb.jpg
-    - images/cover/650f8527ab0f1923ccdfdcd34502cfcc.jpg
     - images/cover/d5f129ada9a764b9380ec1848f0e0a46.jpg
     - images/cover/591b345fcb5ee54056aabc52d3e9f256.jpg
     - images/cover/b387cc7a850148089f5ca022f6483b5c.jpg
@@ -819,19 +990,13 @@ cover:
     - images/cover/289f858e61ed66cd0a900629adf3f937.jpg
     - images/cover/33545100f9b99e716feb338cccad1378.jpg
     - images/cover/19176eb68bf0e19b2a4b245e2d68dcee.jpg
-    - images/cover/4aafdb5e6c3a929c4b533901ca4ac60e.jpg
     - images/cover/33431128ab60c346a1aa684ddd87be4a.jpg
     - images/cover/895b4ea119e9c798f1be380eb21ebb8c.jpg
-    - images/cover/5d068e8b10ae5968ec981419b72c7d52.jpg
     - images/cover/e2847d9eba38ad7fd2dea724e6b1ef16.jpg
-    - images/cover/2abc62d7f463a7c98da46f24a3979ee8.jpg
     - images/cover/682109aa141dba18aef4169e376ebbdc.jpg
-    - images/cover/9b8db3ca82c46f212ad68059cb4d5917.jpg
     - images/cover/811eb127ea1130a0365b328568e7dadc.jpg
     - images/cover/9ae54dbc8c229298466efce1cbc7bdf6.jpg
     - images/cover/e479d3be6b743b1cd34fa90d8880fdde.jpg
-    - images/cover/7ffb016d39c271307ffc1b437453671e.jpg
-    - images/cover/7f1a7795530d5f7e1095f9c1e335b2fa.jpg
     - images/cover/e3e75fc78f66515652b2e4ddec1eaec4.jpg
     - images/cover/7267ed2693355f30c979d064e940fb4b.jpg
     - images/cover/358fceeb6b42ab301074aede33d8c708.jpg
@@ -858,13 +1023,59 @@ cover:
     - images/cover/b1bdb5ad54535721b835c2896f05e3c2.jpg
     - images/cover/7d3abe71acf15e270fb411f568cf70d9.jpg
     - images/cover/8fc67c5c3a1be97bc36e91bde6993028.jpg
+    - images/cover/741ada620b25bb6bf853ae3dd8c8733a.jpg
     - images/cover/e343bd8ab7553898fda2ebbfd8f266a0.jpg
     - images/cover/b028ca49e9603dbbb30935998469c5b9.jpg
     - images/cover/b309be3d5b52b1bd67e277f30a3df5d9.jpg
     - images/cover/babf5248c5649a3740f29d8d2ca5d475.jpg
-    - images/cover/59aff996df57ccfcc138d6c5f31b71bf.jpg
+    - images/cover/79862a693583bf8e4264b1778d83522e.jpg
+    - images/cover/6a967425b7329994b191fac92ec47900.jpg
+    - images/cover/39d7c3d6bf935e1cbb033edc40a7fbdb.jpg
+    - images/cover/bf7b4237be4c6b3740017141c1535913.jpg
+    - images/cover/956c3b5b6f16e66b699e1e6161573353.jpg
+    - images/cover/2181b2fbd43f33d93539a79f07f94eb0.jpg
+    - images/cover/1702386bfb47313ccda5dbeb1f551f23.jpg
     - images/cover/049bd84e63aaa680a571005d86131b70.jpg
+    - images/cover/59aff996df57ccfcc138d6c5f31b71bf.jpg
+    - images/cover/1152f02b56b8d6aef3aad02ca7c6d30e.jpg
+    - images/cover/40c23b676e0438966992264de9488e56.jpg
     - images/cover/78523e8d23e82225f5f24763d3d700c9.jpg
+    - images/cover/182cc503463001b599d919da44c8a81d.jpg
+    - images/cover/338bc74329428789517cc6f1e4fea45b.jpg
+    - images/cover/6cc73fd5aa1a1b39f26f0c7fb6ed1339.jpg
+    - images/cover/300d4f02abd67a4c9e185be5cbaf95a1.jpg
+    - images/cover/539762b5fd20cadacff2cb9a6fccb54d.jpg
+    - images/cover/c5e24934e2d3c5dde9eeec0a419adb57.jpg
+    - images/cover/a0739f0383751553f76291e9887775de.jpg
+    - images/cover/994293b061598ad051e394447cc6e39f.jpg
+    - images/cover/933fb3b7572f5c5bbd49e7f709eb3ffe.jpg
+    - images/cover/dd3e81f8ed4a829fe24d19bdf3407002.jpg
+    - images/cover/6713d1acd27c52745468e3ac685bbb9e.jpg
+    - images/cover/95b50bb227e922be5c0a31d69c4a6706.jpg
+    - images/cover/88ebf6fefe35f747175f35b1b6e348d9.jpg
+    - images/cover/bbebe810e669a18723afb6ea2718e978.jpg
+    - images/cover/b1a3fc2cff691b5d0e4375c047f859c6.jpg
+    - images/cover/edd5a2f60e894e86e80eee6f290d2b8e.jpg
+    - images/cover/d475c7053c8f5786cfbcfe0ae751c2c8.jpg
+    - images/cover/189525edc56114c0d99ffd15827b64de.jpg
+    - images/cover/50bb9f546a77a5553bc1d91cc80a67aa.jpg
+    - images/cover/8174b80c5480a78705e4bd79e89bb16b.jpg
+    - images/cover/15aca8386141d6377ca6178b3ffa603f.jpg
+    - images/cover/79dc7fbe204efdb36a402a2d11b9dd4d.jpg
+    - images/cover/8baea13f9d6ab68098adfc36c9166682.jpg
+    - images/cover/9202974e9978d3c74c021a5c0d2db2d8.jpg
+    - images/cover/59b7c1f37e0cefbeebe4ba7f5909a5d8.jpg
+    - images/cover/28651c8772d3338a872d55eb57181f9a.jpg
+    - images/cover/4cd2b78d73ea5db7834c637599f13413.jpg
+    - images/cover/f48020fb8bc9c70ca605247979eff2c4.jpg
+    - images/cover/10ad852efd7a54894ddc21a45df76711.jpg
+    - images/cover/0c33e854aa0ea8f6bcc7965edf85af63.jpg
+    - images/cover/468914984b16642db2f807cf41bd64a4.jpg
+    - images/cover/96133e74ed1915b646f89234ddc81846.jpg
+    - images/cover/1f478221863c123593af8ac256c73d9e.jpg
+    - images/cover/51a19f40c785b7f1664c566c8758c530.jpg
+    - images/cover/ca66ff52f9c6d0edcf9bce42a466196f.jpg
+    - images/cover/b37b9cf74c5242804e2c2ac206faaddf.jpg
     - images/cover/d7ad90188f18b106545819a227c38497.jpg
     - images/cover/1cd34bdd29bcb4f00c4f2f0552df1562.jpg
     - images/cover/a451711864e94e4ae6ac62476aa21bb1.jpg
@@ -917,46 +1128,6 @@ cover:
     - images/cover/ae37487836757e9953b39cfea95e4699.jpg
     - images/cover/34dbfcb020efdd2b58cf894e2e25d33d.jpg
     - images/cover/2090a8723f336b25739f986c84d7b634.jpg
-    - images/cover/19050ec229bfa7a2bde72e8390edc46d.jpg
-    - images/cover/2beb086a68c3251f8d3d899ec1ff3fce.jpg
-    - images/cover/182cc503463001b599d919da44c8a81d.jpg
-    - images/cover/338bc74329428789517cc6f1e4fea45b.jpg
-    - images/cover/6cc73fd5aa1a1b39f26f0c7fb6ed1339.jpg
-    - images/cover/300d4f02abd67a4c9e185be5cbaf95a1.jpg
-    - images/cover/539762b5fd20cadacff2cb9a6fccb54d.jpg
-    - images/cover/c5e24934e2d3c5dde9eeec0a419adb57.jpg
-    - images/cover/a0739f0383751553f76291e9887775de.jpg
-    - images/cover/994293b061598ad051e394447cc6e39f.jpg
-    - images/cover/933fb3b7572f5c5bbd49e7f709eb3ffe.jpg
-    - images/cover/dd3e81f8ed4a829fe24d19bdf3407002.jpg
-    - images/cover/6713d1acd27c52745468e3ac685bbb9e.jpg
-    - images/cover/95b50bb227e922be5c0a31d69c4a6706.jpg
-    - images/cover/88ebf6fefe35f747175f35b1b6e348d9.jpg
-    - images/cover/bbebe810e669a18723afb6ea2718e978.jpg
-    - images/cover/51a21182241dfacb1aa7a31a3eb5e698.jpg
-    - images/cover/b1a3fc2cff691b5d0e4375c047f859c6.jpg
-    - images/cover/edd5a2f60e894e86e80eee6f290d2b8e.jpg
-    - images/cover/d475c7053c8f5786cfbcfe0ae751c2c8.jpg
-    - images/cover/189525edc56114c0d99ffd15827b64de.jpg
-    - images/cover/50bb9f546a77a5553bc1d91cc80a67aa.jpg
-    - images/cover/8174b80c5480a78705e4bd79e89bb16b.jpg
-    - images/cover/15aca8386141d6377ca6178b3ffa603f.jpg
-    - images/cover/79dc7fbe204efdb36a402a2d11b9dd4d.jpg
-    - images/cover/8baea13f9d6ab68098adfc36c9166682.jpg
-    - images/cover/9202974e9978d3c74c021a5c0d2db2d8.jpg
-    - images/cover/59b7c1f37e0cefbeebe4ba7f5909a5d8.jpg
-    - images/cover/28651c8772d3338a872d55eb57181f9a.jpg
-    - images/cover/4cd2b78d73ea5db7834c637599f13413.jpg
-    - images/cover/f48020fb8bc9c70ca605247979eff2c4.jpg
-    - images/cover/10ad852efd7a54894ddc21a45df76711.jpg
-    - images/cover/0c33e854aa0ea8f6bcc7965edf85af63.jpg
-    - images/cover/468914984b16642db2f807cf41bd64a4.jpg
-    - images/cover/96133e74ed1915b646f89234ddc81846.jpg
-    - images/cover/1f478221863c123593af8ac256c73d9e.jpg
-    - images/cover/51a19f40c785b7f1664c566c8758c530.jpg
-    - images/cover/ca66ff52f9c6d0edcf9bce42a466196f.jpg
-    - images/cover/b37b9cf74c5242804e2c2ac206faaddf.jpg
-    - images/cover/976e5368f7158663c1e8491fc9b55f69.jpg
     - images/cover/7a777c0841223fdd728aef3742360204.jpg
     - images/cover/879d4da59b8a236759d90aac0bff084a.jpg
     - images/cover/3699560a3ba353a90e1068e8201445ee.jpg
@@ -1033,51 +1204,20 @@ cover:
     - images/cover/5ae6ce14ecd89b8c12556e847903358f.jpg
     - images/cover/de731cf9367cf84474b6d3878e926c0e.jpg
     - images/cover/6b86671a7024bdc99d06aeeac58c0a3b.jpg
-    - images/cover/8e39eddf96b0b8cf8aad586af3a1a750.jpg
-    - images/cover/d44af3ff0e819da29a27037df5b3fa7e.jpg
-    - images/cover/6fdd326391f15d75a4240d8c85e5fa4b.jpg
-    - images/cover/1dc7b92ba5ce3d4296ff5e19f005b706.jpg
-    - images/cover/040a490a063c85af27cae675a2900aaf.jpg
-    - images/cover/40389c431a36873973a344a7d26997c9.jpg
+    - images/cover/19050ec229bfa7a2bde72e8390edc46d.jpg
+    - images/cover/2beb086a68c3251f8d3d899ec1ff3fce.jpg
     - images/cover/92e4e9913c820697a6bbfb8a2f2e1463.jpg
-    - images/cover/741ada620b25bb6bf853ae3dd8c8733a.jpg
-    - images/cover/316ed26298976784eabcafc9178db94a.jpg
-    - images/cover/5d973f6f9199c862f3de460dcb3d3cbd.jpg
-    - images/cover/de1c62479492157db9ae34a1558d595d.jpg
-    - images/cover/39db320740dba34a15ffa8909456645a.jpg
-    - images/cover/8a5a10656d581bd6b3dbbe8b31463ca4.jpg
-    - images/cover/f463acec0ab69ca0abdc8b4f634483f8.jpg
-    - images/cover/660a54f9583efb07e7a2cd00caac1bf0.jpg
-    - images/cover/3e2e76f1318158a7069f9121e00178f8.jpg
-    - images/cover/a39c139dad2ef650c5d173d4a3a0a86c.jpg
-    - images/cover/ac92b4a1ad9f9027d0104737977dbbda.jpg
-    - images/cover/31e9fcdc09f844d15848bf717b21dfd5.jpg
-    - images/cover/4e6538300177c3b1f8f357232eb1b912.jpg
-    - images/cover/7cd5242b4f920be5a05a5055814bd169.jpg
-    - images/cover/a4fd85ee83ddd90c0763ebd751d994cc.jpg
-    - images/cover/a287ff0e990302207820b5ee287ef8a5.jpg
-    - images/cover/176c5ca8ff07f9dc8857c805ce9b3712.jpg
-    - images/cover/1cc28d09a64a17b945a8fbe12b855c41.jpg
-    - images/cover/bd77cf522c8d4e0a5258abd8ba957c7b.jpg
-    - images/cover/74912bd499a0d9ac191ad36c869d97bc.jpg
-    - images/cover/9730b7d8f497d0410c4a14e3881316f8.jpg
-    - images/cover/0c4a1f24f6dcb707980514b501666e26.jpg
-    - images/cover/8d787e9d98d36965d54e9537bb126d61.jpg
-    - images/cover/329f3ed0ca2047c9c63d849b17709556.jpg
-    - images/cover/bbd868fdc1ba2e4630d63308b58814f8.jpg
-    - images/cover/c3b8392cc13621b0706314d37dd2ce17.jpg
-    - images/cover/b82e9b3018776aca32d12e6af0567f08.jpg
-    - images/cover/c57b218e3c2673bd88f16a9b802c756c.jpg
-    - images/cover/f60549e80a30aa9a88ca9688e22a76a0.jpg
-    - images/cover/3f8e9d331bf6774afebcb1a1487bbcae.jpg
-    - images/cover/e7a9311a958a45a33355dc776f168d82.jpg
     - images/cover/cfc5e20e12bb509d567df4b55a784857.jpg
     - images/cover/c77015d7a0d1089993e661c447305e4f.jpg
     - images/cover/2996f62768a073950025fb69f4b87864.jpg
-    - images/cover/07111b536866e526abd9fffb52561d58.jpg
-    - images/cover/a7a9e8dd51859cba552773e08c824fbd.jpg
-    - images/cover/b3269c01c2b41aadd15e6b3238f28393.jpg
-    - images/cover/e6b07604b4c34a95f204fd467755fbc8.jpg
+    - images/cover/8e39eddf96b0b8cf8aad586af3a1a750.jpg
+    - images/cover/d44af3ff0e819da29a27037df5b3fa7e.jpg
+    - images/cover/f463acec0ab69ca0abdc8b4f634483f8.jpg
+    - images/cover/c3b8392cc13621b0706314d37dd2ce17.jpg
+    - images/cover/e7a9311a958a45a33355dc776f168d82.jpg
+    - images/cover/a287ff0e990302207820b5ee287ef8a5.jpg
+    - images/cover/176c5ca8ff07f9dc8857c805ce9b3712.jpg
+    - images/cover/bbd868fdc1ba2e4630d63308b58814f8.jpg
 
 
 # Replace Broken Images (替換無法顯示的圖片)
